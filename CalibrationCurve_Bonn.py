@@ -89,14 +89,13 @@ class Class():
                             df.to_csv(Directory + test + "/" + depth[i] + "/Calibration_parameters_" + depth[i] + volt + ".csv", index=True)
 
                     plt.ticklabel_format(useOffset=False)
-                    #plt.xlim(0, 60)
+                    plt.xlim(0, 60)
                     ax.set_title('Calibration curve for ' + depth[i], fontsize=12)
                     ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
                     ax.grid(True)
                     ax.legend()
                     ax.set_xlabel('Tube current (mA)')
                     plt.savefig(Directory + test + "/" + depth[i] + '/CalibrationCurve_Bonn_' + depth[i] + ".png", bbox_inches='tight')
-                plt.savefig(Directory + '/CalibrationCurve_Bonn_' + depth[i] + ".png", bbox_inches='tight')
                 PdfPages.savefig()
             else:
                 print "Skip Plotting %s cm" % depth[i]
@@ -328,7 +327,7 @@ class Class():
 
 if __name__ == '__main__':
     global PdfPages
-    Directory = "/home/silab62/HEP/Scripts/Scripts/Calibration_Curves/Bonn/"
+    Directory = "Calibration_Curves/Bonn/"
     Scan_file = Directory + "Mercury_MotorStage.h5"
     tests = ["without_Al_Filter", "with_Al_Filter"]
 
@@ -336,7 +335,7 @@ if __name__ == '__main__':
     #scan.Plot_Beam_profile_2d(Scan_file=Scan_file, Steps=200, width=20)
     #scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
 
-    PdfPages = PdfPages(Directory + '/CalibrationCurve_Bonn' + '.pdf')
+    PdfPages = PdfPages(Directory + 'output_data/CalibrationCurve_Bonn' + '.pdf')
     scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=tests)
     #scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
     #scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, test="without_Al_Filter")
