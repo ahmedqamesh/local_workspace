@@ -14,9 +14,8 @@ from matplotlib.colors import LogNorm
 from matplotlib import pyplot as p
 from mpl_toolkits.mplot3d import Axes3D    # @UnusedImport
 from math import pi, cos, sin
-import sympy as sym
+
 from scipy.linalg import norm
-import pandas as pd
 import os
 from matplotlib import gridspec
 
@@ -36,9 +35,9 @@ class Class():
 
     def Inverse_square(self, x, a, b, c):
         return a / (x * x + b) + c
-
+        
     def calibration_curve(self, Directory=False, PdfPages=False, stdev=0.06, tests="without_Al_Filter"):
-        '''
+        ''', 
         To get the calibration curves for each current
         For each Measurement you make you need to replace the numbers 0 in Background, Factor, .....by your measurement
         Background =  array of background estimated for each depth
@@ -48,14 +47,13 @@ class Class():
         5 cm     0.936 muA    4.402 Mrad/hr            0.3261 muA    3.281 Mrad/hr
         8 cm     0.257 muA    2.471 Mrad/hr            0.2128 muA    2.077 Mrad/hr
 #         '''
-
-
         #Background = [0, 0, 0, 6.852006e-09, 0, 6.852006e-09, 0, 6.852006e-09]
         #Factor = [0, 0, 0, 9.62, 0, 9.76, 0, 10.06]
         depth = ["0", "0", "0", "3cm", "0", "5cm", "0", "8cm"]
         Voltages = ["30KV", "40KV"]
-        colors = ['r', 'b']
+        colors = ['red','#006381', '#33D1FF', 'green', 'orange', 'maroon']
         styles = ['-', '--']
+        
         for i in range(len(depth)):
             if depth[i] != "0":
                 fig = plt.figure()
@@ -85,8 +83,8 @@ class Class():
                             ax.errorbar(x1, y1, yerr=sig1, color=colors[Voltages.index(volt)], fmt='o')
                             ax.plot(x1, self.linear(x1, *popt1), linestyle=styles[tests.index(test)],
                                     color=colors[Voltages.index(volt)], label=volt + " " + test)
-                            df = pd.DataFrame({"chisq_" + volt: chisq, "(m,c)_" + volt: tuple(popt1)})
-                            df.to_csv(Directory + test + "/" + depth[i] + "/Calibration_parameters_" + depth[i] + volt + ".csv", index=True)
+                            #df = pd.DataFrame({"chisq_" + volt: chisq, "(m,c)_" + volt: tuple(popt1)})
+                            #df.to_csv(Directory + test + "/" + depth[i] + "/Calibration_parameters_" + depth[i] + volt + ".csv", index=True)
 
                     plt.ticklabel_format(useOffset=False)
                     plt.xlim(0, 60)
@@ -116,7 +114,7 @@ class Class():
             Background = [0.00801e-06]
             Factor = [10.06]
             Current = ["10mA", "20mA", "30mA", "40mA"]
-            facecolors = ['r', 'g', 'b', 'c']
+            facecolors = ['#33D1FF','#006381', 'green', 'orange', 'maroon','red']
             with open(Directory + test + "/Dose_Voltage/" + Depth + "/" + Current[i] + ".csv", 'r')as data1:
                 reader = csv.reader(data1)
                 reader.next()
@@ -132,8 +130,8 @@ class Class():
             plt.plot(xfine, self.ln(xfine, *popt), facecolors[i])
             chisq = self.red_chisquare(np.array(y1[i]), self.ln(x1[i], *popt), np.array(sig), popt)
             plt.errorbar(x1[i], y1[i], yerr=sig, color=facecolors[i], fmt='o', label='I=%s, $\chi^2$ =%f ' % (Current[i], chisq))
-            df = pd.DataFrame({"chisq": chisq, "(a,b,c)": tuple(popt)})
-            df.to_csv(Directory + test + "/Dose_Voltage/" + Depth + "/Calibration_parameters_" + Current[i] + ".csv", index=True)
+            #df = pd.DataFrame({"chisq": chisq, "(a,b,c)": tuple(popt)})
+            #df.to_csv(Directory + test + "/Dose_Voltage/" + Depth + "/Calibration_parameters_" + Current[i] + ".csv", index=True)
 
         ax.text(0.98, 0.83, "D(V)=a*log(V + b)-c",
                 horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
@@ -187,7 +185,7 @@ class Class():
         ax.text(0.95, 0.90, "$\Theta$ = %.2f ,  E($\Theta$)=%.2f" % (np.mean(Theta), np.std(Theta)),
                 horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
-        ax.set_title('Diameter covered by beam spot based on the depth', fontsize=12)
+        ax.set_title('Diameter covered by beam spot '+test, fontsize=12)
         ax.invert_yaxis()
         ax.set_xlabel('Diameter [cm]')
         ax.set_ylabel('Depth from the beam window [cm]')
@@ -200,37 +198,61 @@ class Class():
         '''
         Relation between the depth and  the Dose rate
         '''
-        Factor = 9.76 # cALIBRATION fACTOR
-        x1 = []
-        y1 = []
-        with open(Directory + test + "/Dose_Depth/Dose_Depth.csv", 'r')as data:
-            reader = csv.reader(data)
-            reader.next()
-            for row in reader:
-                x1 = np.append(x1, float(row[0]))
-                y1 = np.append(y1, float(row[1])*Factor)
+        def spot_radius(hx=15, theta=0.22):
+            # This will calculate the spot diameter based on the given Height and angle
+            diameter = [1.5, 1.7, 2.1, 3.4]
+            height = [3, 4.5, 8, 11]
+            dx = (hx*theta+ height[2])+diameter[2]
+            return dx/2
+    
         fig = plt.figure()
         ax = fig.add_subplot(111)
-        sig = [stdev * y1[k] for k in range(len(y1))]
-        xfine = np.linspace(0, x1[-1], 100)  # define values to plot the function for
-        popt1, pcov = curve_fit(self.Inverse_square, x1, y1, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(0, 1, 0))
-        chisq1 = self.red_chisquare(np.array(y1), self.Inverse_square(np.array(x1), *popt1), sig, popt1)
-        plt.errorbar(x1, y1, color='Black', fmt='o', label="Data")
-        plt.plot(xfine, self.Inverse_square(xfine, *popt1), 'r-', label='Fit: a=%5.3f ,b = %5.3f , c= %5.3f' % tuple(popt1) + ' & $\chi^2_{red}$ =%f' % (chisq1))
-        ax.text(0.98, 0.83, "D(d)= a / (Depth^2+b) + c",
-                horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
-                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
-        point_label = [r'', r'', r'', r'', r'', r'', r'']
-        for X, Y, Z in zip(x1, y1, point_label):
-            plt.annotate('{}'.format(Z), xy=(X, Y), xytext=(-4, 4), ha='right', textcoords='offset points', fontsize=8)
-        ax.set_title('Dose rate vs Depth at  (%s and %s)' % (Voltage, current) + "with_Al_Filter", fontsize=11)
-        ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
-        ax.set_xlabel('Depth (cm)')
-        ax.set_xlim([0, max(x1)+2])
-        ax.grid(True)
-        ax.legend()
-        plt.ticklabel_format(useOffset=False)
-        plt.savefig(Directory + test + "/Dose_Depth/Dose_Depth_"+ test +".png", bbox_inches='tight')
+        colors = ['#33D1FF','#006381', 'green', 'orange', 'maroon','red'] 
+        for i in range(len(tests)):
+            Factor = 9.76 # Calibration Factor
+            x1 = []
+            y1 = []
+            r1 = []
+            with open(Directory + tests[i] + "/Dose_Depth/Dose_Depth.csv", 'r')as data:
+                reader = csv.reader(data)
+                reader.next()
+                for row in reader:
+                    x1 = np.append(x1, float(row[0]))
+                    y1 = np.append(y1, float(row[1])*Factor)
+                    r1 = np.append(r1, float(row[2]))
+            sig = [stdev * y1[k] for k in range(len(y1))]
+            xfine = np.linspace(0, x1[-1], 100)  # define values to plot the function for
+            popt1, pcov = curve_fit(self.Inverse_square, x1, y1, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(0, 1, 0))
+            chisq1 = self.red_chisquare(np.array(y1), self.Inverse_square(np.array(x1), *popt1), sig, popt1)
+            ax.errorbar(x1, y1, color=colors[i], fmt='o', label=tests[i])
+            ax.plot(xfine, self.Inverse_square(xfine, *popt1),colors[i])#, label='Fit: a=%5.3f ,b = %5.3f , c= %5.3f' % tuple(popt1) + ' & $\chi^2_{red}$ =%f' % (chisq1))
+            point_label = [r'', r'', r'', r'', r'', r'', r'']
+            for X, Y, Z in zip(x1, y1, point_label):
+                plt.annotate('{}'.format(Z), xy=(X, Y), xytext=(-4, 4), ha='right', textcoords='offset points', fontsize=8)
+            ax.set_title('Dose rate vs Depth at  (%s and %s)' % (Voltage, current) + tests[i], fontsize=11)
+            ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
+            ax.set_xlabel('Depth (cm)')
+            ax.set_xlim([0, max(x1)+2])
+            ax.grid(True)
+            ax.legend()
+            ax.ticklabel_format(useOffset=False)
+            fig.savefig(Directory + tests[i] + "/Dose_Depth/Dose_Depth_"+ tests[i] +".png", bbox_inches='tight')
+            # Decide the ticklabel position in the new x-axis,
+#             for r in range(len(r1)):
+#                     if r1[r] != 100:
+#                         print r1[r] , x1[r] , spot_radius(hx =x1[r])
+#         ax2 = ax.twiny()
+#         newlabel = [273,290,310,330,350,373.15] # labels of the xticklabels: the position in the new x-axis
+#         k2degc = lambda t: t-273 # convert function: from Kelvin to Degree Celsius
+#         newpos   = [k2degc(t) for t in newlabel]   # position of the xticklabels in the old x-axis
+#         ax2.set_xticks(newpos)
+#         ax2.set_xticklabels(newlabel)
+#         ax2.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+#         ax2.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+#         ax2.spines['bottom'].set_position(('outward', 36))
+#         ax2.set_xlabel('Radius [cm]')
+#         ax2.set_xlim(ax.get_xlim())
+        plt.tight_layout()
         PdfPages.savefig()
 
     def Plot_Beam_profile_2d(self, Scan_file=False, Directory=False, Steps=121, width=1, PdfPages=False):
@@ -337,8 +359,8 @@ if __name__ == '__main__':
 
     PdfPages = PdfPages(Directory + 'output_data/CalibrationCurve_Bonn' + '.pdf')
     scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=tests)
-    #scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
-    #scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, test="without_Al_Filter")
-    scan.Dose_Depth(test="without_Al_Filter", Directory=Directory, PdfPages=PdfPages)
+    scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
+    scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, test="without_Al_Filter")
+    scan.Dose_Depth(test=tests, Directory=Directory, PdfPages=PdfPages)
     #scan.power_2d(PdfPages=PdfPages, Directory=Directory, V_limit=50, I_limit=50)
     scan.close()
