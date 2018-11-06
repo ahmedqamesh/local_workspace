@@ -14,13 +14,13 @@ from matplotlib.colors import LogNorm
 from matplotlib import pyplot as p
 from mpl_toolkits.mplot3d import Axes3D    # @UnusedImport
 from math import pi, cos, sin
-
+import logging
 from scipy.linalg import norm
 import os
 from matplotlib import gridspec
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - [%(levelname)-8s] (%(threadName)-10s) %(message)s")
 
-
-class Class():
+class Calibration_Curves():
     def linear(self, x, m, c):
         return m * x + c
 
@@ -33,8 +33,8 @@ class Class():
     def exp(self, x, a, b, c):
         return a * np.exp(-b * x) + c
 
-    def Inverse_square(self, x, a, b, c):
-        return a / (x * x + b) + c
+    def Inverse_square(self, x, a, b):
+        return a / (x + b)**2
         
     def calibration_curve(self, Directory=False, PdfPages=False, stdev=0.06, tests="without_Al_Filter"):
         ''', 
@@ -53,7 +53,6 @@ class Class():
         Voltages = ["30KV", "40KV"]
         colors = ['red','#006381', '#33D1FF', 'green', 'orange', 'maroon']
         styles = ['-', '--']
-        
         for i in range(len(depth)):
             if depth[i] != "0":
                 fig = plt.figure()
@@ -76,7 +75,7 @@ class Class():
                             for row in reader:
                                 x1 = np.append(x1, float(row[0]))
                                 y1 = np.append(y1, (float(row[1]) - Background[i]) * Factor[i])
-                            print "Start Plotting %s" % depth[i]
+                            logging.info("Start Plotting %s" % depth[i])
                             sig1 = [stdev * y1[k] for k in range(len(y1))]
                             popt1, pcov = curve_fit(self.linear, x1, y1, sigma=sig1, absolute_sigma=True, maxfev=5000, p0=(1, 1))
                             chisq = self.red_chisquare(np.array(y1), self.linear(x1, *popt1), np.array(sig1), popt1)
@@ -96,7 +95,7 @@ class Class():
                     plt.savefig(Directory + test + "/" + depth[i] + '/CalibrationCurve_Bonn_' + depth[i] + ".png", bbox_inches='tight')
                 PdfPages.savefig()
             else:
-                print "Skip Plotting %s cm" % depth[i]
+                logging.info( "Skip Plotting %s cm" % depth[i])
 
     def Dose_Voltage(self, Directory=False, PdfPages=False, Depth="8cm", test="without_Al_Filter"):
         '''
@@ -152,8 +151,8 @@ class Class():
         To get the estimated beam diameter relative to the depth
         '''
         def New_diameter(dx=15):
-            diameter = [1.5, 1.7, 2.1, 3.4]
-            height = [3, 4.5, 8, 11]
+            diameter = [1.5, 1.7, 2.1, 3.4,10]
+            height = [3, 4.5, 8, 11, 61]
             Theta = []
             for i in range(len(diameter)):
                 for j in range(len(diameter)):
@@ -194,7 +193,7 @@ class Class():
         fig.savefig(Directory + test + '/Depth_Diameter_' + test + '.png', bbox_inches='tight')
         PdfPages.savefig()
 
-    def Dose_Depth(self, Directory=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.06, test="without_Al_Filter"):
+    def Dose_Depth(self, Directory=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.1, test="without_Al_Filter"):
         '''
         Relation between the depth and  the Dose rate
         '''
@@ -213,26 +212,41 @@ class Class():
             x1 = []
             y1 = []
             r1 = []
+            b1 = []
             with open(Directory + tests[i] + "/Dose_Depth/Dose_Depth.csv", 'r')as data:
                 reader = csv.reader(data)
                 reader.next()
                 for row in reader:
                     x1 = np.append(x1, float(row[0]))
-                    y1 = np.append(y1, float(row[1])*Factor)
+                    y1 = np.append(y1, (float(row[1]))*Factor)
                     r1 = np.append(r1, float(row[2]))
+                    b1 = np.append(b1, float(row[3]))
+            y1 = [y1[k]- b1[k] for k in range(len(y1))] # Subtrac Background   
             sig = [stdev * y1[k] for k in range(len(y1))]
             xfine = np.linspace(0, x1[-1], 100)  # define values to plot the function for
-            popt1, pcov = curve_fit(self.Inverse_square, x1, y1, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(0, 1, 0))
+            popt1, pcov = curve_fit(self.Inverse_square, x1, y1, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(300, 10))
+            #b_fixed = 2
+            #popt1, pcov = curve_fit(lambda x1, a, b: self.Inverse_square(x1, a, b_fixed), x1, y1) 
             chisq1 = self.red_chisquare(np.array(y1), self.Inverse_square(np.array(x1), *popt1), sig, popt1)
-            ax.errorbar(x1, y1, color=colors[i], fmt='o', label=tests[i])
-            ax.plot(xfine, self.Inverse_square(xfine, *popt1),colors[i])#, label='Fit: a=%5.3f ,b = %5.3f , c= %5.3f' % tuple(popt1) + ' & $\chi^2_{red}$ =%f' % (chisq1))
-            point_label = [r'', r'', r'', r'', r'', r'', r'']
-            for X, Y, Z in zip(x1, y1, point_label):
-                plt.annotate('{}'.format(Z), xy=(X, Y), xytext=(-4, 4), ha='right', textcoords='offset points', fontsize=8)
-            ax.set_title('Dose rate vs Depth at  (%s and %s)' % (Voltage, current) + tests[i], fontsize=11)
-            ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
-            ax.set_xlabel('Depth (cm)')
-            ax.set_xlim([0, max(x1)+2])
+            ax.errorbar(x1, y1,yerr=sig, color=colors[i], fmt='o', label=tests[i])
+            ax.plot(xfine, self.Inverse_square(xfine, *popt1),colors[i],label='Fit: a=%5.2f ,b=%5.2f' % tuple(popt1) + ' & $\chi^2_{red}$ =%5.2f' % (chisq1))
+            ax.text(0.9, 0.69, r'$D= \frac{a}{(r+b)^2}$',
+                horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
+                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5)) 
+            if tests[i] == "without_Al_Filter":
+                point_label = [str(r1[0])+' cm', str(r1[1])+' cm', str(r1[2])+' cm', str(r1[3])+' cm','','','']
+                for X, Y, Z in zip(x1, y1, point_label):
+                    plt.annotate('{}'.format(Z), xy=(X, Y), xytext=(27,4), ha='right', textcoords='offset points', fontsize=7)
+            if tests[i] == "with_Al_Filter":
+                point_label = [str(r1[0])+' cm', str(r1[1])+' cm', '', str(r1[3])+' cm','','',str(r1[6])+' cm']
+                for X, Y, Z in zip(x1, y1, point_label):
+                    plt.annotate('{}'.format(Z), xy=(X, Y), xytext=(27,4), ha='right', textcoords='offset points', fontsize=7)
+                              
+            ax.set_title('Dose rate vs Distance at  (%s and %s)' % (Voltage, current), fontsize=11)
+            ax.set_ylabel('Dose rate (D) [$Mrad(sio_2)/hr$]')
+            ax.set_xlabel('Distance (r) [cm]')
+            ax.set_xlim([0, max(x1)+8])
+            #ax.set_ylim([0, max(y1)+5])
             ax.grid(True)
             ax.legend()
             ax.ticklabel_format(useOffset=False)
@@ -353,7 +367,7 @@ if __name__ == '__main__':
     Scan_file = Directory + "Mercury_MotorStage.h5"
     tests = ["without_Al_Filter", "with_Al_Filter"]
 
-    scan = Class()
+    scan = Calibration_Curves()
     #scan.Plot_Beam_profile_2d(Scan_file=Scan_file, Steps=200, width=20)
     #scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
 
