@@ -6,6 +6,7 @@ from ROOT import gROOT, gBenchmark
 #import root_numpy as r2n
 import numpy as np
 from matplotlib.backends.backend_pdf import PdfPages
+
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib import colors, cm
@@ -36,12 +37,12 @@ class Simulation():
 
     def readHistogram(self,filename,histname,overflow=True):
         rootFile=TFile("file:%s"%filename)
-    #     assert rootFile.IsOpen(),"could not open file %s"%filename
-    #     try:
-    #         rootHist=rootFile.Get(histname)
-    #         assert rootHist.Class().GetName() in __rootHistogramList__,"%s is not a histogram type"%rootHist.Class().GetName()
-    #     except:
-    #         raise
+        assert rootFile.IsOpen(),"could not open file %s"%filename
+        try:
+            rootHist=rootFile.Get(histname)
+            #assert rootHist.Class().GetName() in __rootHistogramList__,"%s is not a histogram type"%rootHist.Class().GetName()
+        except:
+            raise
         rootHist=histname
         dims=int(rootHist.Class().GetName()[2])
         s = e = 1
@@ -77,41 +78,46 @@ class Simulation():
             return np.asarray(data),np.asarray(binCentersX),np.asarray(binCentersY),np.asarray(binCentersZ)
     
     __rootHistogramList__=["TH%d%s"%(__i__,__type__) for __i__ in range(1,4) for __type__ in ['C','S','I','F','D']]
+    
     def getListOfHistograms(self,filename):
         rootFile = TFile("file:%s" % filename)
         assert rootFile.IsOpen(), "could not open file %s" % filename
         l=list(rootFile.GetListOfKeys())
         return [obj.GetName() for obj in l if obj.GetClassName() in __rootHistogramList__]
-    def Plotting(self):
-        inputdir = "/home/silab62/git/XrayMachine_Bonn/Calibration_Curves/Bonn/Simulation/Geant4/Geant4_empenelope_DiffEnergys/gammaSpectrum_50keV.root"
-        f = ROOT.TFile(inputdir)
-        t=f.Get("h3")
-        t.Draw("t")
-        data,x=self. readHistogram(inputdir,t, False)
-        entries = np.nonzero(data)
+    def Plotting(self, Directory=False, PdfPages=False, Energy= False):
         fig = plt.figure()
         #FigureCanvas(fig)
         ax = fig.add_subplot(111)
-        ax.plot(x, data, linestyle ='none', marker = 'o', markersize = 2)
-        #line_fit_legend_entry = 'line fit: ax + b\na=$%.2f\pm%.2f$\nb=$%.2f\pm%.2f$' % (fit_fn[1], np.absolute(pcov[0][0]) ** 0.5, fit_fn[0], np.absolute(pcov[1][1]) ** 0.5)
+            
+        for i in range(len(Energy)):
+            Energy_file = Directory+"Simulation/Geant4/Geant4_empenelope_DiffEnergys/gammaSpectrum_"+Energy[i]+".root"
+            f = ROOT.TFile(Energy_file)
+            t=f.Get("h3")
+            #t.Draw("t")
+            data,x=self.readHistogram(Energy_file,t, False)
+            entries = np.nonzero(data)
+            ax.errorbar(x, data, fmt='-',markersize = 2, label =Energy[i] )
+            #line_fit_legend_entry = 'line fit: ax + b\na=$%.2f\pm%.2f$\nb=$%.2f\pm%.2f$' % (fit_fn[1], np.absolute(pcov[0][0]) ** 0.5, fit_fn[0], np.absolute(pcov[1][1]) ** 0.5)
+            ax.set_title('Energy of neutral secondaries at creation')
+            ax.set_xlabel('Energy [keV]')
+            ax.set_ylabel('Counts')
+            ax.legend()
+            ax.grid(True)
+            ax.set_yscale("log")
+        plt.savefig(Directory+"Simulation/Geant4/Geant4_empenelope_DiffEnergys/gammaSpectrum_.png", dpi=300)
+        plt.tight_layout()
+        PdfPages.savefig()
         
-        ax.set_title('Energy of neutral secondaries at creation')
-        ax.set_xlabel('Energy [keV]')
-        ax.set_ylabel('Counts')
-        # ax.set_ylim(0,60000000)
-        # ax.set_xlim(xmax=5500)
-        # ax.set_xlim(xmin=1000)
-        plt.legend(["Data"], loc=0)
-        ax.grid(True)
-        #plt.show()
-        fig.savefig("Plot"+".png", dpi=300)
-    
-
     def close(self):
         PdfPages.close()
+        
+        
 if __name__ == '__main__':
     global PdfPages
-    Directory = "/home/silab62/git/XrayMachine_Bonn/Calibration_Curves/Bonn/Simulation/Geant4/"
+    Directory = "Calibration_Curves/Bonn/"
+    Energy = ["10keV","20keV","30keV","40keV","50keV","60keV"]
     scan = Simulation()
-    scan.Plotting()
+    PdfPages = PdfPages(Directory + 'output_data/SimulationCurve_Bonn' + '.pdf')
+    
+    scan.Plotting(Directory=Directory, PdfPages=PdfPages, Energy =Energy)
     scan.close()
