@@ -75,7 +75,7 @@ class Calibration_Curves():
                             for row in reader:
                                 x1 = np.append(x1, float(row[0]))
                                 y1 = np.append(y1, (float(row[1]) - Background[i]) * Factor[i])
-                            logging.info("Start Plotting %s" % depth[i])
+                            logging.info("Start Plotting %s cm  %s" % (depth[i],test))
                             sig1 = [stdev * y1[k] for k in range(len(y1))]
                             popt1, pcov = curve_fit(self.linear, x1, y1, sigma=sig1, absolute_sigma=True, maxfev=5000, p0=(1, 1))
                             chisq = self.red_chisquare(np.array(y1), self.linear(x1, *popt1), np.array(sig1), popt1)
