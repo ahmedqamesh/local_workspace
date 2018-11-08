@@ -12,8 +12,12 @@ y_neu_2_plot, =plt.plot(x2, y_neu_2, ':', color='grey', label='40 Kev')
 y_neu_3_plot, =plt.plot(x2, y_neu_3, '--', color='green', label='50 Kev')
 y_neu_4_plot, =plt.plot(x2, y_neu_4, '--', color='#006381', label='60 Kev')
 y_neu_5_plot, =plt.plot(x2, y_neu_5, '-.', color ='#7e0044', label='80 Kev')
+
+print "how much one need in cm to get 10e-9 = ",  20.7232658369/(2.778E-01 * 2.7) # in Al 31.4 cm
+
+
 plt.grid(True)
-ax = plt.gca()
+ax = plt.gca()  
 
 plt.ylim(bottom=-0.01)
 plt.xlabel('Aluminum Thickness (cm)')
