@@ -90,7 +90,7 @@ class Simulation():
         ax = fig.add_subplot(111)
             
         for i in range(len(Energy)):
-            Energy_file = Directory+"Simulation/Geant4/Geant4_empenelope_DiffEnergys/gammaSpectrum_"+Energy[i]+".root"
+            Energy_file = Directory+"/Geant4_empenelope_DiffEnergys/gammaSpectrum_"+Energy[i]+".root"
             f = ROOT.TFile(Energy_file)
             t=f.Get("h3")
             #t.Draw("t")
@@ -104,7 +104,7 @@ class Simulation():
             ax.legend()
             ax.grid(True)
             ax.set_yscale("log")
-        plt.savefig(Directory+"Simulation/Geant4/Geant4_empenelope_DiffEnergys/gammaSpectrum_.png", dpi=300)
+        plt.savefig(Directory+"/Geant4_empenelope_DiffEnergys/gammaSpectrum_.png", dpi=300)
         plt.tight_layout()
         PdfPages.savefig()
         
@@ -114,10 +114,10 @@ class Simulation():
         
 if __name__ == '__main__':
     global PdfPages
-    Directory = "Calibration_Curves/Bonn/"
+    Directory = "Simulation/Geant4/"
     Energy = ["10keV","20keV","30keV","40keV","50keV","60keV"]
     scan = Simulation()
-    PdfPages = PdfPages(Directory + 'output_data/SimulationCurve_Bonn' + '.pdf')
+    PdfPages = PdfPages('output_data/SimulationCurve_Bonn' + '.pdf')
     
     scan.Plotting(Directory=Directory, PdfPages=PdfPages, Energy =Energy)
     scan.close()
