@@ -1,8 +1,6 @@
 from numpy import loadtxt
 import matplotlib.pyplot as plt
 import numpy as np
-#http://physics.nist.gov/PhysRefData/XrayMassCoef/tab3.html 3.3.2017 (only mass absorption coeff)
-#http://physics.nist.gov/cgi-bin/Xcom/xcom3_1 bzw. http://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html 3.3.2017 (mass abs coeff  with photoeffekt, compton usw..)
 data = loadtxt('mass_attenuation_coeff_in_detail_si.dat')
 x = data[:, 0]
 y = data[:, 6]  # total mass attenuation coeff with coherent scattering
