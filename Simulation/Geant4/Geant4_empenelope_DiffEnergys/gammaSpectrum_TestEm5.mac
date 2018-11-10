@@ -21,7 +21,7 @@
 /gun/particle e- 
 /gun/energy 50 keV
 # 
-#/analysis/setFileName gammaSpectrum_50keV_500Bins
+#/analysis/setFileName gammaSpectrum_50keV
 #/analysis/h1/set  3 500 0 60 keV       #gamma: energy at vertex
 #/analysis/h1/set  5 500 0.01 100 log10  #gamma: energy at vertex (log scale)
 #/analysis/h1/set 20 500 0 60 keV       #gamma: energy at exit

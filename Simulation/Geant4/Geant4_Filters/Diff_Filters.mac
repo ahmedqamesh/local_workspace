@@ -1,0 +1,75 @@
+# THe card starts with the original spectrum (Tungsten_Spectrum_Anode_spectrum.root which is written in File1.dat) and get histogram for the specified filter
+/control/verbose 2
+/control/cout/ignoreThreadsExcept 0
+#/run/verbose 2
+/run/numberOfThreads 4
+#
+/testem/phys/addPhysics  empenelope
+#
+/testem/det/setNbOfLayers 1
+/testem/det/setNbOfAbsor 2
+/testem/det/setNbOfFilter 1
+/testem/det/setAbsor 1 G4_Va  0.015 mm
+/testem/det/setAbsor 2 G4_AIR  0.4 mm     # in some litrature it is 0.25 mm
+/testem/det/setFilter 1 G4_AIR  0.015 mm   # in some litrature it is 0.25 mm G4_Fe
+/testem/det/setSizeYZ 2 cm
+#
+
+/run/initialize
+
+# read from beam 
+#/gun/particle e-
+#/gun/energy 50 keV
+
+# read from specrum
+/gun/spectrum on 
+/gun/particle gamma 
+/gun/position   -1.8 0.0 0.0 cm   # gun position at 8 mm from the tungsten target
+
+#
+/analysis/setFileName Tungsten_Spectrum_Va
+/analysis/h1/set 1  200   0.  60. keV	#Edep in absorber 1
+/analysis/h1/set 2  200   0.  60. keV	#Edep in absorber 2
+
+#/analysis/h1/set 11 50   0.   10.  none	#long. profile in absor1
+#/analysis/h1/set 12 50   0.   10.  none	#long. profile in absor2
+
+#/analysis/h1/set 21 100  0.   100. none	#energy flow
+#/analysis/h1/set 22 100  0.   100. none	#lateral energy leakage
+
+/analysis/h1/set 23  200  0.   60. keV	#Photon Secondaries
+
+/analysis/h1/set 24  200  0.   60. keV	#Photon Edep in absorber 2
+
+/analysis/h1/set 25  200  0.   60. keV	#Photon Edep in Filter 1
+/analysis/h1/set 26  200  0.   60. keV	#Edep in Filter 1
+/analysis/h1/set 27  200  0.   60. keV	#Edep From Spectrum
+/analysis/h1/set 28  200  0.    60. keV	#Photon Edep in Filter 1 
+
+#/analysis/h1/set  29  200  0.0 60 keV	  	#gamma: energy at vertex at creation
+#/analysis/h1/set  30  200 0.0 10 keV log10 	#gamma: energy at vertex (log10) at creation
+
+# All the next data are for Absorber 1 only in case of using Spectrum as input
+/analysis/h1/set  31  200 0.0 50 keV	  	#(transmit, charged) : kinetic energy at exit
+/analysis/h1/set  32  200 0.0 60 keV	  	#(transmit, neutral) : kinetic energy at exit
+/analysis/h1/set  33  200 0.0 60 keV	  	#(reflect , charged) : kinetic energy at exit
+/analysis/h1/set  34  200 0.0 60 keV	  	#(reflect , neutral) : kinetic energy at exit
+
+#/analysis/h1/set 35  200  0.0  0.6 deg		#(transmit, charged) : space angle: dN/dOmega
+#/analysis/h1/set 36  200  0.0  0.6 deg		#(transmit, neutral) : ener fluence: dN/dOmega
+#/analysis/h1/set 37  200  0.0  0.6 deg		#(reflect , charged) : space angle: dN/dOmega
+#/analysis/h1/set 38  200  0.0  0.6 deg		#(reflect , neutral) : ener fluence: dN/dOmega
+
+#/analysis/h1/set  41  200 0.0 60 keV	  	#(transmit, neutral) : ener fluence:  dE(MeV)/dOmega
+
+/analysis/h1/set 47  200 -5.0  +5.0 mm	#x-position at exit  
+/analysis/h1/set 48  200  0.  +10.0 mm	#radius at exit 
+/analysis/h1/set 49  200 -5.0  +5.0 mm	#x_vertex of charged secondaries (all)
+/analysis/h1/set 50  200  0.  +10.0 mm	#x_vertex of charged secondaries (not absorbed)
+
+#
+/run/setCut 1 um
+#
+/run/printProgress 10000
+#
+/run/beamOn 1000000000

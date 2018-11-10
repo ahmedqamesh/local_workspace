@@ -81,7 +81,6 @@ for E in np.arange(len(Energy_range)):
     ax1.legend()
 #ax.set_xticks(new_x)
 #ax.set_xticklabels(new_x, rotation=45)
-
 ax.grid(True,axis='y')
 ax.set_xlabel('Layer Thickness ($\mu m $)')
 ax.set_ylabel('Transmission $I$/$I_0$ ')
