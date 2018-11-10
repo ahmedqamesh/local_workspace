@@ -1,0 +1,14 @@
+# Photon Energy in keV, attenuation length in um
+# data taken from http://henke.lbl.gov/optical_constants/ 
+5.8932	28.7745  # Fe
+6.5128	38.3634
+22.077	1388.15  # Cd
+25.000	1991.47
+8.038	70.5862  # Cu
+8.906	95.2131
+13.3655	314.574  # Rb
+14.9575	438.950
+17.4265	690.413  # Mo
+19.5985	977.512
+4.507	13.4348  # Ti
+4.933	17.3350

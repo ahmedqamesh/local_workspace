@@ -1,9 +1,12 @@
-from numpy import loadtxt
+from kafe import *
+from kafe.function_library import quadratic_3par
+from numpy import loadtxt, arange
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.ticker as mtick
 from matplotlib.legend_handler import HandlerLine2D
 from matplotlib.backends.backend_pdf import PdfPages
+
 import csv
 from scipy.optimize import curve_fit
 import tables as tb
@@ -104,6 +107,8 @@ class Calibration_Curves():
 
         y1 = []
         x1 = []
+        Dataset = []
+        kafe_Fit = []
         fig = plt.figure()
         ax = fig.add_subplot(111)
         Current = ["10mA", "20mA", "30mA", "40mA"]
@@ -124,6 +129,8 @@ class Calibration_Curves():
             y1.append(y)
             stdev = 0.06
             sig = [stdev * y1[i][k] for k in range(len(y1[i]))]
+            Dataset = np.append(Dataset, build_dataset(x1[i],y1[i],yabserr=sig,title='I=%s'%Current[i], axis_labels=['Voltage (kV)', '$Dose rate [Mrad(sio_2)/hr]$']))
+            
             popt, pcov = curve_fit(self.ln, x1[i], y1[i], sigma=sig, absolute_sigma=True, maxfev=5000, p0=(1, 1, 1))
             xfine = np.linspace(0., 60., 100)
             plt.plot(xfine, self.ln(xfine, *popt), facecolors[i])
@@ -131,7 +138,6 @@ class Calibration_Curves():
             plt.errorbar(x1[i], y1[i], yerr=sig, color=facecolors[i], fmt='o', label='I=%s, $\chi^2$ =%f ' % (Current[i], chisq))
             #df = pd.DataFrame({"chisq": chisq, "(a,b,c)": tuple(popt)})
             #df.to_csv(Directory + test + "/Dose_Voltage/" + Depth + "/Calibration_parameters_" + Current[i] + ".csv", index=True)
-
         ax.text(0.98, 0.83, "D(V)=a*log(V + b)-c",
                 horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
@@ -145,14 +151,21 @@ class Calibration_Curves():
         plt.ylim(0.1, 7.5)
         plt.savefig(Directory + test + "/Dose_Voltage/" + Depth + "/" + Depth + Directory[58:-1] + ".png", bbox_inches='tight')
         PdfPages.savefig()
+        for Data in Dataset:
+            kafe_Fit = np.append(kafe_Fit, Fit(Data, quadratic_3par))
+        for fit in kafe_Fit:
+            fit.do_fit()
+        kafe_plot = Plot(kafe_Fit[2],kafe_Fit[3])
+        kafe_plot.plot_all(show_data_for='all',show_band_for=0)
+        kafe_plot.save(Directory + test + "/Dose_Voltage/" + Depth + "/" + Depth + Directory[58:-1] +"_kafe_Fit"+".png")
+        
+        PdfPages.savefig()
 
-    def Depth_Diameter(self, Directory=False, Unknown_diameter=[4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15], PdfPages=False, test="without_Al_Filter"):
+    def Depth_Diameter(self, Directory=False, Unknown_diameter=[4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15], PdfPages=False, tests=["without_Al_Filter"]):
         '''
         To get the estimated beam diameter relative to the depth
         '''
-        def New_diameter(dx=15):
-            diameter = [1.5, 1.7, 2.1, 3.4,10]
-            height = [3, 4.5, 8, 11, 61]
+        def New_diameter(dx=15,diameter = False,height = False):
             Theta = []
             for i in range(len(diameter)):
                 for j in range(len(diameter)):
@@ -163,108 +176,131 @@ class Calibration_Curves():
             hx = (dx - diameter[2]) / np.mean(Theta) + height[2]
             # print "Height for diameter %i cm is %i cm " % (dx, hx)
             return np.round(hx), Theta
-        diameter = [1.5, 1.7, 2.1, 3]
-        height = [3, 4.5, 8, 11]
-        for i in range(len(Unknown_diameter)):
-            Unknown_height, Theta = New_diameter(dx=Unknown_diameter[i])
-            diameter = np.append(diameter, Unknown_diameter[i])
-            height = np.append(height, Unknown_height)
-        fig = plt.figure()
-        fig.add_subplot(111)
-        ax = plt.gca()
-        for i in range(len(diameter)):
-            x = np.linspace(-diameter[i] / 2.0, diameter[i] / 2.0, 10)
-            y = np.arange(height[i] / 10.0, height[i] + height[i] / 10.0, height[i] / 10.0)
-            if i <= 3:  # These values are measured experimentaly
-                linestyle = "solid"
-            else:
-                linestyle = "dashed"  # These are Theoritical values
-            plt.plot(x, self.linear(y, m=0, c=height[i]), linestyle=linestyle)
+        for j in range(len(tests)):
+            fig = plt.figure()
+            fig.add_subplot(111)
+            ax = plt.gca()
+            
+            Factor = 9.76 # Calibration Factor
+            y1 = []
+            r1 = []
+            diameter = []
+            height = []
+            with open(Directory + tests[j] + "/Dose_Depth/Dose_Depth.csv", 'r')as data:
+                reader = csv.reader(data)
+                reader.next()
+                for row in reader:
+                    if (float(row[2]) <100): # Some missing data needed to be taken  in the future
+                        height = np.append(height, float(row[0]))# Distance from the source
+                        diameter = np.append(diameter, float(row[2])*2) #Diameter of the beam
+            
+            for i in range(len(Unknown_diameter)):
+                Unknown_height, Theta = New_diameter(dx=Unknown_diameter[i],diameter =diameter,height =height)
+                diameter = np.append(diameter, Unknown_diameter[i])
+                height = np.append(height, Unknown_height)
+            for i in range(len(diameter)):
+                x = np.linspace(-diameter[i] / 2.0, diameter[i] / 2.0, 10)
+                y = np.arange(height[i] / 10.0, height[i] + height[i] / 10.0, height[i] / 10.0)
+                if i <= 4:  # These values are measured experimentaly
+                    linestyle = "solid"
+                else:
+                    linestyle = "dashed"  # These are Theoritical values
+                    
+                plt.plot(x, self.linear(y, m=0, c=height[i]), linestyle=linestyle)
+    
+            ax.text(0.95, 0.90, "$\Theta$ = %.2f ,  E($\Theta$)=%.2f" % (np.mean(Theta), np.std(Theta)),
+                    horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
+                    bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+            ax.set_title('Diameter covered by beam spot %s'%(tests[j]), fontsize=12)
+            ax.invert_yaxis()
+            ax.set_xlabel('Diameter [cm]')
+            ax.set_ylabel('Depth from the beam window [cm]')
+            ax.grid(True)
+            fig.savefig(Directory + tests[j] + '/Depth_Diameter_' + tests[j] + '.png', bbox_inches='tight')
+            PdfPages.savefig()
 
-        ax.text(0.95, 0.90, "$\Theta$ = %.2f ,  E($\Theta$)=%.2f" % (np.mean(Theta), np.std(Theta)),
-                horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
-                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
-        ax.set_title('Diameter covered by beam spot '+test, fontsize=12)
-        ax.invert_yaxis()
-        ax.set_xlabel('Diameter [cm]')
-        ax.set_ylabel('Depth from the beam window [cm]')
-        ax.grid(True)
-        fig.savefig(Directory + test + '/Depth_Diameter_' + test + '.png', bbox_inches='tight')
-        PdfPages.savefig()
-
-    def Dose_Depth(self, Directory=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.1, test="without_Al_Filter"):
+    def Dose_Depth(self, Directory=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.1, test="without_Al_Filter", theta = 0.16):
         '''
         Relation between the depth and  the Dose rate
-        '''
-        def spot_radius(hx=15, theta=0.22):
-            # This will calculate the spot diameter based on the given Height and angle
-            diameter = [1.5, 1.7, 2.1, 3.4]
-            height = [3, 4.5, 8, 11]
-            dx = (hx*theta+ height[2])+diameter[2]
-            return dx/2
-    
+        '''          
+        
         fig = plt.figure()
         ax = fig.add_subplot(111)
-        colors = ['#33D1FF','#006381', 'green', 'orange', 'maroon','red'] 
+        colors = ['#33D1FF', 'maroon','#006381', 'green', 'orange','red'] 
         for i in range(len(tests)):
             Factor = 9.76 # Calibration Factor
-            x1 = []
+            height = []
+            diameter = []
             y1 = []
             r1 = []
             b1 = []
+            Unknown_radius = []
             with open(Directory + tests[i] + "/Dose_Depth/Dose_Depth.csv", 'r')as data:
                 reader = csv.reader(data)
                 reader.next()
                 for row in reader:
-                    x1 = np.append(x1, float(row[0]))
-                    y1 = np.append(y1, (float(row[1]))*Factor)
-                    r1 = np.append(r1, float(row[2]))
-                    b1 = np.append(b1, float(row[3]))
+                    height = np.append(height, float(row[0]))# Distance from the source
+                    y1 = np.append(y1, (float(row[1]))*Factor) # Dose rate
+                    r1 = np.append(r1, float(row[2])) #radius of the beam
+                    diameter =  np.append(r1, float(row[2])*2) #Diameter of the beam
+                    b1 = np.append(b1, float(row[3])) # Background
             y1 = [y1[k]- b1[k] for k in range(len(y1))] # Subtrac Background   
             sig = [stdev * y1[k] for k in range(len(y1))]
-            xfine = np.linspace(0, x1[-1], 100)  # define values to plot the function for
-            popt1, pcov = curve_fit(self.Inverse_square, x1, y1, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(300, 10))
+            for h in range(len(r1)):
+                if diameter[h]<100:
+                    Unknown_radius  = np.append(Unknown_radius , ((height[h]-height[1])*theta+ diameter[1])*0.5)
+            xfine = np.linspace(0, height[-1], 100)  # define values to plot the function for
+            popt1, pcov = curve_fit(self.Inverse_square, height, y1, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(300, 10))
             #b_fixed = 2
             #popt1, pcov = curve_fit(lambda x1, a, b: self.Inverse_square(x1, a, b_fixed), x1, y1) 
-            chisq1 = self.red_chisquare(np.array(y1), self.Inverse_square(np.array(x1), *popt1), sig, popt1)
-            ax.errorbar(x1, y1,yerr=sig, color=colors[i], fmt='o', label=tests[i])
+            chisq1 = self.red_chisquare(np.array(y1), self.Inverse_square(np.array(height), *popt1), sig, popt1)
+            ax.errorbar(height, y1,yerr=sig, color=colors[i], fmt='o', label=tests[i])
             ax.plot(xfine, self.Inverse_square(xfine, *popt1),colors[i],label='Fit: a=%5.2f ,b=%5.2f' % tuple(popt1) + ' & $\chi^2_{red}$ =%5.2f' % (chisq1))
             ax.text(0.9, 0.69, r'$D= \frac{a}{(r+b)^2}$',
                 horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5)) 
+            newlabel = np.arange(0,height[-1],10) # labels of the xticklabels: the position in the new x-axis
+            function = lambda t: ((t-height[1])*theta+ diameter[1])*0.5
+            newpos  = [function(t) for t in newlabel]   # position of the xticklabels in the old x-axis
             if tests[i] == "without_Al_Filter":
                 point_label = [str(r1[0])+' cm', str(r1[1])+' cm', str(r1[2])+' cm', str(r1[3])+' cm','','','']
-                for X, Y, Z in zip(x1, y1, point_label):
+                for X, Y, Z in zip(height, y1, point_label):
                     plt.annotate('{}'.format(Z), xy=(X, Y), xytext=(27,4), ha='right', textcoords='offset points', fontsize=7)
+#                 ax3 = ax.twiny()
+#                 ax3.set_xticks(newpos)
+#                 #ax2.set_xticklabels(newlabel)
+#                 ax3.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+#                 ax3.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+#                 ax3.tick_params(axis='x', colors=colors[i])
+#                 #ax.xaxis.label.set_color(colors[i])
+#                 ax3.spines['bottom'].set_position(('outward', 36))
+#                 ax3.set_ylim(ax.get_ylim()[0], ax.get_ylim()[-1])
+#                 print newpos
             if tests[i] == "with_Al_Filter":
                 point_label = [str(r1[0])+' cm', str(r1[1])+' cm', '', str(r1[3])+' cm','','',str(r1[6])+' cm']
-                for X, Y, Z in zip(x1, y1, point_label):
+                for X, Y, Z in zip(height, y1, point_label):
                     plt.annotate('{}'.format(Z), xy=(X, Y), xytext=(27,4), ha='right', textcoords='offset points', fontsize=7)
-                              
+#                 ax2 = ax.twiny()
+#                 ax2.set_xticks(newpos)
+#                 print newpos
+#                 #ax2.set_xticklabels(newlabel)
+#                 ax2.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+#                 ax2.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+#                 ax2.tick_params(axis='x', colors=colors[i])
+#                 #ax.xaxis.label.set_color(colors[i])
+#                 ax2.spines['bottom'].set_position(('outward', 60))
+#                 ax2.set_xlabel('Radius [cm]')
+#                 ax2.set_ylim(ax.get_ylim()[0], ax.get_ylim()[-1])
+#         
+                      
             ax.set_title('Dose rate vs Distance at  (%s and %s)' % (Voltage, current), fontsize=11)
             ax.set_ylabel('Dose rate (D) [$Mrad(sio_2)/hr$]')
             ax.set_xlabel('Distance (r) [cm]')
-            ax.set_xlim([0, max(x1)+8])
-            #ax.set_ylim([0, max(y1)+5])
+            ax.set_xlim([0, max(height)+8])
             ax.grid(True)
             ax.legend()
             ax.ticklabel_format(useOffset=False)
             fig.savefig(Directory + tests[i] + "/Dose_Depth/Dose_Depth_"+ tests[i] +".png", bbox_inches='tight')
-            # Decide the ticklabel position in the new x-axis,
-#             for r in range(len(r1)):
-#                     if r1[r] != 100:
-#                         print r1[r] , x1[r] , spot_radius(hx =x1[r])
-#         ax2 = ax.twiny()
-#         newlabel = [273,290,310,330,350,373.15] # labels of the xticklabels: the position in the new x-axis
-#         k2degc = lambda t: t-273 # convert function: from Kelvin to Degree Celsius
-#         newpos   = [k2degc(t) for t in newlabel]   # position of the xticklabels in the old x-axis
-#         ax2.set_xticks(newpos)
-#         ax2.set_xticklabels(newlabel)
-#         ax2.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
-#         ax2.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
-#         ax2.spines['bottom'].set_position(('outward', 36))
-#         ax2.set_xlabel('Radius [cm]')
-#         ax2.set_xlim(ax.get_xlim())
         plt.tight_layout()
         PdfPages.savefig()
 
@@ -369,9 +405,9 @@ if __name__ == '__main__':
     #scan.Plot_Beam_profile_2d(Scan_file=Scan_file, Steps=200, width=20)
     #scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
     PdfPages = PdfPages('output_data/CalibrationCurve_Bonn' + '.pdf')
-    scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=tests)
-    scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
-    scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, test="without_Al_Filter")
-    #scan.Dose_Depth(test=tests, Directory=Directory, PdfPages=PdfPages)
+    #scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=tests)
+    #scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, tests=["without_Al_Filter"])
+    scan.Dose_Depth(test=tests, Directory=Directory, PdfPages=PdfPages)
     #scan.power_2d(PdfPages=PdfPages, Directory=Directory, V_limit=50, I_limit=50)
+    #scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
     scan.close()
