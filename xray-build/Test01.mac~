@@ -41,7 +41,7 @@
 # read from specrum
 #/gun/spectrum on 
 #/gun/particle gamma 
-#/gun/loadGunData File1.dat
+
 /gun/position   0.8 0.0 0.0 cm   # gun position at 8 mm from the tungsten target
 
 #Activation of Emission 
