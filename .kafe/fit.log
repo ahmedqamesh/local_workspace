@@ -1,0 +1,520 @@
+
+########################################
+# Fit performed on 2018-11-10 23:58:45 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+2.293679e-01	1.376208e-02
+7.472567e-01	4.483540e-02
+1.217260e+00	7.303560e-02
+1.526102e+00	9.156612e-02
+1.700140e+00	1.020084e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-5.4352e-04  1.56e-04  
+# lin_coeff
+6.9867e-02  8.00e-03  -0.977  
+# constant
+-4.1560e-01  6.97e-02  +0.934  -0.978  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00054 +- 0.00016
+lin_coeff = 0.0699 +- 0.008
+constant = -0.416 +- 0.07
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.341/2 = 0.171
+EdM      1.14509e-19
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.843
+HYPTEST  accepted (sig. 5%)
+
+
+########################################
+# Fit performed on 2018-11-10 23:58:45 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+3.692019e-01	2.215212e-02
+1.426609e+00	8.559651e-02
+2.382107e+00	1.429264e-01
+3.008946e+00	1.805368e-01
+3.360040e+00	2.016024e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-1.1127e-03  3.01e-04  
+# lin_coeff
+1.4253e-01  1.53e-02  -0.977  
+# constant
+-9.4571e-01  1.31e-01  +0.941  -0.983  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00111 +- 0.0003
+lin_coeff = 0.143 +- 0.015
+constant = -0.95 +- 0.13
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.364/2 = 0.182
+EdM      5.35545e-14
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.834
+HYPTEST  accepted (sig. 5%)
+
+
+########################################
+# Fit performed on 2018-11-10 23:58:45 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+5.160779e-01	3.096468e-02
+2.112600e+00	1.267560e-01
+3.556210e+00	2.133726e-01
+4.506880e+00	2.704128e-01
+5.050120e+00	3.030072e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-1.6604e-03  4.49e-04  
+# lin_coeff
+2.1445e-01  2.28e-02  -0.977  
+# constant
+-1.4636e+00  1.93e-01  +0.943  -0.985  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00166 +- 0.00045
+lin_coeff = 0.214 +- 0.023
+constant = -1.46 +- 0.19
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.361/2 = 0.181
+EdM      2.12742e-13
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.835
+HYPTEST  accepted (sig. 5%)
+
+
+########################################
+# Fit performed on 2018-11-10 23:58:45 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+6.619479e-01	3.971688e-02
+2.802716e+00	1.681630e-01
+4.738260e+00	2.842956e-01
+6.016886e+00	3.610132e-01
+6.758308e+00	4.054985e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-2.2083e-03  5.97e-04  
+# lin_coeff
+2.8685e-01  3.03e-02  -0.976  
+# constant
+-1.9872e+00  2.56e-01  +0.944  -0.985  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00221 +- 0.0006
+lin_coeff = 0.287 +- 0.03
+constant = -1.99 +- 0.26
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.354/2 = 0.177
+EdM      1.98598e-14
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.838
+HYPTEST  accepted (sig. 5%)
+
+
+########################################
+# Fit performed on 2018-11-10 23:59:46 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+2.293679e-01	1.376208e-02
+7.472567e-01	4.483540e-02
+1.217260e+00	7.303560e-02
+1.526102e+00	9.156612e-02
+1.700140e+00	1.020084e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-5.4352e-04  1.56e-04  
+# lin_coeff
+6.9867e-02  8.00e-03  -0.977  
+# constant
+-4.1560e-01  6.97e-02  +0.934  -0.978  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00054 +- 0.00016
+lin_coeff = 0.0699 +- 0.008
+constant = -0.416 +- 0.07
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.341/2 = 0.171
+EdM      1.14509e-19
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.843
+HYPTEST  accepted (sig. 5%)
+
+
+########################################
+# Fit performed on 2018-11-10 23:59:46 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+3.692019e-01	2.215212e-02
+1.426609e+00	8.559651e-02
+2.382107e+00	1.429264e-01
+3.008946e+00	1.805368e-01
+3.360040e+00	2.016024e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-1.1127e-03  3.01e-04  
+# lin_coeff
+1.4253e-01  1.53e-02  -0.977  
+# constant
+-9.4571e-01  1.31e-01  +0.941  -0.983  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00111 +- 0.0003
+lin_coeff = 0.143 +- 0.015
+constant = -0.95 +- 0.13
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.364/2 = 0.182
+EdM      5.35545e-14
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.834
+HYPTEST  accepted (sig. 5%)
+
+
+########################################
+# Fit performed on 2018-11-10 23:59:46 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+5.160779e-01	3.096468e-02
+2.112600e+00	1.267560e-01
+3.556210e+00	2.133726e-01
+4.506880e+00	2.704128e-01
+5.050120e+00	3.030072e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-1.6604e-03  4.49e-04  
+# lin_coeff
+2.1445e-01  2.28e-02  -0.977  
+# constant
+-1.4636e+00  1.93e-01  +0.943  -0.985  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00166 +- 0.00045
+lin_coeff = 0.214 +- 0.023
+constant = -1.46 +- 0.19
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.361/2 = 0.181
+EdM      2.12742e-13
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.835
+HYPTEST  accepted (sig. 5%)
+
+
+########################################
+# Fit performed on 2018-11-10 23:59:46 #
+########################################
+
+###########
+# Dataset #
+###########
+
+# axis 0: Voltage (kV)
+# datapoints
+1.000000e+01
+2.000000e+01
+3.000000e+01
+4.000000e+01
+5.000000e+01
+
+# axis 1: $Dose rate [Mrad(sio_2)/hr]$
+# datapoints	uncor. err.
+6.619479e-01	3.971688e-02
+2.802716e+00	1.681630e-01
+4.738260e+00	2.842956e-01
+6.016886e+00	3.610132e-01
+6.758308e+00	4.054985e-01
+
+
+################
+# Fit function #
+################
+
+quadratic_3par(x; quad_coeff, lin_coeff, constant) = quad_coeff * x^2 + lin_coeff * x + constant
+
+##############
+# Fit result #
+##############
+
+# value        error   correlations
+# quad_coeff
+-2.2083e-03  5.97e-04  
+# lin_coeff
+2.8685e-01  3.03e-02  -0.976  
+# constant
+-1.9872e+00  2.56e-01  +0.944  -0.985  
+
+########################
+# Final fit parameters #
+########################
+
+quad_coeff = -0.00221 +- 0.0006
+lin_coeff = 0.287 +- 0.03
+constant = -1.99 +- 0.26
+
+###############
+# Fit details #
+###############
+
+USING    iminuit
+FCN/ndf  0.354/2 = 0.177
+EdM      1.98598e-14
+UP       1
+STA      Error matrix accurate
+
+chi2prob 0.838
+HYPTEST  accepted (sig. 5%)
+

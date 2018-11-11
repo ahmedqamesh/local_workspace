@@ -402,12 +402,12 @@ if __name__ == '__main__':
     Scan_file = Directory + "Mercury_MotorStage.h5"
     tests = ["without_Al_Filter", "with_Al_Filter"]
     scan = Calibration_Curves()
-    #scan.Plot_Beam_profile_2d(Scan_file=Scan_file, Steps=200, width=20)
-    #scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
+#     scan.Plot_Beam_profile_2d(Scan_file=Scan_file, Steps=200, width=20)
+#     scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
     PdfPages = PdfPages('output_data/CalibrationCurve_Bonn' + '.pdf')
-    #scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=tests)
-    #scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, tests=["without_Al_Filter"])
+    scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=tests)
+    scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, tests=["without_Al_Filter"])
     scan.Dose_Depth(test=tests, Directory=Directory, PdfPages=PdfPages)
     #scan.power_2d(PdfPages=PdfPages, Directory=Directory, V_limit=50, I_limit=50)
-    #scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
+    scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
     scan.close()

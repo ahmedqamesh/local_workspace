@@ -56,18 +56,3 @@ export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
 To unistall 
 sudo apt-get remove root-system-bin
 sudo apt-get remove --auto-remove root-system-bin
-
-# running the examples
-cp -r /home/silab62/HEP/geant4-install/examples/basic/B1/ .
-cd $HOME
-mkdir B1-build
-cd $HOME/B1-build
-cmake /home/silab62/HEP/geant4-install/examples/basic/B1
-make -j
-./exampleB1
-
- in 'batch' mode from macro files
-cd $HOME/TestEm1_build    # or cd $HOME/TestEm1 if example was built with GNUmake
-./TestEm1 annihil.mac
-./TestEm1 brem.mac
-./TestEm1 TestEm1.in >& myTestEm1.out   # redirecting output in a file
