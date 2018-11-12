@@ -1,0 +1,9 @@
+MLSQ-FP XRF Multi-Standards Calibrate Setup File
+4
+Standard TFR Filenames =========================
+"C:\CrossRoads Scientific\SIR-FP Tutorial\MLSQ Files\RockStd1.tfr"
+"C:\CrossRoads Scientific\SIR-FP Tutorial\MLSQ Files\RockStd2.tfr"
+"C:\CrossRoads Scientific\SIR-FP Tutorial\MLSQ Files\RockStd3.tfr"
+"C:\CrossRoads Scientific\SIR-FP Tutorial\MLSQ Files\RockStd4.tfr"
+FP Calibration Model ===========================
+9

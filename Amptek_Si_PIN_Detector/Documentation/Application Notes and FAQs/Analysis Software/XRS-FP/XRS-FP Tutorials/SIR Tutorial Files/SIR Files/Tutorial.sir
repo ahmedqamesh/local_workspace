@@ -1,0 +1,12 @@
+XRF Scatter Intensity Ratio File
+7
+"Filename","Mean-Z","C/R Ratio"
+"C:\CrossRoads Scientific\SIR-FP Tutorial\SIR Files\Al2O3Binder10 .tfr",10.12,4.67
+"C:\CrossRoads Scientific\SIR-FP Tutorial\SIR Files\B2O3Binder05.tfr",6.99,8.37
+"C:\CrossRoads Scientific\SIR-FP Tutorial\SIR Files\CaCO3.tfr",12.57,1.89
+"C:\CrossRoads Scientific\SIR-FP Tutorial\SIR Files\K2SO4.tfr",14.41,1.67
+"C:\CrossRoads Scientific\SIR-FP Tutorial\SIR Files\NaCl.tfr",14.64,1.86
+"C:\CrossRoads Scientific\SIR-FP Tutorial\SIR Files\Teflon.tfr",8.28,7.05
+"C:\CrossRoads Scientific\SIR-FP Tutorial\SIR Files\TiO2.tfr",16.39,1.08
+"Slope","Intercept"
+-2.441332,7.0138

@@ -8,32 +8,32 @@
 #/testem/det/setNbOfLayers 1
 /testem/det/setNbOfAbsor 1
 #/testem/det/setNbOfFilter 1
-/testem/det/setAbsor 1 Tungsten  5 mm
+#/testem/det/setAbsor 1 Tungsten  5 mm
 #/testem/det/setAbsor 1  quartz  0.001  	 mm
-/testem/det/setAbsor 2  G4_Al   0.0028 	 mm
-/testem/det/setAbsor 3   quartz 0.0008 	 mm
-/testem/det/setAbsor 4   G4_Cu  0.0034 	 mm
-/testem/det/setAbsor 5  quartz 0.00067 	 mm
-/testem/det/setAbsor 6  G4_Cu  0.0009 	 mm
-/testem/det/setAbsor 7  quartz 0.00067   mm
-/testem/det/setAbsor 8  G4_Cu  0.00022   mm
-/testem/det/setAbsor 9  quartz 0.000175  mm
-/testem/det/setAbsor 10 G4_Cu  0.00022   mm
-/testem/det/setAbsor 11 quartz 0.000175  mm
-/testem/det/setAbsor 12 G4_Cu  0.00022   mm
-/testem/det/setAbsor 13 quartz 0.000175  mm
-/testem/det/setAbsor 14 G4_Cu  0.00022   mm
-/testem/det/setAbsor 15 quartz 0.000175  mm
-/testem/det/setAbsor 16 G4_Cu  0.00022   mm
-/testem/det/setAbsor 17 quartz 0.000175  mm
-/testem/det/setAbsor 18 G4_Cu  0.00022   mm
-/testem/det/setAbsor 19 quartz 0.000175  mm
-/testem/det/setAbsor 20 G4_Cu  0.00018   mm
-/testem/det/setAbsor 21 quartz 0.00031   mm
+#/testem/det/setAbsor 2  G4_Al   0.0028 	 mm
+#/testem/det/setAbsor 3   quartz 0.0008 	 mm
+#/testem/det/setAbsor 4   G4_Cu  0.0034 	 mm
+#/testem/det/setAbsor 5  quartz 0.00067 	 mm
+#/testem/det/setAbsor 6  G4_Cu  0.0009 	 mm
+#/testem/det/setAbsor 7  quartz 0.00067   mm
+#/testem/det/setAbsor 8  G4_Cu  0.00022   mm
+#/testem/det/setAbsor 9  quartz 0.000175  mm
+#/testem/det/setAbsor 10 G4_Cu  0.00022   mm
+#/testem/det/setAbsor 11 quartz 0.000175  mm
+#/testem/det/setAbsor 12 G4_Cu  0.00022   mm
+#/testem/det/setAbsor 13 quartz 0.000175  mm
+#/testem/det/setAbsor 14 G4_Cu  0.00022   mm
+#/testem/det/setAbsor 15 quartz 0.000175  mm
+#/testem/det/setAbsor 16 G4_Cu  0.00022   mm
+#/testem/det/setAbsor 17 quartz 0.000175  mm
+#/testem/det/setAbsor 18 G4_Cu  0.00022   mm
+#/testem/det/setAbsor 19 quartz 0.000175  mm
+#/testem/det/setAbsor 20 G4_Cu  0.00018   mm
+#/testem/det/setAbsor 21 quartz 0.00031   mm
 /testem/det/setSizeYZ 2 cm
 #
 /run/initialize
-
+1
 # read from beam 
 /gun/particle e-
 /gun/energy 50 keV
@@ -110,4 +110,3 @@
 /run/printProgress 10000
 #
 /run/beamOn 100000000
-

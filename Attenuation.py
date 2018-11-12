@@ -43,9 +43,9 @@ class attenuation():
 			Energy =[]
 			x=np.arange(0, 20, 0.001)
 			y = []
-			fig = plt.figure()
-			ax = fig.add_subplot(111)
 			with open(Directory + target+"/Attenuation_Energy_"+target+".csv", 'r')as parameters:
+				fig = plt.figure()
+				ax = fig.add_subplot(111)
 				reader = csv.reader(parameters)
 				reader.next()
 				for row in reader:
@@ -55,37 +55,35 @@ class attenuation():
 				for i in np.arange(len(Energy)):
 					y = np.exp((-1)* Mu[i] * Density[0] * x)
 					ax.plot(x, y, ':', label=str(Energy[i])+'Kev')
-					if Energy[i] == 60.0:
+					if ((Energy[i] == 60.0) and (target != "Be")):
 						l = np.log(10**(-9))/((-1)*Mu[i] * Density[0])
-						print "to get 10e-9 of the initial intensity in %s  %5.3f cm shielding is needed"%(target,l) # in Al 31.4 cm , in Iron 2.18 cm, 
-	        	ax.annotate("%5.3f cm"%l, xy=(l, 10**(-9)), xytext=(l+1, 10**(-8)),
+						print "to get 10e-9 of the initial intensity in %s  %5.3f cm shielding is needed"%(target,l)
+						ax.annotate("%5.3f cm"%l, xy=(l, 10**(-9)), xytext=(l+1, 10**(-8)),
+								arrowprops=dict(arrowstyle="-|>",connectionstyle="arc3,rad=-0.5",relpos=(.6, 0.),fc="w"))
+						ax.axvline(x=l, linewidth=2, color='#d62728', linestyle='solid') # Define the shielding thickness
+	        			#ax.axhline(y=10**(-9), linewidth=2, color='#d62728', linestyle='solid')# Define the shielding thickness
+	        	 		ax.set_ylim(bottom=10**(-10))
+	        	 		ax.set_xlim(0.001, 150)
+	        	 		#ax.set_yscale('log')
+        		if target == "Be":
+					ax.axvline(x=0.03, linewidth=2, color='#d62728', linestyle='solid')
+					ax.annotate("%5.3f cm"%0.03, xy=(0.03, 0), xytext=(0.03+0.1, 0.2),
 						arrowprops=dict(arrowstyle="-|>",
-						connectionstyle="arc3,rad=-0.5",relpos=(.6, 0.),fc="w"))
-	        	if target == "Be":
-	        		plt.axvline(x=0.03, linewidth=2, color='#d62728', linestyle='solid') # Define the Thickness of our Be window
-	        		ax.set_xscale('log')
-	        	else :
-	        		plt.axvline(x=l, linewidth=2, color='#d62728', linestyle='solid') # Define the shielding thickness
-	        		plt.axhline(y=10**(-9), linewidth=2, color='#d62728', linestyle='solid')# Define the shielding thickness
-	        	 	plt.ylim(bottom=10**(-10))
-	        	 	plt.xlim(0.001, 150)
-	        	 	if logx:
-	        			ax.set_xscale('log')
-	        		if logy:
-	        			ax.set_yscale('log')
-	        	ax.grid(True)
-	        	ax = plt.gca()
-	        	ax.set_xlabel(target+' Thickness (cm)')
-	        	ax.set_ylabel('Transmission $I$/$I_0$ ')
-	        	ax.legend()
-	        	ax.set_title(r'Transmission of x rays through %s Filter'%target, fontsize=11)
-	        	
-	        	plt.tight_layout()
-	        	plt.savefig(Directory+target+"/Thickness_"+target+".png", bbox_inches='tight')
-		        PdfPages.savefig()
+						connectionstyle="arc3,rad=-0.5",relpos=(.2, 0.),fc="w"))
+					ax.set_xlim(0.001, 10)
+		 	if logx:
+				ax.set_xscale('log')
+			ax.grid(True)
+			ax.set_xlabel(target+' Thickness (cm)')
+			ax.set_ylabel('Transmission $I$/$I_0$ ')
+			ax.legend(loc='upper right')
+			ax.set_title(r'Transmission of x rays through %s Filter'%target, fontsize=11)
+			plt.tight_layout()
+			plt.savefig(Directory+target+"/Thickness_"+target+".png", bbox_inches='tight')
+			PdfPages.savefig()
  
- 	def attenuation_Energy(self, Directory=False, PdfPages=False,targets=False, logx= True, logy= True):
-		color=['green','black','orange','grey','#006381','#7e0044','black','red','#33D1FF',"maroon"]
+ 	def attenuation_Energy(self, Directory=False, PdfPages=False,targets=False, logx= True, logy= True, n=False, x_offset=False,y_offset =False):
+		color=['green','black','orange','grey','#006381','#7e0044','black','red','#33D1FF',"maroon","yellow", "magenta"]
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		for i in np.arange(len(targets)):
@@ -93,30 +91,20 @@ class attenuation():
 			x = data[:, 0]  # Energy in Kev
 			y = data[:, 6]  # total mass attenuation coeff with coherent scattering
 			ax.plot(x*10**3, y, '-', color=color[i], label=targets[i])
-		x_offset = [1.55,2.3,7.3,6.53,8.5,5.46,17.99,8.97]
-		y_offset = [4500,3500,430,550,330,700,100,275]
-		n=[r'$\mathregular{K}^{\mathregular{Al}}$(1.55  KeV)',
-		   r'$\mathregular{L}^{\mathregular{Zr}}_{I,II,III}$(2.22 ,2.30, 2.53 KeV)',
-		    r'$\mathregular{K}^{\mathregular{Fe}}$(7.11 KeV)',
-		    r'$\mathregular{K}^{\mathregular{Mn}}$(6.53  KeV)',
-		    r'$\mathregular{K}^{\mathregular{Ni}}$(8.33 KeV)',
-		     r'$\mathregular{K}^{\mathregular{V}}$(5.46 KeV)',
-		      r'$\mathregular{K}^{\mathregular{Zr}}$(17.9 KeV)',
-		            r'$\mathregular{K}^{\mathregular{Cu}}$(8.97 KeV)']
 		ax = plt.gca()#.invert_xaxis()
-		for i, txt in enumerate(n):
-		    ax.annotate(txt,xy=(x_offset[i],y_offset[i]),color=color[i])
+		for j, txt in enumerate(n):
+			ax.annotate(txt,xy=(x_offset[j],y_offset[j]),color=color[j], size=6)
 		ax.set_xscale('log')
 		ax.set_yscale('log')
 		ax.set_xlabel('Photon energy / keV')
 		ax.grid(True)
 		ax.set_ylabel('Mass attenuation coefficient / cm$^2$/g')
-		ax.set_title(r'Mass attenuation coefficient for %s '%targets[i], fontsize=11)
+		ax.set_title(r"Mass attenuation coefficients as a function of Energy", fontsize=10)
 		plt.ylim(1,10000)
-		plt.xlim(1.2, 100)
+		plt.xlim(1, 60)
 		ax.legend()
 		plt.tight_layout()
-		plt.savefig(Directory+targets[i]+"/attenuation_Energy_relation.png", bbox_inches='tight')
+		plt.savefig(Directory+"/attenuation_Energy_relation.png", bbox_inches='tight')
 		PdfPages.savefig()
 	
 	def attenuation_thickness_RD53(self, Directory=False, PdfPages=False):
@@ -222,11 +210,23 @@ class attenuation():
 if __name__ == '__main__':
     global PdfPages
     Directory = "Attenuation/"
-    targets = ["Al","Fe","pb","Ni","Zr","Mn","V","Cu","W","Be"]
+    targets = ["Al","Fe","pb","Be","W","Ni","Zr","Mn","V","Cu"]
+    x_offset = [1.55,10.21,2.3,7.3,6.53,8.5,5.46,17.99,8.97]
+    y_offset = [4500,300,3500,430,550,330,700,100,275]
+    n=[r'$\mathregular{K}^{\mathregular{Al}}$(1.55  KeV)',
+	   r'$\mathregular{L}^{\mathregular{W}}_{I,II,III}$(10.21,11.54,12.1 KeV)',
+		   r'$\mathregular{L}^{\mathregular{Zr}}_{I,II,III}$(2.22 ,2.30, 2.53 KeV)',
+		    r'$\mathregular{K}^{\mathregular{Fe}}$(7.11 KeV)',
+		    r'$\mathregular{K}^{\mathregular{Mn}}$(6.53  KeV)',
+		    r'$\mathregular{K}^{\mathregular{Ni}}$(8.33 KeV)',
+		     r'$\mathregular{K}^{\mathregular{V}}$(5.46 KeV)',
+		      r'$\mathregular{K}^{\mathregular{Zr}}$(17.9 KeV)',
+		      r'$\mathregular{K}^{\mathregular{Cu}}$(8.97 KeV)']
+		
     PdfPages = PdfPages('output_data/Attenuation' + '.pdf')
     scan = attenuation()
-    scan.attenuation_Energy(PdfPages=PdfPages, Directory=Directory, targets =targets[0:8])
-    scan.attenuation_thickness(PdfPages=PdfPages, Directory=Directory, targets =targets[0:3], logx = True, logy= True)
-    scan.mass_attenuation_coeff(PdfPages=PdfPages, Directory=Directory, targets =targets[1:])
-    scan.attenuation_thickness_RD53(PdfPages=PdfPages, Directory=Directory)
+    scan.attenuation_Energy(PdfPages=PdfPages, Directory=Directory, targets =["Al","W","Be"],x_offset=x_offset,y_offset=y_offset,n = n[0:2])
+    scan.attenuation_thickness(PdfPages=PdfPages, Directory=Directory, targets =targets[0:4], logx = True, logy= True)
+    #scan.mass_attenuation_coeff(PdfPages=PdfPages, Directory=Directory, targets =targets[1:])
+    #scan.attenuation_thickness_RD53(PdfPages=PdfPages, Directory=Directory)
     scan.close()

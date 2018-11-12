@@ -1,0 +1,80 @@
+# THe Card will generate events from a spectrum on an Al (Default) Filter defined as a scoring region followed by several layers of Metals
+
+/control/verbose 2
+/control/cout/ignoreThreadsExcept 0
+/run/verbose 2
+/run/numberOfThreads 4
+#
+/testem/phys/addPhysics  empenelope
+#
+#/testem/det/setNbOfLayers 1
+/testem/det/setNbOfAbsor 21
+#/testem/det/setNbOfFilter 1
+/testem/det/setSizeYZ 2 cm
+#/testem/det/setFilter G4_Al   0.15 	mm
+
+#
+/run/initialize
+# read from beam 
+#/gun/particle e-
+#/gun/energy 50 keV
+
+# read from specrum
+/gun/spectrum on 
+/gun/particle gamma 
+#/gun/loadGunData File1.dat
+/gun/position   -1 0.0 0.0 cm   # Be Spectrum is at 1 cm the filter
+
+#Activation of Emission 
+#to have Auger emission it is mandatory to activate Auger electron production for the region
+# fluorescence from photons and e- is activated by default in Livermore and Penelope , while Auger production and PIXE are not.
+/process/em/deexcitation region true true true	#region is World region 
+/process/em/fluo true
+/process/em/auger true
+/process/em/pixe true
+#
+/run/setCut 1 um
+
+
+
+#_Al_0.15mm
+/analysis/setFileName Tungsten_Be_0.3mm_Al_0.15mm_Specrum.root
+/analysis/h1/set 1  200   0.  60. keV	#Edep in absorber 1
+/analysis/h1/set 21 100  0.   23. none	#energy flow
+/analysis/h1/set 22 100  0.   23.  none	#lateral energy leakage
+/analysis/h1/set 24  200  0.   60. keV		#Photon Edep in absorber 1
+/analysis/h1/set 25  200  0.    60. keV		#Photon Edep in the Selected Scoring area
+/analysis/h1/set 26  200  0.    60. keV		#Edep in in the Selected Scoring area
+/analysis/h1/set 27  200  0.    60. keV		#Edep From Spectrum
+/analysis/h1/set 28  200  0.    60. keV		#Edep in the the Selected Scoring area (Same as 26)
+
+
+# All the next data are for Absorber 1 only in case of using Spectrum as input
+/analysis/h1/set  31  200 0.0 50 keV	  	#(transmit, charged) : kinetic energy at exit
+/analysis/h1/set  32  200 0.0 60 keV	  	#(transmit, neutral) : kinetic energy at exit
+/analysis/h1/set  33  200 0.0 60 keV	  	#(reflect , charged) : kinetic energy at exit
+/analysis/h1/set  34  200 0.0 60 keV	  	#(reflect , neutral) : kinetic energy at exit
+
+/analysis/h1/set 35  200  0.0  0.6 deg		#(transmit, charged) : space angle: dN/dOmega
+/analysis/h1/set 36  200  0.0  0.6 deg		#(transmit, neutral) : ener fluence: dN/dOmega
+/analysis/h1/set 37  200  0.0  0.6 deg		#(reflect , charged) : space angle: dN/dOmega
+/analysis/h1/set 38  200  0.0  0.6 deg		#(reflect , neutral) : ener fluence: dN/dOmega
+
+/analysis/h1/set  41  200 0.0 60 keV	  	#(transmit, neutral) : ener fluence:  dE(MeV)/dOmega
+
+/analysis/h1/set 47  200 -5.0  +5.0  mm		#x-position at exit  
+/analysis/h1/set 48  200  0.  +10.0  mm		#radius at exit 
+/analysis/h1/set 49  200 -5.0  +5.0  mm		#x_vertex of charged secondaries (all)
+/analysis/h1/set 50  200 -20.0 +20.0 mm		#x_vertex of charged secondaries (not absorbed)
+
+/analysis/h1/set 51  200  0.   60. keV		#Secondary charged particles
+/analysis/h1/set 52  200  0.   60. keV		#Energy of photo of e- at creation 
+/analysis/h1/set 53  200  0.   60. keV		#Energy of Compt of e- at creation 
+/analysis/h1/set 54  200  0.   60. keV		#Energy of photAuger of ComptAuger of e- at creation
+/analysis/h1/set 55  200  0.   60. keV		#Energy of PIXEAuger e- at creation
+/analysis/h1/set 56  200  0.   60. keV		#Energy of undefined e- at creation
+/analysis/h1/set 57  200  0.   3.  cm 	    #Track Length of Secondary e- (log10)
+#
+/run/printProgress 10000
+#
+/run/beamOn 67241589
