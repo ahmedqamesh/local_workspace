@@ -6,7 +6,8 @@ Geant4 :http://geant4.cern.ch/support/download.shtml
 Attenuation Data: http://henke.lbl.gov/optical_constants//
 http://physics.nist.gov/PhysRefData/XrayMassCoef/tab3.html (only mass absorption coeff)
 http://physics.nist.gov/cgi-bin/Xcom/xcom3_1
-http://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html  (mass abs coeff  with photoeffekt, compton usw..)				  
+http://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html  (mass abs coeff  with photoeffekt, compton usw..)	
+https://physics.nist.gov/PhysRefData/XrayTrans/Html/search.html			 (X-ray transition energies by element(s), transition(s), and/or energy/wavelength range. )  
 # Need to install 
 pip install lmfit
 
@@ -51,8 +52,6 @@ export PATH=$ROOTSYS/bin:$PATH
 export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
 
 #For Ubuntu 14.04 run: sudo mkdir /usr/include/freetype && sudo cp /usr/include/freetype2/freetype.h /usr/include/freetype/freetype.h
-
-
 To unistall 
 sudo apt-get remove root-system-bin
 sudo apt-get remove --auto-remove root-system-bin

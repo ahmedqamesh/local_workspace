@@ -1,0 +1,37 @@
+# THe Card will fire 10000000 e on W target (Filter) defined as a scoring region followed by several layers of Metals
+/control/verbose 2
+/control/cout/ignoreThreadsExcept 0
+/run/verbose 2
+/run/numberOfThreads 4
+#
+/testem/phys/addPhysics  empenelope
+#
+#/testem/det/setNbOfLayers 1
+/testem/det/setNbOfAbsor 1
+#
+/run/initialize
+# read from beam 
+/gun/particle e-
+/gun/energy 50 keV
+
+/gun/position    -1.0 0.0 0.0 cm   # gun position at 1 cm from the tungsten target
+
+#Activation of Emission 
+#to have Auger emission it is mandatory to activate Auger electron production for the region
+# fluorescence from photons and e- is activated by default in Livermore and Penelope , while Auger production and PIXE are not.
+/process/em/deexcitation region true true true	#region is World region 
+/process/em/fluo true
+/process/em/auger true
+/process/em/pixe true
+#
+/analysis/setFileName Tungsten_Specrum.root
+/analysis/h1/set 1  200   0.  60. keV	#Edep in absorber 1
+/analysis/h1/set 24  200  0.   60. keV		#Photon Edep in absorber 1
+/analysis/h1/set 25  200  0.    60. keV		#Photon Edep in the Selected Scoring area
+/analysis/h1/set 26  200  0.    60. keV		#Edep in in the Selected Scoring area
+/analysis/h1/set 28  200  0.    60. keV		#Edep in the the Selected Scoring area (Same as 26)
+/analysis/h1/set  32  200 0.0 60 keV	  	#(transmit, neutral) : kinetic energy at exit (As a Check if something reached the layer behind)
+#
+/run/printProgress 100000
+#
+/run/beamOn 10000000

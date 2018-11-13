@@ -10,7 +10,7 @@ REAL_TIME - 2148.976000
 START_TIME - 11/11/2018 22:07:14
 SERIAL_NUMBER - 0
 <<CALIBRATION>>
-LABEL - Channel
+LABEL  - keV
 1399 59.54
 <<ROI>>
 1383 1416
@@ -2132,5 +2132,5 @@ Real Time: 2154.178000
 Dead Time:       
 HV Volt: 180V
 TEC Temp: 215K
-Board Temp: 42°C
+Board Temp: 42ï¿½C
 <<DPP STATUS END>>

@@ -211,12 +211,12 @@ if __name__ == '__main__':
     global PdfPages
     Directory = "Attenuation/"
     targets = ["Al","Fe","pb","Be","W","Ni","Zr","Mn","V","Cu"]
-    x_offset = [1.55,10.21,2.3,7.3,6.53,8.5,5.46,17.99,8.97]
-    y_offset = [4500,300,3500,430,550,330,700,100,275]
+    x_offset = [1.55,10.21,7.3,2.3,6.53,8.5,5.46,17.99,8.97]
+    y_offset = [4500,300,430,3500,550,330,700,100,275]
     n=[r'$\mathregular{K}^{\mathregular{Al}}$(1.55  KeV)',
 	   r'$\mathregular{L}^{\mathregular{W}}_{I,II,III}$(10.21,11.54,12.1 KeV)',
+	   r'$\mathregular{K}^{\mathregular{Fe}}$(7.11 KeV)',
 		   r'$\mathregular{L}^{\mathregular{Zr}}_{I,II,III}$(2.22 ,2.30, 2.53 KeV)',
-		    r'$\mathregular{K}^{\mathregular{Fe}}$(7.11 KeV)',
 		    r'$\mathregular{K}^{\mathregular{Mn}}$(6.53  KeV)',
 		    r'$\mathregular{K}^{\mathregular{Ni}}$(8.33 KeV)',
 		     r'$\mathregular{K}^{\mathregular{V}}$(5.46 KeV)',
@@ -225,7 +225,7 @@ if __name__ == '__main__':
 		
     PdfPages = PdfPages('output_data/Attenuation' + '.pdf')
     scan = attenuation()
-    scan.attenuation_Energy(PdfPages=PdfPages, Directory=Directory, targets =["Al","W","Be"],x_offset=x_offset,y_offset=y_offset,n = n[0:2])
+    scan.attenuation_Energy(PdfPages=PdfPages, Directory=Directory, targets =["Al","W","Be","Fe"],x_offset=x_offset,y_offset=y_offset,n = n[0:3])
     scan.attenuation_thickness(PdfPages=PdfPages, Directory=Directory, targets =targets[0:4], logx = True, logy= True)
     #scan.mass_attenuation_coeff(PdfPages=PdfPages, Directory=Directory, targets =targets[1:])
     #scan.attenuation_thickness_RD53(PdfPages=PdfPages, Directory=Directory)

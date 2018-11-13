@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/silab62/git/XrayMachine_
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_02791/fast"
-/usr/bin/make -f CMakeFiles/cmTC_02791.dir/build.make CMakeFiles/cmTC_02791.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b0455/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0455.dir/build.make CMakeFiles/cmTC_b0455.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_02791.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_02791.dir/testCCompiler.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_02791
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02791.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_02791.dir/testCCompiler.c.o  -o cmTC_02791 -rdynamic 
+Building C object CMakeFiles/cmTC_b0455.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b0455.dir/testCCompiler.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b0455
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0455.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b0455.dir/testCCompiler.c.o  -o cmTC_b0455 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_67f59/fast"
-/usr/bin/make -f CMakeFiles/cmTC_67f59.dir/build.make CMakeFiles/cmTC_67f59.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2914f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2914f.dir/build.make CMakeFiles/cmTC_2914f.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_67f59
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67f59.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o  -o cmTC_67f59 -rdynamic  
+Building C object CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_2914f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2914f.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o  -o cmTC_2914f -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 4.8.5 (Ubuntu 4.8.5-4ubuntu8~14.04.2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67f59' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_67f59 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2914f' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_2914f /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_67f59/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_67f59.dir/build.make CMakeFiles/cmTC_67f59.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_2914f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_2914f.dir/build.make CMakeFiles/cmTC_2914f.dir/build]
   ignore line: [make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_67f59]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67f59.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o  -o cmTC_67f59 -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_2914f]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2914f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o  -o cmTC_2914f -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -85,8 +85,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.5 (Ubuntu 4.8.5-4ubuntu8~14.04.2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67f59' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_67f59 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2914f' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_2914f /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -100,7 +100,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_67f59] ==> ignore
+    arg [cmTC_2914f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -112,7 +112,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_67f59.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_2914f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -146,14 +146,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4e235/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4e235.dir/build.make CMakeFiles/cmTC_4e235.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_9d4e7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9d4e7.dir/build.make CMakeFiles/cmTC_9d4e7.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4e235.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_4e235.dir/feature_tests.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4e235
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e235.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_4e235.dir/feature_tests.c.o  -o cmTC_4e235 -rdynamic 
+Building C object CMakeFiles/cmTC_9d4e7.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_9d4e7.dir/feature_tests.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9d4e7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d4e7.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9d4e7.dir/feature_tests.c.o  -o cmTC_9d4e7 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
@@ -166,14 +166,14 @@ make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeF
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9ca3a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9ca3a.dir/build.make CMakeFiles/cmTC_9ca3a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bc583/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bc583.dir/build.make CMakeFiles/cmTC_bc583.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9ca3a.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_9ca3a.dir/feature_tests.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_9ca3a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ca3a.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_9ca3a.dir/feature_tests.c.o  -o cmTC_9ca3a -rdynamic 
+Building C object CMakeFiles/cmTC_bc583.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_bc583.dir/feature_tests.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bc583
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc583.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_bc583.dir/feature_tests.c.o  -o cmTC_bc583 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
@@ -186,14 +186,14 @@ make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeF
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e0409/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e0409.dir/build.make CMakeFiles/cmTC_e0409.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_255c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_255c3.dir/build.make CMakeFiles/cmTC_255c3.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e0409.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_e0409.dir/feature_tests.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e0409
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0409.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_e0409.dir/feature_tests.c.o  -o cmTC_e0409 -rdynamic 
+Building C object CMakeFiles/cmTC_255c3.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_255c3.dir/feature_tests.c.o   -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_255c3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_255c3.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_255c3.dir/feature_tests.c.o  -o cmTC_255c3 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
@@ -204,28 +204,28 @@ make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeF
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_46597/fast"
-/usr/bin/make -f CMakeFiles/cmTC_46597.dir/build.make CMakeFiles/cmTC_46597.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e0077/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e0077.dir/build.make CMakeFiles/cmTC_e0077.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_46597.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_46597.dir/testCXXCompiler.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_46597
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46597.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_46597.dir/testCXXCompiler.cxx.o  -o cmTC_46597 -rdynamic 
+Building CXX object CMakeFiles/cmTC_e0077.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_e0077.dir/testCXXCompiler.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_e0077
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0077.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_e0077.dir/testCXXCompiler.cxx.o  -o cmTC_e0077 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6ec90/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6ec90.dir/build.make CMakeFiles/cmTC_6ec90.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e9ed5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e9ed5.dir/build.make CMakeFiles/cmTC_e9ed5.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_6ec90
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ec90.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6ec90 -rdynamic  
+Building CXX object CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_e9ed5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9ed5.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e9ed5 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -235,8 +235,8 @@ Thread model: posix
 gcc version 4.8.5 (Ubuntu 4.8.5-4ubuntu8~14.04.2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ec90' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_6ec90 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e9ed5' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_e9ed5 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
@@ -244,14 +244,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6ec90/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6ec90.dir/build.make CMakeFiles/cmTC_6ec90.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e9ed5/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e9ed5.dir/build.make CMakeFiles/cmTC_e9ed5.dir/build]
   ignore line: [make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_6ec90]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ec90.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6ec90 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_e9ed5]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9ed5.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e9ed5 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -261,8 +261,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.8.5 (Ubuntu 4.8.5-4ubuntu8~14.04.2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ec90' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_6ec90 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e9ed5' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_e9ed5 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -276,7 +276,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6ec90] ==> ignore
+    arg [cmTC_e9ed5] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -288,7 +288,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_6ec90.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_e9ed5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -320,14 +320,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fed24/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fed24.dir/build.make CMakeFiles/cmTC_fed24.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_eec65/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eec65.dir/build.make CMakeFiles/cmTC_eec65.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fed24.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_fed24.dir/feature_tests.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_fed24
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fed24.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_fed24.dir/feature_tests.cxx.o  -o cmTC_fed24 -rdynamic 
+Building CXX object CMakeFiles/cmTC_eec65.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_eec65.dir/feature_tests.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_eec65
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eec65.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_eec65.dir/feature_tests.cxx.o  -o cmTC_eec65 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
@@ -393,14 +393,14 @@ make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeF
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1ca6d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1ca6d.dir/build.make CMakeFiles/cmTC_1ca6d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ccf40/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ccf40.dir/build.make CMakeFiles/cmTC_ccf40.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1ca6d.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_1ca6d.dir/feature_tests.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1ca6d
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ca6d.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_1ca6d.dir/feature_tests.cxx.o  -o cmTC_1ca6d -rdynamic 
+Building CXX object CMakeFiles/cmTC_ccf40.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_ccf40.dir/feature_tests.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ccf40
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccf40.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_ccf40.dir/feature_tests.cxx.o  -o cmTC_ccf40 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 
@@ -466,14 +466,14 @@ make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeF
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_aded8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_aded8.dir/build.make CMakeFiles/cmTC_aded8.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1f585/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1f585.dir/build.make CMakeFiles/cmTC_1f585.dir/build
 make[1]: Entering directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_aded8.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_aded8.dir/feature_tests.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_aded8
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aded8.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_aded8.dir/feature_tests.cxx.o  -o cmTC_aded8 -rdynamic 
+Building CXX object CMakeFiles/cmTC_1f585.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_1f585.dir/feature_tests.cxx.o -c /home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1f585
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f585.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_1f585.dir/feature_tests.cxx.o  -o cmTC_1f585 -rdynamic 
 make[1]: Leaving directory `/home/silab62/git/XrayMachine_Bonn/xray-build/CMakeFiles/CMakeTmp'
 
 

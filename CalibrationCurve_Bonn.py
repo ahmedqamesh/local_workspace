@@ -52,53 +52,69 @@ class Calibration_Curves():
 #         '''
         #Background = [0, 0, 0, 6.852006e-09, 0, 6.852006e-09, 0, 6.852006e-09]
         #Factor = [0, 0, 0, 9.62, 0, 9.76, 0, 10.06]
-        depth = ["0", "0", "0", "3cm", "0", "5cm", "0", "8cm"]
+        depth = ["3cm","5cm", "8cm"]
         Voltages = ["30KV", "40KV"]
         colors = ['red','#006381', '#33D1FF', 'green', 'orange', 'maroon']
         styles = ['-', '--']
         for i in range(len(depth)):
-            if depth[i] != "0":
-                fig = plt.figure()
-                ax = fig.add_subplot(111)
-                for test in tests:
-                    Background = []
-                    Factor = []
-                    with open(Directory + test + "/Cal_Parameters.csv", 'r')as parameters:  # Get Data for the first Voltage
-                        reader = csv.reader(parameters)
-                        reader.next()
-                        for row in reader:
-                            Background = np.append(Background, float(row[0]))
-                            Factor = np.append(Factor, float(row[1]))
-                    for volt in Voltages:
-                        x1 = []
-                        y1 = []
-                        with open(Directory + test + "/" + depth[i] + "/" + volt + ".csv", 'r')as data:  # Get Data for the first Voltage
-                            reader = csv.reader(data)
-                            reader.next()
-                            for row in reader:
-                                x1 = np.append(x1, float(row[0]))
-                                y1 = np.append(y1, (float(row[1]) - Background[i]) * Factor[i])
-                            logging.info("Start Plotting %s cm  %s" % (depth[i],test))
-                            sig1 = [stdev * y1[k] for k in range(len(y1))]
-                            popt1, pcov = curve_fit(self.linear, x1, y1, sigma=sig1, absolute_sigma=True, maxfev=5000, p0=(1, 1))
-                            chisq = self.red_chisquare(np.array(y1), self.linear(x1, *popt1), np.array(sig1), popt1)
-                            ax.errorbar(x1, y1, yerr=sig1, color=colors[Voltages.index(volt)], fmt='o')
-                            ax.plot(x1, self.linear(x1, *popt1), linestyle=styles[tests.index(test)],
-                                    color=colors[Voltages.index(volt)], label=volt + " " + test)
-                            #df = pd.DataFrame({"chisq_" + volt: chisq, "(m,c)_" + volt: tuple(popt1)})
-                            #df.to_csv(Directory + test + "/" + depth[i] + "/Calibration_parameters_" + depth[i] + volt + ".csv", index=True)
+            fig = plt.figure()
+            #ax = fig.add_subplot(111)
+            gs = gridspec.GridSpec(2, 1, height_ratios=[3.5, 0.5])
+            #fig, (ax, tabax) = plt.subplots(nrows=2)
+            ax = plt.subplot(gs[0])
+            ax2 = plt.subplot(gs[1])
+            for volt in Voltages:
+                x1 = []
+                y1 = []
+                y2 = []
+                bkg_y1 = []
+                bkg_y2 = []
+                Factor = []
+                difference = []
+                with open(Directory +"with_Al_Filter/" + depth[i] + "/" + volt + ".csv", 'r')as data:  # Get Data for the first Voltage
+                    reader = csv.reader(data)
+                    reader.next()
+                    for row in reader:
+                        x1 = np.append(x1, float(row[0]))
+                        y1 = np.append(y1, (float(row[1]) - float(row[2])) * float(row[5]))
+                        bkg_y1 = np.append(bkg_y1, float(row[2]))
+                        y2 = np.append(y2, (float(row[3]) - float(row[4])) * float(row[5]))
+                        bkg_y2 = np.append(bkg_y2, float(row[4]))
+                        Factor = np.append(Factor, float(row[5]))
+                        difference = np.append(difference,(float(row[3]) - float(row[1])) / float(row[3])*100)
+                    logging.info("Start Plotting %s cm" % (depth[i]))
+                    sig1 = [stdev * y1[k] for k in range(len(y1))]
+                    popt1, pcov = curve_fit(self.linear, x1, y1, sigma=sig1, absolute_sigma=True, maxfev=5000, p0=(1, 1))
+                    chisq1 = self.red_chisquare(np.array(y1), self.linear(x1, *popt1), np.array(sig1), popt1)
+                    ax.errorbar(x1, y1, yerr=sig1, color=colors[Voltages.index(volt)], fmt='o')
+                    ax.plot(x1, self.linear(x1, *popt1), linestyle=styles[0],
+                            color=colors[Voltages.index(volt)], label=volt + " " + "with_Al_Filter")
+                    
+                    sig2 = [stdev * y2[k] for k in range(len(y2))]
+                    popt2, pcov = curve_fit(self.linear, x1, y2, sigma=sig2, absolute_sigma=True, maxfev=5000, p0=(1, 1))
+                    chisq2 = self.red_chisquare(np.array(y2), self.linear(x1, *popt2), np.array(sig2), popt2)
+                    ax.errorbar(x1, y2, yerr=sig2, color=colors[Voltages.index(volt)], fmt='o')
+                    ax.plot(x1, self.linear(x1, *popt2), linestyle=styles[1],
+                            color=colors[Voltages.index(volt)], label=volt + " " + "without_Al_Filter")
+                    sig3 = [stdev * difference[k] for k in range(len(difference))]
+                    ax2.errorbar(x1, difference, yerr=sig3, color=colors[Voltages.index(volt)], fmt='o',markersize='1',capsize=2)
+                                               
+                    #df = pd.DataFrame({"chisq_" + volt: chisq, "(m,c)_" + volt: tuple(popt1)})
+                    #df.to_csv(Directory + test + "/" + depth[i] + "/Calibration_parameters_" + depth[i] + volt + ".csv", index=True)
 
-                    plt.ticklabel_format(useOffset=False)
-                    plt.xlim(0, 60)
-                    ax.set_title('Calibration curve for ' + depth[i], fontsize=12)
-                    ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
-                    ax.grid(True)
-                    ax.legend()
-                    ax.set_xlabel('Tube current (mA)')
-                    plt.savefig(Directory + test + "/" + depth[i] + '/CalibrationCurve_Bonn_' + depth[i] + ".png", bbox_inches='tight')
-                PdfPages.savefig()
-            else:
-                logging.info( "Skip Plotting %s cm" % depth[i])
+            plt.ticklabel_format(useOffset=False)
+            plt.xlim(0, 60)
+            ax.set_title('Calibration curve for ' + depth[i], fontsize=12)
+            ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
+            ax.set_ylabel('Dose rate drop [%]')
+            ax.grid(True)
+            ax2.yaxis.set_ticks(np.arange(60, 90, step=10))
+            #ax2.set_ylim(0,101,10)
+            ax2.grid(True)
+            ax.legend()
+            ax2.set_xlabel('Tube current (mA)')
+            plt.savefig(Directory +"with_Al_Filter/" + depth[i] + '/CalibrationCurve_Bonn_' + depth[i] + ".png", bbox_inches='tight')
+            PdfPages.savefig()
 
     def Dose_Voltage(self, Directory=False, PdfPages=False, Depth="8cm", test="without_Al_Filter"):
         '''
@@ -405,9 +421,9 @@ if __name__ == '__main__':
 #     scan.Plot_Beam_profile_2d(Scan_file=Scan_file, Steps=200, width=20)
 #     scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
     PdfPages = PdfPages('output_data/CalibrationCurve_Bonn' + '.pdf')
-    scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=tests)
+    scan.calibration_curve(stdev=0.05, PdfPages=PdfPages, Directory=Directory, tests=["with_Al_Filter"])
     scan.Depth_Diameter(Directory=Directory, PdfPages=PdfPages, tests=["without_Al_Filter"])
     scan.Dose_Depth(test=tests, Directory=Directory, PdfPages=PdfPages)
-    #scan.power_2d(PdfPages=PdfPages, Directory=Directory, V_limit=50, I_limit=50)
+    scan.power_2d(PdfPages=PdfPages, Directory=Directory, V_limit=50, I_limit=50)
     scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter")
     scan.close()

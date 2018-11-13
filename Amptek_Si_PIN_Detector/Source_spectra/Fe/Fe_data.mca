@@ -5,18 +5,17 @@ GAIN - 3
 THRESHOLD - 0
 LIVE_MODE - 0
 PRESET_TIME - 0
-LIVE_TIME - 0.129547
-REAL_TIME - 1295.466000
-START_TIME - 11/11/2018 23:04:02
+LIVE_TIME - 1.011000
+REAL_TIME - 1.011000
+START_TIME - 11/12/2018 21:33:52
 SERIAL_NUMBER - 0
-<<CALIBRATION>>
-LABEL - channel
-133.34 5.9
 <<ROI>>
-8 64
-14 287
-387 389
-1383 1416
+8 349
+28 363
+63 298
+68 327
+282 301
+293 294
 <<DATA>>
 0
 0
@@ -36,381 +35,316 @@ LABEL - channel
 0
 0
 0
-88
-143
-163
-143
-161
-166
-171
-158
-176
-191
-206
-201
-196
-220
-216
-252
-227
-253
-235
-300
-255
-252
-312
-323
-265
-361
-360
-367
-355
-370
-388
-372
-383
-413
-436
-417
-491
-456
-490
-458
-475
-504
-511
-515
-523
-624
-581
-612
-636
-630
-580
-618
-657
-673
-712
-720
-732
-728
-734
-726
-791
-793
-794
-840
-831
-870
-846
-859
-881
-826
-915
-980
-923
-912
-973
-983
-996
-1012
-993
-1073
-1023
-1055
-1080
-1117
-1120
-1096
-1114
-1154
-1173
-1161
-1109
-1137
-1177
-1198
-1107
-1144
-1251
-1195
-1232
-1158
-1262
-1241
-1257
-1171
-1171
-1245
-1182
-1220
-1297
-1250
-1228
-1245
-1252
-1250
-1248
-1222
-1209
-1240
-1266
-1254
-1185
-1274
-1210
-1207
-1179
-1191
-1219
-1163
-1189
-1219
-1169
-1160
-1139
-1154
-1114
-1179
-1115
-1104
-1113
-1087
-1040
-1053
-1047
-1028
-1018
-1035
-979
-961
-1007
-912
-1039
-905
-921
-925
-910
-938
-892
-881
-855
-834
-835
-840
-826
-767
-828
-812
-793
-754
-759
-733
-665
-721
-674
-699
-661
-630
-675
-659
-637
-644
-608
-555
-541
-529
-526
-561
-517
-525
-475
-484
-483
-447
-468
-456
-438
-456
-440
-422
-407
-397
-337
-386
-378
-356
-332
-334
-333
-286
-316
-318
-310
-277
-291
-259
-287
-255
-259
-240
-237
-237
-198
-194
-218
-203
-228
-190
-174
-189
-177
-183
-146
-148
-134
-146
-158
-134
-157
-134
-140
-124
-110
-117
-115
-91
-96
-97
-114
-94
-92
-92
-73
-75
-82
-80
-82
-68
-66
-72
-72
-56
-59
-59
-55
-53
-45
-49
-25
-52
-42
-37
-44
-45
-36
-36
-35
-41
-36
-33
-28
-25
-25
-20
-23
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+2
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+1
+2
+0
+2
+0
+0
+1
+2
+2
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+3
+8
+13
+24
+24
 16
-28
-18
-22
-20
-18
-10
-19
+8
+1
+2
+0
+4
 14
-18
-19
-23
+5
+7
+6
+7
+11
+1
+1
+2
+0
+0
+0
+4
+2
+0
+0
+2
+3
+3
+0
+0
+0
+1
+0
+1
+0
+0
+3
+0
+1
+1
+1
+4
+4
+0
+4
+6
+3
+1
 15
-15
-16
-10
-13
+44
+131
+338
+646
+827
+762
+491
+229
+67
+12
+14
+8
 9
-12
+4
+14
+41
+64
+138
+130
+132
+104
+40
+24
 5
-12
+9
+9
+5
+2
+5
+2
+3
+5
+7
+2
+5
+4
+6
+5
+4
+2
+7
+8
+6
+5
+4
+2
+8
+4
+7
+2
+3
+3
+7
+2
+8
+5
+11
+8
+6
+3
+4
+3
+9
+6
+3
+5
+4
+7
+8
+3
+8
+4
+4
+8
+6
+7
+6
+9
+7
+9
+8
+7
+9
+8
+8
+7
+6
 10
+11
+10
+9
+6
+9
+6
+8
+6
+7
+7
+5
+3
+6
+8
 13
+1
 7
+7
+7
+4
+7
+6
+6
+2
+7
+3
+8
+8
+4
+8
+5
 10
-8
-5
-4
-12
-3
-6
-5
-4
-5
-5
-8
-6
-3
-5
-2
+1
 7
-2
-3
-3
-2
-6
-1
-3
-3
-2
-4
 5
 1
+8
+3
+3
+5
+4
+6
+4
+7
+5
+5
+9
+5
+7
+5
+8
+5
+9
+5
+6
+6
+5
+7
+3
+0
+3
+2
+4
+3
+2
+3
+1
+2
+3
+2
+2
 4
 2
 2
-2
-0
-0
-2
-3
-2
-3
-0
 1
 0
 0
-0
-0
+2
 1
 2
 1
-0
 1
 1
 0
 0
 0
 2
+0
+0
+0
+0
 1
+0
+1
+1
+1
+1
+2
+0
 2
 0
 0
 0
 1
 1
-1
-1
-0
-0
-1
-0
 0
 2
 0
@@ -419,6 +353,35 @@ LABEL - channel
 0
 0
 0
+1
+0
+0
+1
+2
+1
+0
+0
+0
+1
+2
+1
+1
+1
+1
+2
+0
+0
+0
+1
+1
+1
+0
+0
+0
+0
+0
+1
+1
 0
 1
 1
@@ -433,8 +396,12 @@ LABEL - channel
 0
 0
 0
+1
 0
 0
+2
+2
+1
 0
 0
 0
@@ -443,6 +410,8 @@ LABEL - channel
 0
 0
 0
+1
+1
 0
 0
 0
@@ -450,9 +419,11 @@ LABEL - channel
 0
 0
 0
+1
 0
 0
 0
+1
 0
 0
 0
@@ -461,6 +432,7 @@ LABEL - channel
 0
 0
 0
+1
 0
 0
 0
@@ -469,8 +441,10 @@ LABEL - channel
 0
 0
 0
+1
 0
 0
+1
 0
 0
 0
@@ -514,6 +488,31 @@ LABEL - channel
 0
 0
 0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+1
 0
 0
 0
@@ -2069,26 +2068,26 @@ LABEL - channel
 <<END>>
 <<DP5 CONFIGURATION>>
 RESC=?;    Reset Configuration
-CLCK=80;    20MHz/80MHz
-TPEA=1.000;    Peaking Time
-GAIF=1.0955;    Fine Gain
-GAIN=15.999;    Total Gain (Analog * Fine)
-RESL=50;    Detector Reset Lockout
-TFLA=0.300;    Flat Top
-TPFA=50;    Fast Channel Peaking Time
+CLCK=20;    20MHz/80MHz
+TPEA=25.600;    Peaking Time
+GAIF=1.1157;    Fine Gain
+GAIN=13.016;    Total Gain (Analog * Fine)
+RESL=819;    Detector Reset Lockout
+TFLA=0.200;    Flat Top
+TPFA=400;    Fast Channel Peaking Time
 PURE=ON;    PUR Interval On/Off
 RTDE=OFF;    RTD On/Off
 MCAS=NORM;    MCA Source
 MCAC=2048;    MCA/MCS Channels
 SOFF=OFF;    Set Spectrum Offset
-AINP=POS;    Analog Input Pos/Neg
+AINP=NEG;    Analog Input Pos/Neg
 INOF=DEF;    Input Offset
-GAIA=13;    Analog Gain Index
+GAIA=12;    Analog Gain Index
 CUSP=0;    Non-Trapezoidal Shaping
 PDMD=NORM;    Peak Detect Mode (Min/Max)
-THSL=0.878;    Slow Threshold
+THSL=1.416;    Slow Threshold
 TLLD=OFF;    LLD Threshold
-THFA=12.75;    Fast Threshold
+THFA=41.43;    Fast Threshold
 DACO=SHAPED;    DAC Output
 DACF=50;    DAC Offset
 RTDS=0.0;    RTD Sensitivity
@@ -2103,8 +2102,8 @@ PRER=OFF;    Preset Real Time
 PREC=OFF;    Preset Counts
 PRCL=1;    Preset Counts Low Threshold
 PRCH=8191;    Preset Counts High Threshold
-HVSE=OFF;    HV Set
-TECS=220;    TEC Set
+HVSE=180;    HV Set
+TECS=190;    TEC Set
 PAPS=ON;    Preamp 8.5/5 (N/A)
 SCOE=FA;    Scope Trigger Edge
 SCOT=12;    Scope Trigger Position
@@ -2127,13 +2126,13 @@ Device Type: DP5
 Serial Number: 16411
 Firmware: 6.09  Build:  4
 FPGA: 6.15
-Fast Count: 2809576939
-Slow Count: 168967
+Fast Count: 23
+Slow Count: 5331
 GP Count: 0
-Accumulation Time: 1295.466000
-Real Time: 1296.892000
-Dead Time: 99.99%
-HV Volt: 8V
-TEC Temp: 220K
-Board Temp: 43°C
+Accumulation Time: 1.011000
+Real Time: 1.019000
+Dead Time:       
+HV Volt: 180V
+TEC Temp: 215K
+Board Temp: 44°C
 <<DPP STATUS END>>
