@@ -36,7 +36,7 @@
 /testem/gun/spectrum on 
 /gun/particle gamma 
 #/gun/loadGunData File1.dat
-/gun/position   1 0.0 0.0 cm   # 1cm away from the Target Which is at 3 cm
+/gun/position   0.2 0.0 0.0 cm # 1cm away from the Target Which is at 3 cm
 /gun/direction  1 0 0
 #Activation of Emission 
 #to have Auger emission it is mandatory to activate Auger electron production for the region
