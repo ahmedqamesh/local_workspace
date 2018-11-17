@@ -2,7 +2,7 @@ from numpy import loadtxt
 import matplotlib.pyplot as plt
 import numpy as np
 
-data = loadtxt('mass_attenuation_coeff_in_detail_cu.dat')
+data = loadtxt('mass_attenuation_coeff_in_detail_Cu.dat')
 x = data[:, 0]
 y = data[:, 6]  # total mass attenuation coeff with coherent scattering
 p = data[:, 3]  # mass attenuation coeff due to photoelectric effect

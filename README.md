@@ -3,8 +3,8 @@
 
 # Links
 Geant4 :http://geant4.cern.ch/support/download.shtml
-Attenuation Data: http://henke.lbl.gov/optical_constants//
-http://physics.nist.gov/PhysRefData/XrayMassCoef/tab3.html (only mass absorption coeff)
+Attenuation Data: http://henke.lbl.gov/optical_constants/
+http://physics.nist.gov/PhysRefData/XrayMassCoef/tab3.html (only mass absorption coeff Low range)
 http://physics.nist.gov/cgi-bin/Xcom/xcom3_1
 http://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html  (mass abs coeff  with photoeffekt, compton usw..)	
 https://physics.nist.gov/PhysRefData/XrayTrans/Html/search.html			 (X-ray transition energies by element(s), transition(s), and/or energy/wavelength range. )  

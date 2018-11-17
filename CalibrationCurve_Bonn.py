@@ -98,19 +98,15 @@ class Calibration_Curves():
                             color=colors[Voltages.index(volt)], label=volt + " " + "without_Al_Filter")
                     sig3 = [stdev * difference[k] for k in range(len(difference))]
                     ax2.errorbar(x1, difference, yerr=sig3, color=colors[Voltages.index(volt)], fmt='o',markersize='1',capsize=2)
-                                               
-                    #df = pd.DataFrame({"chisq_" + volt: chisq, "(m,c)_" + volt: tuple(popt1)})
-                    #df.to_csv(Directory + test + "/" + depth[i] + "/Calibration_parameters_" + depth[i] + volt + ".csv", index=True)
-
+                    ax2.set_ylabel('Drop [%]')
+                    ax2.yaxis.set_ticks(np.arange(60, 90, step=10))
+                    ax2.grid(True)
             plt.ticklabel_format(useOffset=False)
             plt.xlim(0, 60)
             ax.set_title('Calibration curve for ' + depth[i], fontsize=12)
             ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
-            ax.set_ylabel('Dose rate drop [%]')
             ax.grid(True)
-            ax2.yaxis.set_ticks(np.arange(60, 90, step=10))
             #ax2.set_ylim(0,101,10)
-            ax2.grid(True)
             ax.legend()
             ax2.set_xlabel('Tube current (mA)')
             plt.savefig(Directory +"with_Al_Filter/" + depth[i] + '/CalibrationCurve_Bonn_' + depth[i] + ".png", bbox_inches='tight')

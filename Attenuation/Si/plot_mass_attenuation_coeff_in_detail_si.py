@@ -10,7 +10,7 @@ r = data[:, 1]  # mass attenuation coeff due to rayleigh (coherent) scattering
 ppn = data[:, 4]  # mass attenuation coeff due to pair production in nuclei field
 ppe = data[:, 5]  # mass attenuation coeff due to pair production in electron field
 
-conversion = 10**3
+
 plt.grid(True)
 ppe_plot, = plt.plot(x*conversion, ppe, ':', color='orange', label='Pair production (electron)')
 ppn_plot, = plt.plot(x*conversion, ppn, ':', color='grey', label='Pair production (nuclei)')

@@ -1,0 +1,20 @@
+from numpy import loadtxt
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = loadtxt('mass_attenuation_coeff_in_detail_Cu.dat')
+x = data[:, 0]
+y = data[:, 6]
+Cu_rho = 8.96 #g/cm3
+y_neu = 1 - np.exp(- y * Cu_rho * 580)  # 200 mum thick Si layer (5.8 nm), 1E-07
+print x,y
+plt.grid(True)
+plt.plot(x*10**3, y_neu, '-', color='black')
+ax = plt.gca()
+plt.ylim(bottom=0)
+plt.xlabel('Photon energy / keV')
+plt.ylabel('Absorption pribability')
+plt.legend(["Absorption 1-$I$/$I_0$ of $200\ $$\mathrm{\mu}$m thick Cu layer (Z=29)"], loc= 'upper right')
+
+plt.tight_layout()
+plt.savefig(r'absorption_xray_cu.pdf', bbox_inches='tight')

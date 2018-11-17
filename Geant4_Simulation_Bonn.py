@@ -85,7 +85,7 @@ class Simulation():
         l=list(rootFile.GetListOfKeys())
         return [obj.GetName() for obj in l if obj.GetClassName() in __rootHistogramList__]
     
-    def get_spectrum(self, Directory=False, PdfPages=False, test= False,hist_id=[0],location=False,save=True,
+    def get_spectrum(self, Directory=False, PdfPages=False, test= False,hist_id=[0],location=False,save=True,Ratio= False,
                      title=False,xtitle='Energy [keV]',outputname =False,logx=False,logy=False, file = False,labels= False):
         colors = ['red','#006381', '#33D1FF', 'green', 'orange', 'maroon','black']
         fig = plt.figure()
@@ -105,13 +105,13 @@ class Simulation():
             else:
                label = t.GetTitle()
             ax.errorbar(x[1:], data[1:], fmt='-',color = colors[i],markersize = 2, label =label)
-            #ax.fill_between(x[1:], 0, data[1:], facecolor=colors[i], interpolate=True)
-        loss1 = np.float(Entries[0]-Entries[1])/float(Entries[0])*100
-        loss2 = np.float(Entries[1]-Entries[2])/float(Entries[1])*100
-        print np.float(Entries[1]-Entries[2])
-        print Entries[1],Entries[2]
-        ax.text(0.98, 0.80, "W/Be = $%5.2f$ perc \n Be/Al = $%5.2f$ perc"%(loss1,loss2), horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
-                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5),multialignment="left")
+#             ax.fill_between(x[1:], 0, data[1:], facecolor=colors[i], interpolate=True)
+        if Ratio:
+            loss1 = np.float(Entries[0]-Entries[1])/float(Entries[0])
+            loss2 = np.float(Entries[1]-Entries[2])/float(Entries[1])
+            loss3 = np.float(Entries[2]-Entries[3])/float(Entries[2])
+            ax.text(0.98, 0.70, "Ratios : \n W/Be = $%5.2f$ \n Be/Al = $%5.2f$ \n Al/Chip = $%5.2f$ "%(loss1,loss2,loss3), horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
+                    bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5),multialignment="left")
         if title:
             ax.set_title(title)
         ax.set_xlabel(xtitle)
@@ -127,7 +127,7 @@ class Simulation():
             if outputname :
                 plt.savefig(Directory+location+"/gammaSpectrum_"+outputname+".png", dpi=300)
             else:
-                plt.savefig(Directory+"/Geant4_empenelope_DiffEnergys/gammaSpectrum_"+location+".png", dpi=300)
+                plt.savefig(Directory+"/gammaSpectrum_"+location+".png", dpi=300)
             PdfPages.savefig()
         else:
             plt.show()
@@ -137,37 +137,39 @@ class Simulation():
         gs = gridspec.GridSpec(2, 1, height_ratios=[3.5, 0.5])
         ax = plt.subplot(gs[0])
         ax2 = plt.subplot(gs[1])
+        n = []
         for i in range(len(test)):
             file = Directory+location+"/gammaSpectrum_"+test[i]+".root"
             f = ROOT.TFile(file)
             for j in range(len(hist_id)):
                 t=f.Get(hist_id[j])
-                #print t.GetEntries()
+                n = np.append(n, t.GetEntries())
                 data,x=self.readHistogram(file,t, False)
                 entries = np.nonzero(data)
                 ax.errorbar(x[:], data[:], fmt='-',color = colors[j],markersize = 2, label =t.GetTitle())
         #if title:
             #ax.set_title(title)
+        sum = np.sum(n)
+        r = np.divide(n,sum)*100
         ax.set_xlabel(xtitle)
         ax.set_ylabel('Counts')
         ax.legend()
         ax.grid(True)
         ax.set_xlim(xmin=0.0)
         ax2.set_axis_off()
-        #ax.set_ylim(ymin=0.0)
         ax.set_yscale("log")
-        columns = ('Photo $e^-$', 'Compton $e^-$', 'Auger or comptAuger $e^-$', "PIXI Auger $e^-$")
-        rows = ['Energy',"Probability"]
-        data = [[ "$0-50$", "$< 10 kev$",   "$< 10 kev$", "$< 10 kev$"],
-                [ 58230, 381139,  78045,31]]
+        columns = ('Photo $e^-$', 'Compton $e^-$', 'AphotAuger or ComptAuger $e^-$', "PIXI Auger $e^-$")
+        rows = ['Energy[KeV]',"Probability [%]"]
+        data = [[ "$0-50$", "$< 10$",   "$< 10$", "$< 10$"], np.round(r,3)]
         ax2.table(cellText=data,
                   rowLabels=rows,
-                  colLabels=columns,cellLoc = 'center', rowLoc = 'center',loc='center',fontsize=12)
+                  colWidths=[0.25 for x in columns],
+                  colLabels=columns,cellLoc = 'center', rowLoc = 'center',loc='center',fontsize=16)
         plt.subplots_adjust(bottom=0.05)
         if outputname :
-            plt.savefig(Directory+"/Geant4_empenelope_DiffEnergys/gammaSpectrum_"+outputname+".png", dpi=300)
+            plt.savefig(Directory+location+"/"+outputname+".png", dpi=300)
         else:
-            plt.savefig(Directory+"/Geant4_empenelope_DiffEnergys/gammaSpectrum_"+location+".png", dpi=300)
+            plt.savefig(Directory+"/gammaSpectrum_"+location+".png", dpi=300)
         plt.tight_layout()
         PdfPages.savefig()
            
@@ -301,26 +303,27 @@ if __name__ == '__main__':
     Energy = ["10keV","20keV","30keV","40keV","50keV","60keV"]
     Filters = ["original","Be","Al","Fe","Mn","Ni","Va"]
     Model = ["emlivermore","empenelope","emstandardopt4"]
-    Spectrum =["Tungsten-Spectrum","Be-0.3mm-Specrum","Al-0.15mm-Specrum"]
-    RD53_layers = ["with-metal-layers","without-metal-layers"]
+    Spectrum =["Tungsten-Spectrum","Be-0.3mm-Spectrum","Al-0.15mm-Spectrum","RD53"]
+    RD53_layers = ["RD53","RD53_No"]
     Depth=["with-metal-layers"]
     filter_thickness = ["","$0.3mm$","$0.15mm$","$0.15mm$","$0.15mm$","$0.15mm$","$0.15mm$"]
     PdfPages = PdfPages('output_data/SimulationCurve_Bonn' + '.pdf')
     scan = Simulation()
     #scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=Energy,hist_id=["h3","h3","h3","h3","h3","h3"],logy=True,location="Geant4_empenelope_DiffEnergys",title ="Tungsten spectrum at different energies")
     #scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=Model,hist_id=["h3","h3","h3","h3","h3","h3"],logy=True,location="Geant4_DiffModels",title ="Tungsten 50Kev Spectrum using Different Models" )
-    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=Spectrum,hist_id=["27","24","25"],labels=Spectrum,
-                      logy=True,location="Geant4_Be_window",title ="Effect of Beryllium-window on 50Kev Spectrum")
+    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=Spectrum,hist_id=["28","32","32","32"],labels=Spectrum,
+                      logy=True,Ratio= True,location="Geant4_Be_window",title ="Tungsten 50 kev Spectrum")
 #     scan.get_spectrum(Directory=Directory, PdfPages=PdfPages,test = ["Tungsten_Specrum"],
 #                       file = "/home/silab62/git/XrayMachine_Bonn/xray-build/Tungsten_Specrum.root"
 #                       ,hist_id=["25"],logy=True,save=False) 
-    #scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers,
-    #                  hist_id=["32","32"],logy=True,location="RD53",title ="Effect of metal layers on RD53")
+
+    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers,Ratio= False,
+                      hist_id=["32","32"],logy=True,location="RD53",title ="Effect of metal layers on RD53")
     #scan.get_spectrum_depth(Directory=Directory, PdfPages=PdfPages, test=["with-metal-layers"],hist_id=["57"],location="RD53",logx=True,
     #                  title ="Secondary electrons produced in the Metal Layers",outputname ="Secondary electrons",xtitle="distance[cm]")
-    scan.get_Secondary_spectrum(Directory=Directory, PdfPages=PdfPages, test=["with-metal-layers"],
-                                hist_id=["51","52","53","54"],location="RD53",logx=True,colors=colors,
-                                title ="Secondary electrons produced in the Metal Layers",outputname ="Secondary electrons")
-    scan.filters(Directory=Directory, PdfPages=PdfPages,Filters=Filters[0:5],hist_id="25",log=True,
+    scan.get_Secondary_spectrum(Directory=Directory, PdfPages=PdfPages, test=["RD53"],
+                                hist_id=["52","53","54","55"],location="RD53",logx=True,colors=colors,
+     title ="Secondary electrons produced in the Metal Layers",outputname ="Secondary electrons")
+    scan.filters(Directory=Directory, PdfPages=PdfPages,Filters=Filters[0:5],hist_id="32",log=True,
                  colors=colors,filter_thickness=filter_thickness,x_offset=x_offset,y_offset=y_offset,n = n[0:2])
     scan.close()

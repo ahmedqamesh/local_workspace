@@ -1,0 +1,11 @@
+Results ffrom TestEM5 using different Models.
+	bins = 200
+setCut 	  : 1 um
+Target YZ : 2 cm
+World of  : 10 x 10 x 10 cm Filled with Air
+beam pos  : 5 cm 
+Target pos: 0 cm
+Energy	Thickness	Events		photons Creat.		Photons Transmit.			addPhysics
+50 keV	   5 mm		1e+8	          1.991523 e+6 		 4.02486  e+5  			emstandard_opt4	(best current advanced EM options standard + lowenergy)
+50 keV	   5 mm		1e+8	          1.991523 e+6 		 3.86404  e+5  			emlivermore	(low-energy EM physics using Livermore data)
+50 keV	   5 mm		1e+8	          2.234153 e+6 		 5.00903  e+5  			empenelope	(low-energy EM physics using Livermore data)	

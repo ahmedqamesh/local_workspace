@@ -1,0 +1,63 @@
+# THe Card will fire 1095098 photons from spectrum on Al target (Filter)
+/control/verbose 2
+/control/cout/ignoreThreadsExcept 0
+/run/verbose 2
+/run/numberOfThreads 4
+#
+/testem/phys/addPhysics  empenelope
+#
+#/testem/det/setNbOfLayers 1
+/testem/det/setNbOfAbsor 21
+/testem/det/setAbsor 1  quartz  0.001  	 mm
+/testem/det/setAbsor 2  G4_Al   0.0028 	 mm
+/testem/det/setAbsor 3   quartz 0.0008 	 mm
+/testem/det/setAbsor 4   G4_Cu  0.0034 	 mm
+/testem/det/setAbsor 5  quartz 0.00067 	 mm
+/testem/det/setAbsor 6  G4_Cu  0.0009 	 mm
+/testem/det/setAbsor 7  quartz 0.00067   mm
+/testem/det/setAbsor 8  G4_Cu  0.00022   mm
+/testem/det/setAbsor 9  quartz 0.000175  mm
+/testem/det/setAbsor 10 G4_Cu  0.00022   mm
+/testem/det/setAbsor 11 quartz 0.000175  mm
+/testem/det/setAbsor 12 G4_Cu  0.00022   mm
+/testem/det/setAbsor 13 quartz 0.000175  mm
+/testem/det/setAbsor 14 G4_Cu  0.00022   mm
+/testem/det/setAbsor 15 quartz 0.000175  mm
+/testem/det/setAbsor 16 G4_Cu  0.00022   mm
+/testem/det/setAbsor 17 quartz 0.000175  mm
+/testem/det/setAbsor 18 G4_Cu  0.00022   mm
+/testem/det/setAbsor 19 quartz 0.000175  mm
+/testem/det/setAbsor 20 G4_Cu  0.00018   mm
+/testem/det/setAbsor 21 quartz 0.00031   mm
+/testem/det/setNbOfFilter 1
+#
+/run/initialize
+# read from specrum
+/testem/gun/spectrum on 
+/gun/particle gamma 
+#/gun/loadGunData File1.dat
+/gun/position   1 0.0 0.0 cm   # 1cm away from the Target Which is at 3 cm
+/gun/direction  1 0 0
+#Activation of Emission 
+#to have Auger emission it is mandatory to activate Auger electron production for the region
+# fluorescence from photons and e- is activated by default in Livermore and Penelope , while Auger production and PIXE are not.
+/process/em/deexcitation region true true true	#region is World region 
+/process/em/fluo true
+/process/em/auger true
+/process/em/pixe true
+#
+
+#/run/setCut 1 um   # it is 0.7 mm by default
+/analysis/setFileName gammaSpectrum_RD53.root
+/analysis/h1/set 1  200   0.  60. keV		#Edep in absorber 1
+/analysis/h1/set 23  200   0.  60. keV		#Original Spectrum
+/analysis/h1/set 32  200   0.  60. keV		#Photon transmitted Spectrum through Be
+/analysis/h1/set 28  200   0.  60. keV		#Secondary neutral particles(Everywhere)
+/analysis/h1/set 51  200   0.  60. keV		#
+/analysis/h1/set 52  200   0.  60. keV		#
+/analysis/h1/set 53  200   0.  60. keV		#
+/analysis/h1/set 54  200   0.  60. keV		#
+/analysis/h1/set 55  200   0.  60. keV		#
+/analysis/h1/set 57  200   0.  60. keV		#
+/run/printProgress 10000
+/run/beamOn 284857

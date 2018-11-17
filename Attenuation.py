@@ -124,10 +124,9 @@ class attenuation():
 		Cu_rho = 8.96 #g/cm3
 		Al_rho = 2.70 #g/cm3
 		# Energy deposition from Geant4
-		Energy_deposition = [70.3885,254.722,55.2842,1.98059*1000,42.7487,394.459,38.6216,82.0917,14.4346,82.8024,14.2578,
-					   80.9561,13.9143,78.9877,13.6107, 76.8117,13.2364, 74.3392,12.557,54.8731,10.0689] # ev
+		Energy_deposition = [16.612,88.628,26.367,2.3403 *1000 ,29.739,485.94,28.618,108.82,10.228, 106.49,9.9527,106.05,9.2885,103.3,9.9909,100.72,9.824,98.55,
+							 8.4857,72.163,7.7287]# ev
 		total_deposition =np.sum(Energy_deposition)
-			
 		Energy_range = ['30 Kev','40 Kev','50 Kev','60 Kev']
 		Attenuation_Al = [1.128E+00, 5.684E-01,3.681E-01,2.778E-01]
 		Attenuation_Sio2 = [0.859,0.463,0.318,0.252]
@@ -196,7 +195,7 @@ class attenuation():
 		ax2.set_xlabel("Layer")
 		ax2.set_ylim(0.001, 20000)
 		ax2.legend(prop={'size': 6})
-		ax2.legend(handles =[rect1,rect2,rect3] , labels =["cu", "Al","sio2"])
+		ax2.legend(handles =[rect1,rect2,rect3] , labels =["Al","cu", "sio2"])
 		ax2.set_title(r'Energy loss of 50 keV x rays through RD53 Metal Layers', fontsize=11)		 
 		ax2.grid(True)
 		ax2.set_xticks(y_pos)
@@ -228,5 +227,5 @@ if __name__ == '__main__':
     scan.attenuation_Energy(PdfPages=PdfPages, Directory=Directory, targets =["Al","W","Be","Fe"],x_offset=x_offset,y_offset=y_offset,n = n[0:3])
     scan.attenuation_thickness(PdfPages=PdfPages, Directory=Directory, targets =targets[0:4], logx = True, logy= True)
     #scan.mass_attenuation_coeff(PdfPages=PdfPages, Directory=Directory, targets =targets[1:])
-    #scan.attenuation_thickness_RD53(PdfPages=PdfPages, Directory=Directory)
+    scan.attenuation_thickness_RD53(PdfPages=PdfPages, Directory=Directory)
     scan.close()
