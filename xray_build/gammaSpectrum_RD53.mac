@@ -52,12 +52,25 @@
 /analysis/h1/set 1  200   0.  60. keV		#Edep in absorber 1
 /analysis/h1/set 23  200   0.  60. keV		#Original Spectrum
 /analysis/h1/set 32  200   0.  60. keV		#Photon transmitted Spectrum through Be
-/analysis/h1/set 28  200   0.  60. keV		#Secondary neutral particles(Everywhere)
-/analysis/h1/set 51  200   0.  60. keV		#
+/analysis/h1/set 28  200   0.  60. keV		#Secondary neutral particles(all)
+
+/analysis/h1/set 51  200   0.  60. keV		#Secondary charged particles(all)
 /analysis/h1/set 52  200   0.  60. keV		#
 /analysis/h1/set 53  200   0.  60. keV		#
 /analysis/h1/set 54  200   0.  60. keV		#
 /analysis/h1/set 55  200   0.  60. keV		#
 /analysis/h1/set 57  200   0.  60. keV		#
+
+/analysis/h1/set 35  200   0.  60. keV		#Secondary charged particles(in absorbers)
+/analysis/h1/set 36  200   0.  60. keV		#
+/analysis/h1/set 37  200   0.  60. keV		#
+/analysis/h1/set 38  200   0.  60. keV		#
+/analysis/h1/set 39  200   0.  60. keV		#
+/analysis/h1/set 40  200   0.  60. keV		#
+/analysis/h1/set 41  200   0.  60. keV		#
+/analysis/h1/set 42  200   0.  60. keV		#
+/analysis/h1/set 43  200   0.  60. keV		#
+/analysis/h1/set 44  200   0.  60. keV		#
+
 /run/printProgress 10000
 /run/beamOn 284857

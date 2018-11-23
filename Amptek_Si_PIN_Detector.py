@@ -31,7 +31,7 @@ class Amptel_Spectrum():
         plt.tight_layout()
         plt.savefig(Directory+"Energy_channel_calibration/channel_energy_calibration.png", bbox_inches='tight')
         PdfPages.savefig()
-        
+        return a, a_error, b, b_error       
     def energy_spectrum(self, Directory=False, PdfPages=False,sources=False,real_time=False,color = False):
         # energy calib E=a*x + b, x is the channel number
         a = 0.04258
@@ -76,6 +76,26 @@ class Amptel_Spectrum():
             plt.tight_layout()
             plt.savefig(Directory+"Source_spectra/"+sources[i]+"/"+sources[i]+"_spectrum_calibrated.png", bbox_inches='tight')
             PdfPages.savefig()               
+    def plot_FWHM(self, x, sigma, sigma_err=None, a=None, a_error=None, b=None, b_error=None, point_label=False):
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+        delta_vcal = 2 * np.sqrt(2 * np.log(2)) * sigma  # FWHM in channels
+        delta_vcal_err = 2 * np.sqrt(2 * np.log(2)) * sigma_err  # Error on FWHM
+        y_energy = (delta_vcal - b) / a  # From calibration The energy resolution is expressed  in units of energy
+        y_energy_err = np.sqrt((delta_vcal_err / a)**2 + (b_error / a)**2 * (a_error * (delta_vcal - b) / (a**2))**2)
+        plt.grid(True)
+        ax.errorbar(x, y_energy, yerr=y_energy_err, fmt='.', color='black', label="Data")
+        for X, Y, Z in zip(x, y_energy, point_label):
+            ax.annotate('{}'.format(Z), xy=(X, Y), xytext=(-4, 4), ha='right', textcoords='offset points', fontsize=8)
+        ax.legend(["data"], fontsize=11, loc=0)
+        ax.set_title("Energy Resolution for RD53A")
+        ax.set_ylabel(r'FWHM / keV', fontsize=10)
+        ax.set_xlabel(r'Energy / keV', fontsize=10)
+        ax.grid(True)
+        plt.tight_layout()
+        plt.savefig(Directory + "Energy_Resolution_test.png", bbox_inches='tight')
+        PdfPages.savefig()
+        
     def close(self):
         PdfPages.close()
 
@@ -88,7 +108,7 @@ if __name__ == '__main__':
     real_time=[661.16,60.715000,2148.976000 , 1.011000,6272.115000]  # Number is accumulation time
     PdfPages = PdfPages('output_data/Amptel_Spectrum' + '.pdf')
     scan = Amptel_Spectrum()
-    scan.channel_energy_calibration(PdfPages=PdfPages, Directory=Directory,point_label=point_label)
+    a, a_error, b, b_error = scan.channel_energy_calibration(PdfPages=PdfPages, Directory=Directory,point_label=point_label)
     scan.energy_spectrum(PdfPages=PdfPages, Directory=Directory, sources =sources,real_time =real_time,color=color)
     
     scan.close()

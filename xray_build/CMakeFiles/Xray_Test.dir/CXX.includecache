@@ -4072,6 +4072,12 @@ G4VUIshell.hh
 map
 -
 
+/home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWith3VectorAndUnit.hh
+G4UIcommand.hh
+/home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcommand.hh
+G4ThreeVector.hh
+/home/silab62/HEP/geant4.10.01-install/include/Geant4/G4ThreeVector.hh
+
 /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithABool.hh
 G4UIcommand.hh
 /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcommand.hh
@@ -5959,10 +5965,14 @@ G4RotationMatrix.hh
 /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/G4RotationMatrix.hh
 
 /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorMessenger.hh
-globals.hh
-/home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/globals.hh
 G4UImessenger.hh
 /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/G4UImessenger.hh
+globals.hh
+/home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/globals.hh
+G4UIcmdWith3VectorAndUnit.hh
+/home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/G4UIcmdWith3VectorAndUnit.hh
+G4UIcmdWithAString.hh
+/home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/G4UIcmdWithAString.hh
 
 /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EmAcceptance.hh
 globals.hh
@@ -6057,6 +6067,8 @@ globals.hh
 /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/globals.hh
 G4UImessenger.hh
 /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/G4UImessenger.hh
+G4UIcmdWithAString.hh
+/home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/G4UIcmdWithAString.hh
 
 /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StackingAction.hh
 G4UserStackingAction.hh

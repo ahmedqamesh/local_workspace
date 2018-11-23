@@ -15,7 +15,8 @@
 # read from specrum
 /testem/gun/spectrum on 
 /gun/particle gamma 
-#/gun/loadGunData File1.dat
+#/testem/run/loadGunData gammaSpectrum_Tungsten-Spectrum.dat
+
 /gun/position   1 0.0 0.0 cm   # 2cm away from the Be Target Which is at 3 cm
 /gun/direction  1 0 0
 #/run/setCut 1 um   # it is 0.7 mm by default

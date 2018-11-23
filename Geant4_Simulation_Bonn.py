@@ -12,6 +12,7 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib import colors, cm
 from matplotlib import pyplot as plt
 #import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 import datetime as dt
 import time
 from pytz import timezone
@@ -108,7 +109,7 @@ class Simulation():
                 label = labels[i]
             else:
                 label = t.GetTitle()
-            ax.errorbar(x[1:], data[1:], fmt='-', color=colors[i], markersize=2, label=label)
+            ax.errorbar(x[:], data[:], fmt='-', color=colors[i], markersize=2, label=label)
 #             ax.fill_between(x[1:], 0, data[1:], facecolor=colors[i], interpolate=True)
         if Ratio:
             loss1 = np.float(Entries[0] - Entries[1]) / float(Entries[0])
@@ -152,17 +153,20 @@ class Simulation():
                 data, x = self.readHistogram(file, t, False)
                 entries = np.nonzero(data)
                 ax.errorbar(x[:], data[:], fmt='-', color=colors[j], markersize=2, label=t.GetTitle())
-        # if title:
-            # ax.set_title(title)
+                print t.GetEntries(), hist_id[j], t.GetTitle()
         sum = np.sum(n)
         r = np.divide(n, sum) * 100
         ax.set_xlabel(xtitle)
         ax.set_ylabel('Counts')
         ax.legend()
         ax.grid(True)
-        ax.set_xlim(xmin=0.0)
+        ax.legend(loc = "upper right")
         ax2.set_axis_off()
-        ax.set_yscale("log")
+        if logx:
+            ax.set_xscale("log")
+        if logy:
+            ax.set_yscale("log")
+        ax.set_xlim(xmin=0.01,xmax=30.0)
         columns = ('Photo $e^-$', 'Compton $e^-$', 'AphotAuger or ComptAuger $e^-$', "PIXI Auger $e^-$")
         rows = ['Energy[KeV]', "Probability [%]"]
         data = [["$0-50$", "$< 10$", "$< 10$", "$< 10$"], np.round(r, 3)]
@@ -178,75 +182,97 @@ class Simulation():
         plt.tight_layout()
         PdfPages.savefig()
 
-    def get_spectrum_depth(self, Directory=False, PdfPages=False, test=False, hist_id=[0], location=False,
+    def get_track_length(self, Directory=False, PdfPages=False, test=False, hist_id=[0], location=False,
                            title=False, xtitle='Energy [keV]', outputname=False, logx=False, logy=False):
         fig = plt.figure()
-        gs = gridspec.GridSpec(2, 1, height_ratios=[2, 2])
+        gs = gridspec.GridSpec(3, 1, height_ratios=[1, 1,1])
         ax = plt.subplot(gs[0])
-        ax1 = plt.subplot(gs[0])
-        ax2 = plt.subplot(gs[1])
-
-        def autolabel(rects, total):
-            """
-            Attach a text label above each bar displaying its height
-            """
-            for rect in rects:
-                height = rect.get_height()
-                ax2.text(rect.get_x() + rect.get_width() / 2., 1.05 * height, '%.2f %%' % (height / total * 100), ha='center', va='bottom')
+        ax1 = plt.subplot(gs[1])
+        ax2 = plt.subplot(gs[2])
         # Energy deposition from Geant4
-        Energy_deposition = [70.3885, 254.722, 55.2842, 1.98059 * 1000, 42.7487, 394.459, 38.6216, 82.0917, 14.4346, 82.8024, 14.2578,
-                             80.9561, 13.9143, 78.9877, 13.6107, 76.8117, 13.2364, 74.3392, 12.557, 54.8731, 10.0689]  # ev
-        total_deposition = np.sum(Energy_deposition)
-        Si_rho = 2.32  # g/cm3
-        Cu_rho = 8.96  # g/cm3
-        Al_rho = 2.70  # g/cm3
-        Al_thickness = [2800]  # nano 2.8
-        Cu_thickness = [3400, 900, 220 * 6, 180]  # nano 5.8
-        Si_thickness = [1000, 800, 670 * 2, 175 * 6, 310]  # nano 4.5
-        thickness = [x * 1E-07 for x in [1000, 2800, 800, 3400, 670, 900, 670, 220, 175, 220, 175, 220, 175, 220, 175, 220, 175, 220, 175, 180, 310]]  # cm
-        total_Thickness = np.sum(thickness)
+        Energy_deposition = [16.612,88.628,26.367,2.3403 *1000 ,29.739,485.94,28.618,108.82,10.228, 106.49,9.9527,106.05,9.2885,103.3,9.9909,100.72,9.824,98.55,
+                     8.4857,72.163,7.7287]# ev
+        total_deposition =np.sum(Energy_deposition)
+        Si_rho = 2.32 #g/cm3
+        Cu_rho = 8.96 #g/cm3
+        Al_rho = 2.70 #g/cm3
+        
+        Energy_range = ['50 Kev']
+        Attenuation_Al = [1.128E+00, 5.684E-01,3.681E-01,2.778E-01]
+        Attenuation_Sio2 = [0.859,0.463,0.318,0.252]
+        Attenuation_cu = [1.119E-01,9.413E-02,8.363E-02,7.625E-02]
+        Al_thickness = [2800] # nano 2.8
+        Cu_thickness = [3400,900,220*6,180] #nano 5.8
+        Si_thickness = [1000,800,670*2,175*6,310] #nano 4.5
+        thickness_Micro =[x*1E-03 for x in [1000,2800,800,3400,670,900,670,220,175,220,175,220,175,220,175,220,175,220,175,180,310]] #Micro
+        thickness = [x*1E-07 for x in [1000,2800,800,3400,670,900,670,220,175,220,175,220,175,220,175,220,175,220,175,180,310]] #cm
+        total_Thickness = np.sum(thickness_Micro)
         total_metal = ["si02", "Al", "si02", "cu", "si02", "cu", "si02", "cu", "si02", "cu", "si02", "cu", "si02", "cu", "si02", "cu", "si02", "cu", "si02", "cu", "si02"]
         colors = ['red', '#006381', '#33D1FF', 'green', 'orange', 'maroon', 'black']
         for i in range(len(test)):
             file = Directory + location + "/gammaSpectrum_" + test[i] + ".root"
             f = ROOT.TFile(file)
-            t = f.Get(hist_id[i])
-            data, x = self.readHistogram(file, t, False)
-            entries = np.nonzero(data)
-            ax1.errorbar(x[:], data[:], fmt='-', color=colors[i], markersize=2, label=test[i])
-            #ax.fill_between(x[1:], 0, data[1:], facecolor=colors[i], interpolate=True)
-        new_x = []
-        layer_percent = []
-        a = 0
-        y_pos = np.arange(len(total_metal))
-        # Get the depth as a distance from the first layer
-        for i in y_pos:
-            new_x = np.append(new_x, round(a, 2))
-            a = a + thickness[i]
-            layer_percent = np.append(layer_percent, (thickness[i] / total_Thickness) * 100)
-        for i in np.arange(len(thickness)):
-            if total_metal[i] == "Al":
-                Al = ax.axvspan(new_x[i], new_x[i + 1], alpha=0.5, color=colors[1])
-                rect1 = ax2.bar(i, Energy_deposition[i], color=colors[1], align='center', alpha=0.5)
-                autolabel(rect1, total_deposition)
-            if total_metal[i] == "cu":
-                rect2 = ax2.bar(i, Energy_deposition[i], color=colors[2], align='center', alpha=0.5)
-                cu = ax.axvspan(new_x[i], new_x[i + 1], alpha=0.5, color=colors[2])
-                autolabel(rect2, total_deposition)
-            if total_metal[i] == "si02":
-                new_x = np.append(new_x, new_x[i] + thickness[-1])
-                sio2 = ax.axvspan(new_x[i], new_x[i + 1], alpha=0.5, color=colors[0])
-                rect3 = ax2.bar(i, Energy_deposition[i], color=colors[0], align='center', alpha=0.5)
-                autolabel(rect3, total_deposition)
-        if title:
-            ax.set_title(title)
-        ax.set_xlabel(xtitle)
-        ax.set_ylabel('Counts')
-        ax.legend()
-        ax.grid(True)
-        # ax.set_xscale("log")
-        # ax1.set_xscale("log")
-        # ax.set_yscale("log")
+            for j in range(len(hist_id)):
+                t = f.Get(hist_id[j])
+                data, x = self.readHistogram(file, t, False)
+                entries = np.nonzero(data)
+                if j == 0:
+                    ax.errorbar(x[:], data[:], fmt='-', color=colors[j], markersize=2, label=t.GetTitle())    
+                    ax.set_title(title)
+                    ax.set_xlabel(xtitle)
+                    ax.set_ylabel('Counts')
+                    ax.legend()
+                   # ax.set_xlim(0,3)
+                    ax.grid(True)
+                    if logx:
+                        ax.set_xscale("log")
+                    if logy:
+                        ax.set_yscale("log")
+                if j == 1:
+                    ax1.errorbar(x[:], data[:], fmt='-', color=colors[j], markersize=2, label=t.GetTitle())
+                    #ax1.set_xlim(2.85,3.45)
+                    #ax1.xaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: '{0:g}'.format(x*10000)))
+                    ax1.set_title("Vertex position")
+                    ax1.set_xlabel(xtitle)
+                    ax1.set_ylabel('Counts')
+                    ax1.legend(loc = "upper right")
+                    ax1.grid(True)
+                     
+        for E in np.arange(len(Energy_range)): 
+            y=[]
+            new_x = []
+            att= []
+            a =0 
+            f = 1
+            y_pos = np.arange(len(total_metal))
+            # Get the depth as a distance from the first layer
+            for i in y_pos:
+                new_x = np.append(new_x,round(a, 2))
+                a = a+thickness_Micro[i]
+            y = np.append(y,f)    
+            for i in np.arange(len(thickness_Micro)):    
+                if total_metal[i] == "Al":
+                    att = np.append(att,float(np.exp(- Attenuation_Al[E] * Si_rho* thickness[i])))
+                    if E == 0 : 
+                        Al = ax2.axvspan(new_x[i],new_x[i+1], alpha=0.5, color=colors[1])
+                if total_metal[i] == "cu":
+                    att = np.append(att,float(np.exp(- Attenuation_cu[E] * Cu_rho* thickness[i])))
+                    if E == 0 : 
+                        cu = ax2.axvspan(new_x[i],new_x[i+1], alpha=0.5, color=colors[2])
+                if total_metal[i] == "si02": 
+                    if i <20:
+                        att = np.append(att,float(np.exp(- Attenuation_Sio2[E] * Si_rho* thickness[i])))
+                    else:
+                        new_x = np.append(new_x,new_x[i]+thickness_Micro[-1])
+                        att = np.append(att,float(np.exp(- Attenuation_Sio2[E] * Si_rho* thickness[i])))
+                    if E == 0 : 
+                        sio2 = ax2.axvspan(new_x[i],new_x[i+1], alpha=0.5, color=colors[0])
+                f = f*att[i]
+                y = np.append(y,f)
+            Energy = ax2.plot(new_x, y, ':',color=colors[E+3], linestyle='dashed', label =Energy_range[E])
+        ax2.legend(handles =[Al,cu,sio2] , labels =["Al","cu", "sio2"])
+        ax2.set_xlabel('Layer Thickness ($\mu m $)')
+        ax2.set_ylabel('Transmission $I$/$I_0$ ')
         if outputname:
             plt.savefig(Directory + location + "/" + outputname + ".png", dpi=300)
         else:
@@ -283,26 +309,22 @@ if __name__ == '__main__':
     filters = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum", "Al-0.15mm-Spectrum", "Fe-0.15mm-Spectrum", "Mn-0.15mm-Spectrum", "Ni-0.15mm-Spectrum"]
     PdfPages = PdfPages('output_data/SimulationCurve_Bonn' + '.pdf')
     scan = Simulation()
-    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=energy,hist_id=["h3","h3","h3","h3","h3","h3"],labels=energy,
-                      logy=True,location="Geant4_empenelope_DiffEnergys",title ="Tungsten spectrum at different energies")
-    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=models,hist_id=["h3","h3","h3","h3","h3","h3"],labels=models,
-                      logy=True,location="Geant4_DiffModels",title ="Tungsten 50Kev Spectrum using Different Models" )
-    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=spectrum, hist_id=["28", "32", "32", "32"], labels=spectrum,
-                      logy=True, Ratio=True, location="Geant4_Be_window",
-                      outputname="spectrum",
-                      title="Tungsten 50 kev Spectrum")
-    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=filters, hist_id=["28", "32", "32", "32", "32", "32"], labels=filters,
-                      logy=True, Ratio=False, location="Geant4_Filters",
-                      outputname="Diff_filters",
-                      title="Tungsten Anode Spectrum After Different Filters")
-    scan.get_Secondary_spectrum(Directory=Directory, PdfPages=PdfPages, test=["RD53"],
-                                hist_id=["52", "53", "54", "55"], location="RD53", logx=True, colors=colors,
-                                outputname="Secondary_electrons", title="Secondary electrons produced in the Metal Layers")
-
-    scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers, Ratio=False,
-                      hist_id=["32", "32"], logy=True, location="RD53", title="Effect of metal layers on RD53")
-
-#     scan.get_spectrum_depth(Directory=Directory, PdfPages=PdfPages, test=["RD53"],hist_id=["57"],location="RD53",logx=True,
-#                       title ="Secondary electrons produced in the Metal Layers",
-#                       outputname ="Secondary_electrons_depth",xtitle="distance[cm]")
+    Geant4_empenelope_DiffEnergys = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=energy, hist_id=["h3", "h3", "h3", "h3", "h3", "h3"], labels=energy,
+                                                      logy=True, location="Geant4_empenelope_DiffEnergys", title="Tungsten spectrum at different energies")
+    Geant4_DiffModels = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=models, hist_id=["h3", "h3", "h3", "h3", "h3", "h3"], labels=models,
+                                          logy=True, location="Geant4_DiffModels", title="Tungsten 50Kev Spectrum using Different Models")
+    Geant4_Be_window = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=spectrum, hist_id=["28", "32", "32", "32"], labels=spectrum,
+                                         logy=True, Ratio=True, location="Geant4_Be_window",
+                                         outputname="spectrum", title="Tungsten 50 kev Spectrum")
+    Geant4_Filters = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=filters, hist_id=["28", "32", "32", "32", "32", "32"], labels=filters,
+                                       logy=True, Ratio=False, location="Geant4_Filters",
+                                       outputname="Diff_filters", title="Tungsten Anode Spectrum After Different Filters")
+    RD53 = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers, Ratio=False,
+                             hist_id=["32", "32"], logy=True, location="RD53", title="Effect of metal layers on RD53")
+    Secondary_electrons = scan.get_Secondary_spectrum(Directory=Directory, PdfPages=PdfPages, test=["RD53"],
+                                                      hist_id=["35","36","37","42"], location="RD53", logy=True,logx=False,colors=colors,
+                                                      outputname="Secondary_electrons", title="Secondary electrons produced in the Metal Layers")
+    tracklength =scan.get_track_length(Directory=Directory, PdfPages=PdfPages, test=["RD53"],hist_id=["43","44"],location="RD53",logx=False,logy=False,
+                    title ="Secondary electrons produced in the Metal Layers",
+                    outputname ="Secondary_electrons_depth",xtitle="distance[cm]")
     scan.close()

@@ -1266,6 +1266,8 @@ CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Tubs.icc
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Types.hh
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UBox.hh
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWith3VectorAndUnit.hh
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithAString.hh
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIdirectory.hh
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UImessenger.hh
@@ -1385,7 +1387,9 @@ CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Tubs.hh
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Tubs.icc
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Types.hh
+CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWith3VectorAndUnit.hh
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh
+CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithAString.hh
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithAnInteger.hh
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithoutParameter.hh
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcommand.hh
@@ -3638,6 +3642,7 @@ CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-inst
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Tubs.hh
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Tubs.icc
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Types.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithAString.hh
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIdirectory.hh
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UImessenger.hh
@@ -3791,6 +3796,7 @@ CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.1
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4ThreeVector.hh
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4Types.hh
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithABool.hh
+CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcmdWithAString.hh
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIcommand.hh
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UIdirectory.hh
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4UImessenger.hh

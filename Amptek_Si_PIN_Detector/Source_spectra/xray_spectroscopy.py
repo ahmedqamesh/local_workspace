@@ -27,8 +27,9 @@ energies = { 'Fe': 5.89, 'Fe': 6.49,'Cd': 22.075, 'Cd': 24.94, 'Am': 59.54}
 peaks_fit = dict([(k, peaks[k]["peak_0"]) for k in peaks if k not in ['Background']])
 calib = sp.do_energy_calibration(peaks_fit, energies)
 # 
-bkg_interpolate = sp.interpolate_bkg(spectra['Background'])
+bkg_interpolate = None#sp.interpolate_bkg(spectra['Background'], window=3)
 
-background, bkg_background = sp.fit_spectrum(spectra['Background'], bkg=bkg_interpolate , energy_cal=calib["func"],  xray=True, expected_accuracy=1e-2)
+background, bkg = sp.fit_spectrum(spectra['Background'], bkg=bkg_interpolate , energy_cal=calib["func"],  xray=True, expected_accuracy=10e-2)
 #s_peaks = select_peaks(["Background"], background)
-plot_spectrum(spectra['Background'], peaks=background, bkg=bkg_background, energy_cal=calib['func'])
+real_peaks = select_peaks(["Ag", "In", "Pb", "Fe", "Ni", "Cu"], background)
+plot_spectrum(spectra['Background'], peaks=real_peaks, bkg=bkg, energy_cal=calib['func'])

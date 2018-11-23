@@ -1,91 +1,7 @@
-# From GEANT4 example.
-# Macro file for the visualization setting for the initialization phase 
-# Add icons to steer simulation
-#
-/control/execute icons.mac
-#
-# File menu :
-/gui/addMenu file File
-/gui/addButton file Quit exit
-# Run menu :
-/gui/addMenu run Run
-/gui/addButton run "Init" "/run/initialize"
-/gui/addButton run "1 events" "/run/beamOn 1"
-/gui/addButton run "10 events" "/run/beamOn 10"
-/gui/addButton run "1e4 events" "/run/beamOn 10000"
-/gui/addButton run "1e5 events" "/run/beamOn 100000"
-/gui/addButton run "1e6 events" "/run/beamOn 1000000"
-/gui/addButton run "1e7 events" "/run/beamOn 10000000"
 
-# Physics menu :
-/gui/addMenu physics Physics
-/gui/addButton physics "HADRON_QGSP_BERT" "/setup/physics/SelectHadronPhysics QGSP_BERT"
-/gui/addButton physics "HADRON_QGSP_BERT_HP" "/setup/physics/SelectHadronPhysics QGSP_BERT_HP"
-/gui/addButton physics "HADRON_QGSP_BIC" "/setup/physics/SelectHadronPhysics QGSP_BIC"
-/gui/addButton physics "HADRON_QGSP_BIC_HP" "/setup/physics/SelectHadronPhysics QGSP_BIC_HP"
-/gui/addButton physics "EM_Livermore" "/setup/physics/SelectEMPhysics emlivermore"
-/gui/addButton physics "EM_Penelope" "/setup/physics/SelectEMPhysics empenelope"
-/gui/addButton physics "EM_Standard" "/setup/physics/SelectEMPhysics emstandard"
-/gui/addButton physics "EM_Standard_v4" "/setup/physics/SelectEMPhysics emstandard_opt4"
-/gui/addButton physics "DECAY_Decay" "/setup/physics/SelectDecayPhysics decay"
-/gui/addButton physics "DECAY_Radioactive Decay" "/setup/physics/SelectDecayPhysics radioactivedecay"
+/control/execute gui.mac
+/control/execute vis.mac
 
-# Source menu :
-/gui/addMenu source Setup
-/gui/addButton source "Beam"      "/control/execute beam.mac"
-/gui/addButton source "Test01"   "/control/execute Test01.mac"
-
-# Viewer menu :
-/gui/addMenu viewer Viewer
-/gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
-/gui/addButton viewer "Set style wireframe" "/vis/viewer/set/style wireframe"
-/gui/addButton viewer "Refresh viewer" "/vis/viewer/refresh"
-/gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
-/gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
-/gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
-
-# To limit the output flow in the "dump" widget :
-/run/printProgress 100
-
-# User defined icon :
-/gui/addIcon "Run beam on" user_icon "/run/beamOn 10" run.png 
-# Use these open statements to open selected visualization
-#
-# Use this open statement to create an OpenGL view:
-/vis/open OGL 600x600-0+0
-
-# Disable auto refresh and quieten vis messages whilst scene and
-# trajectories are established:
-/vis/viewer/set/autoRefresh false
-/vis/verbose errors
-#
-# Draw geometry:
-/vis/drawVolume
-#
-# Specify view angle:
-/vis/viewer/set/viewpointThetaPhi 90. 180.
-#
-# Specify zoom value:
-#/vis/viewer/zoom 2.
-#
-# Specify style (surface, wireframe, auxiliary edges,...)
-/vis/viewer/set/background white
-#/vis/viewer/set/style wireframe
-#/vis/viewer/set/auxiliaryEdge true
-#/vis/viewer/set/lineSegmentsPerCircle 100
-#
-# Draw coordinate axes:
-/vis/scene/add/axes 0 0 0 1 cm
-#
-# Draw smooth trajectories at end of event, showing trajectory points
-# as markers 2 pixels wide:
-/vis/scene/add/trajectories smooth
-/vis/modeling/trajectories/create/drawByCharge
-/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
-/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
-# Draw hits at end of event:
-/vis/scene/add/hits
-#
 # To draw only gammas:
 #/vis/filtering/trajectories/create/particleFilter
 #/vis/filtering/trajectories/particleFilter-0/add gamma
@@ -93,11 +9,11 @@
 # To invert the above, drawing all particles except gammas,
 # keep the above two lines but also add:
 #/vis/filtering/trajectories/particleFilter-0/invert true
-#
+
 # Many other options are available with /vis/modeling and /vis/filtering.
 # For example, to select colour by particle ID:
-#/vis/modeling/trajectories/create/drawByParticleID
-#/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
 # To select or override default colours (note: e+ is blue by default):
 #/vis/modeling/trajectories/list
 #/vis/modeling/trajectories/drawByParticleID-0/set e+ yellow
@@ -111,5 +27,4 @@
 #
 # For file-based drivers, use this to create an empty detector view:
 #/vis/viewer/flush
-/run/initialize
 
