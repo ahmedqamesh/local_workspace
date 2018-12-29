@@ -1,0 +1,71 @@
+//Original Tungsten specrum 
+	>>	gammaSpectrum_Tungsten-Spectrum_SourceSim.root
+	500 bins	Beam on  = 5e+7 		E = 50 KeV		Histogram Name = Histograms/4	Entries = 1007560.0		
+	card used gammaSpectrum_Tungsten-Spectrum_SourceSim.mac		
+	sourceshield pos   0. 0. -1.8 cm
+	Tungsten thickness 5 mm
+	
+	>>	gammaSpectrum_Tungsten-Spectrum.root
+	200 bins	Beam on  = e+8		E = 50 KeV		Histogram Name = 29		Entries = 1095098		
+	card used gammaSpectrum_Tungsten-Spectrum.mac		
+	Target pos     0. 0. -1 cm
+	/gun/position  0.9 0.0 0.0 cm
+	/gun/direction -1 0 0
+	Tungsten thickness 5 mm	   
+
+	
+	
+//Tungsten Be specrum
+	>>gammaSpectrum_Be-0.3mm-Spectrum.root
+	200 bins	
+	Beam on  = 1095098 		Beam E = 50 KeV		
+	Histogram Name = 29		Entries = 691586		
+	card used gammaSpectrum_Be-0.3mm-Spectrum.mac
+	/gun/position   1 0.0 0.0 cm
+	Be pos   3 0.0 0.0 cm
+	Be thickness 0.3 mm	
+	
+//Tungsten Be aL specrum
+	>>gammaSpectrum_Al-0.15mm-Spectrum.root
+	200 bins	
+	Beam on  = 691586 		Beam E = 50 KeV		
+	Histogram Name = 29		Entries = 284857		
+	card used gammaSpectrum_Al-0.15mm-Spectrum.mac
+	/gun/position   1 0.0 0.0 cm
+	Al pos   3 0.0 0.0 cm
+	Al thickness 0.15 mm		
+	
+	
+	
+	// Rd53
+
+      material   Edep       RMS         sqrt(E0(GeV))*rmsE/Emean     total tracklen 
+ 
+        quartz: 128.77 eV  :  1.212 keV     6.656 +- 0.01286 %      23.6 nm  +-  288 nm 
+         G4_Al: 105.71 eV  :  1.071 keV     7.166 +- 0.01385 %      13.6 nm  +-  165 nm 
+        quartz: 36.283 eV  :  549.7 eV      10.71 +- 0.0207 %      5.41 nm  +- 92.8 nm 
+         G4_Cu: 1.9172 keV :  4.886 keV     1.802 +- 0.003481 %      82.9 nm  +-  273 nm 
+        quartz: 41.431 eV  :  590.4 eV      10.08 +- 0.01947 %      6.65 nm  +-  109 nm 
+         G4_Cu: 402.09 eV  :  2.283 keV     4.014 +- 0.007756 %      17.8 nm  +-  123 nm 
+        quartz: 37.902 eV  :  565.2 eV      10.54 +- 0.02037 %      5.97 nm  +-  101 nm 
+         G4_Cu:  82.46 eV  :  921.2 eV        7.9 +- 0.01526 %      3.65 nm  +- 44.7 nm 
+        quartz: 14.868 eV  :  267.3 eV      12.71 +- 0.02456 %      2.22 nm  +- 39.8 nm 
+         G4_Cu: 83.496 eV  :  914.7 eV      7.746 +- 0.01497 %      3.77 nm  +- 45.8 nm 
+        quartz: 15.734 eV  :  282.8 eV      12.71 +- 0.02455 %      2.33 nm  +- 42.4 nm 
+         G4_Cu: 86.143 eV  :  929.9 eV      7.633 +- 0.01475 %      3.84 nm  +- 46.2 nm 
+        quartz: 16.717 eV  :  295.6 eV      12.51 +- 0.02416 %      2.52 nm  +- 45.1 nm 
+         G4_Cu: 82.755 eV  :  911.5 eV      7.789 +- 0.01505 %      3.77 nm  +- 45.8 nm 
+        quartz: 16.377 eV  :  284.5 eV      12.29 +- 0.02374 %      2.44 nm  +- 42.8 nm 
+         G4_Cu: 84.197 eV  :  922.5 eV      7.748 +- 0.01497 %      3.71 nm  +- 44.7 nm 
+        quartz: 14.484 eV  :  266.1 eV      12.99 +- 0.0251 %      2.13 nm  +- 38.7 nm 
+         G4_Cu: 76.364 eV  :  882.7 eV      8.173 +- 0.01579 %      3.38 nm  +- 43.4 nm 
+        quartz:  13.64 eV  :  264.9 eV      13.73 +- 0.02653 %      2.03 nm  +- 39.4 nm 
+         G4_Cu: 54.196 eV  :  716.1 eV      9.343 +- 0.01805 %      2.32 nm  +- 33.2 nm 
+        quartz: 12.256 eV  :  275.9 eV      15.92 +- 0.03075 %      1.86 nm  +- 43.3 nm 
+
+
+
+
+      material   Edep       RMS         sqrt(E0(GeV))*rmsE/Emean     total tracklen 
+      quartz: 111.25 eV  :  1.143 keV     7.268 +- 0.01404 %      21.2 nm  +-  281 nm 
+

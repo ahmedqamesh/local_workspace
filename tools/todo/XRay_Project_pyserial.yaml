@@ -1,0 +1,37 @@
+transfer_layer:
+  - name     : Serial_ms
+    type     : Serial
+    init     :
+        port     : /dev/ttyUSB3
+        read_termination : "\x03"
+        baudrate : 9600
+        timeout : 0.1
+        
+  - name     : Serial_th
+    type     : Serial
+    init     :
+        port     : /dev/ttyUSB2
+        read_termination : ""
+        baudrate : 115200
+        timeout : 2.0
+
+  - name     : RS232
+    type     : Serial
+    init     :
+        port     : /dev/ttyUSB0
+        read_termination : "\r"
+        baudrate : 4800        
+        timeout : 1
+
+hw_drivers:
+  - name      : MotorStage
+    type      : XRay_Project_01
+    interface : Serial_ms
+
+  - name      : Thermohygrometer
+    type      : XRay_Project_01
+    interface : Serial_th
+
+  - name      : JulaboFP50
+    type      : XRay_Project_01
+    interface : RS232   

@@ -32,8 +32,6 @@ ccmake .
 make 
 make install
 
-
-
 #Root installation 
 sudo apt-get install git dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
 sudo apt-get install build-essential git subversion
