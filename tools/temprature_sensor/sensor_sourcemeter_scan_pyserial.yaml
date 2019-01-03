@@ -1,11 +1,11 @@
 transfer_layer:
-  - name     : Serial_ms
+  - name     : Serial_th
     type     : Serial
     init     :
         port     : /dev/ttyUSB2
-        read_termination : "\x03"
-        baudrate : 9600
-        timeout : 0.1
+        read_termination : ""
+        baudrate : 115200
+        timeout : 2.0
 
   - name     : Serial
     type     : Serial
@@ -15,12 +15,13 @@ transfer_layer:
         baudrate : 19200  
 
 hw_drivers:
-  - name      : ms
-    type      : motor_stage
-    interface : Serial_ms
+  - name      : ts
+    type      : temprature_sensor
+    interface : Serial_th
 
-  - name      : ms
-    type      : motor_stage
+  - name      : ts
+    type      : temprature_sensor
     interface : Serial
     init      :
         device : Keithley 2400
+        

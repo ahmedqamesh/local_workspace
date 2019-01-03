@@ -8,6 +8,6 @@ transfer_layer:
         timeout : 0.1
 
 hw_drivers:
-  - name      : MotorStage
-    type      : Scanning_01
+  - name      : ms
+    type      : motor_stage
     interface : Serial_ms

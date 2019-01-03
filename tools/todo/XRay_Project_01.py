@@ -161,75 +161,7 @@ class XRay(HardwareLayer):
         print self.read()
 
 # Part for Sensirion Thermohygrometer
-    def write_sensirion(self, command):
-        self._intf.write(binascii.a2b_hex(command))
-
-    def ask(self, command):
-        '''Read response to command and convert it to 16-bit integer.
-        Returns : list of values
-        '''
-        self.write_sensirion(command)
-        time.sleep(0.1)
-        return self.read_sensirion()
-
-    def read_sensirion(self):
-        Result = []
-        flg = 0
-        for i in range(1024):  # data assumed to be less than 1024 words
-            a = self._intf.read(size=1).encode('hex_codec')
-            if self.debug == 1:
-                print a,
-            if a == '':
-                if self.debug == 1:
-                    print "sensirionEKH4.read() timeout"
-                break
-            elif flg == 0 and a == '7e':
-                flg = 1
-            elif flg == 1 and a == '7e':
-                break
-            elif flg == 1:
-                Result.append(a)
-        if self.debug == 1:
-            print "----", Result
-        return Result
-
-    def get_temperature(self, min_val=-40, max_val=200):
-        ret = self.ask(r"7e4700b87e")
-        values = []
-        for j in range(4):
-            if ret[2 + 2 * j] == "7f" and ret[2 + 2 * j + 1] == "ff":
-                values.append(None)
-            else:
-                values.append(self.cal_ret(ret[2 + 2 * j] + ret[2 + 2 * j + 1]))
-        return values[0]
-
-    def get_humidity(self, min_val=0, max_val=100):
-        ret = self.ask(r"7e4600b97e")
-        values = []
-        for j in range(4):
-            if ret[2 + 2 * j] == "7f" and ret[2 + 2 * j + 1] == "ff":
-                values.append(None)
-            else:
-                values.append(self.cal_ret(ret[2 + 2 * j] + ret[2 + 2 * j + 1]))
-        return values[0]
-
-    def get_dew_point(self, min_val=-40, max_val=100):
-        ret = self.ask(r"7e4800b77e")
-        values = []
-        for j in range(4):
-            if ret[2 + 2 * j] == "7f" and ret[2 + 2 * j + 1] == "ff":
-                values.append(None)
-            else:
-                values.append(self.cal_ret(ret[2 + 2 * j] + ret[2 + 2 * j + 1]))
-        return values[0]
-
-    def cal_ret(self, value):
-        bits = 16
-        value = int(value, 16)
-        #"""compute the 2's compliment of int value"""
-        if (value & (1 << (bits - 1))) != 0:  # if sign bit is set e.g., 8bit: 128-255
-            value = value - (1 << bits)  # compute negative value
-        return float(value) / 100.0  # return positive value as is
+ 
 
 
 # Part For JulaboFP50_HP chiller

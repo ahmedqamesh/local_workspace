@@ -332,7 +332,7 @@ class Simulation():
 if __name__ == '__main__':
     global PdfPages
     Directory = "Simulation/"
-    colors = ['red', '#006381', 'orange', '#33D1FF', 'green', 'black', 'grey', '#7e0044', 'black', "maroon", "yellow", "magenta"]
+    colors = ['red', '#006381', "magenta",'#7e0044',"maroon",'grey','green', 'orange', '#33D1FF', 'black', '#7e0044', 'black', "yellow"]
     x_offset = [10.21, 7.3, 1.55, 2.3, 6.53, 8.5, 5.46, 17.99, 8.97]
     y_offset = [4500000, 3000000, 430, 3500, 550, 330, 700, 100, 275]
     n = [r'$\mathregular{L}{\mathregular{W}}-{I,II,III}$(10.21,11.54,12.1 KeV)',
@@ -350,26 +350,26 @@ if __name__ == '__main__':
     spectrum = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum", "Al-0.15mm-Spectrum", "RD53"]
     RD53_layers = ["RD53-No", "RD53"]
     filters = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum", "Al-150um-Spectrum", "Fe-150um-Spectrum", "Mn-150um-Spectrum", "Zr-150um-Spectrum", "Ni-150um-Spectrum", "V-150um-Spectrum"]
-    filters_machine = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum", "Al-150um-Spectrum"]  # ,"Zr-75um-Spectrum"]#, "Mn-25um-Spectrum", "Fe-15um-Spectrum" ,"Ni-15um-Spectrum","V-15um-Spectrum"]
+    filters_machine = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum","V-15um-Spectrum"]#"Ni-15um-Spectrum", "Fe-15um-Spectrum", "Mn-25um-Spectrum", "Al-150um-Spectrum" ,"Zr-75um-Spectrum" ,"Ni-15um-Spectrum"]
     PdfPages = PdfPages('output_data/SimulationCurve_Bonn' + '.pdf')
     scan = Simulation()
-    Geant4_empenelope_Diffenergys = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=energy, hist_id=["h3", "h3", "h3", "h3", "h3", "h3"], labels=energy,
-                                                      logy=True, colors=colors, location="Geant4_empenelope_DiffEnergys", title=False)
-    Geant4_DiffModels = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=models, hist_id=["h3", "h3", "h3"], labels=models, colors=colors,
-                                          logy=True, outputname="DiffModels", location="Geant4_DiffModels", title=False)
-    Geant4_RD53 = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=spectrum, hist_id=["28", "32", "32", "32"], labels=spectrum,
-                                    logy=True, Ratio=True, colors=colors, location="RD53", outputname="spectrum", title="Tungsten x-ray spectrum x-ray spectrum ")
+#     Geant4_empenelope_Diffenergys = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=energy, hist_id=["h3", "h3", "h3", "h3", "h3", "h3"], labels=energy,
+#                                                       logy=True, colors=colors, location="Geant4_empenelope_DiffEnergys", title=False)
+#     Geant4_DiffModels = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=models, hist_id=["h3", "h3", "h3"], labels=models, colors=colors,
+#                                           logy=True, outputname="DiffModels", location="Geant4_DiffModels", title=False)
+#     Geant4_RD53 = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=spectrum, hist_id=["28", "32", "32", "32"], labels=spectrum,
+#                                     logy=True, Ratio=True, colors=colors, location="RD53", outputname="spectrum", title="Tungsten x-ray spectrum x-ray spectrum ")
     Geant4_Filters = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=filters, hist_id=["28", "32", "32", "32", "32", "32", "32", "32", "32", "32"], labels=filters,
                                        logy=True, Ratio=False, location="Geant4_Filters", colors=colors,
                                        outputname="Diff_filters", title="Tungsten x-ray spectrum After Different Filters")
     Geant4_Filters = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=filters_machine, hist_id=["28", "32", "32", "32", "32", "32", "32", "32"], labels=filters_machine,
                                        logy=True, Ratio=False, location="machine_filters", colors=colors, outputname="machine_filters", title=False)
-    RD53 = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers, hist_id=["32", "32"], outputname="RD53", Ratio=True, colors=colors,
-                             labels=["Without metal layers", "With metal layers"], logy=True, location="RD53", title="Tungsten Spectrum on the last layer of RD53 module")
-    Secondary_electrons = scan.get_Secondary_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers, table=True,
-                                                      hist_id=["35", "37", "41", "42"], location="RD53", logy=True, logx=False, colors=colors,
-                                                      outputname="Secondary_electrons", title=["with metal layers", "without metal layers"])
-    tracklength = scan.get_track_length(Directory=Directory, PdfPages=PdfPages, test=["RD53"], hist_id=["39", "40"], location="RD53", logx=True, logy=True, colors=colors,
-                                        title="Secondary electrons produced in the Metal Layers",
-                                        outputname="Secondary_electrons_depth", xtitle="distance[mm]")
+#     RD53 = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers, hist_id=["32", "32"], outputname="RD53", Ratio=True, colors=colors,
+#                              labels=["Without metal layers", "With metal layers"], logy=True, location="RD53", title="Tungsten Spectrum on the last layer of RD53 module")
+#     Secondary_electrons = scan.get_Secondary_spectrum(Directory=Directory, PdfPages=PdfPages, test=RD53_layers, table=True,
+#                                                       hist_id=["35", "37", "41", "42"], location="RD53", logy=True, logx=False, colors=colors,
+#                                                       outputname="Secondary_electrons", title=["with metal layers", "without metal layers"])
+#     tracklength = scan.get_track_length(Directory=Directory, PdfPages=PdfPages, test=["RD53"], hist_id=["39", "40"], location="RD53", logx=True, logy=True, colors=colors,
+#                                         title="Secondary electrons produced in the Metal Layers",
+#                                         outputname="Secondary_electrons_depth", xtitle="distance[mm]")
     scan.close()

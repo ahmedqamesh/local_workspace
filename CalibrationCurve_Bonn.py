@@ -1,3 +1,4 @@
+from __future__ import division
 from kafe import *
 from kafe.function_library import quadratic_3par
 from numpy import loadtxt, arange
@@ -171,7 +172,57 @@ class Calibration_Curves():
 
         PdfPages.savefig()
 
-    def opening_angle(self, Directory=False, Unknown_diameter=np.linspace(3, 10.8, 30), PdfPages=False, tests=["without_Al_Filter"]):
+    def opening_angle(self, Directory=False, Unknown_diameter=np.linspace(3, 10, 20), PdfPages=False, tests=["without_Al_Filter"]):
+        '''
+        To get the estimated beam diameter relative to the depth
+        '''
+        for j in range(len(tests)):
+            Factor = 9.76  # Calibration Factor
+            r = []
+            h = []
+            with open(Directory + tests[j] +"/Dose_Depth/Dose_Depth_"+tests[j] +".csv", 'r')as data:
+                reader = csv.reader(data)
+                reader.next()
+                for row in reader:
+                    if (float(row[2]) < 100):  # missing data needed to be taken  in the future
+                        h = np.append(h, float(row[0]))  # Distance from the source
+                        r = np.append(r, float(row[2]))  # Diameter of the beam
+            fig2 = plt.figure()
+            fig2.add_subplot(111)
+            ax2 = plt.gca()
+            sig = [0.04 * r[k] for k in range(len(r))]
+            ax2.errorbar(h, r, xerr=0.0, yerr=sig, fmt='o', color='black', markersize=3)  # plot points
+            popt, pcov = curve_fit(self.linear, h, r, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(1, 1))
+            chisq2 = self.red_chisquare(np.array(r), self.linear(h, *popt), np.array(sig), popt)
+            line_fit_legend_entry = 'line fit: ax + b\n a=$%.2f\pm%.2f$\nb=$%.2f\pm%.2f$' % (popt[0], np.absolute(pcov[0][0]) ** 0.5, popt[1], np.absolute(pcov[1][1]) ** 0.5)
+            ax2.plot(h, self.linear(h, *popt),'-', lw=2, label=line_fit_legend_entry)
+            ax2.grid(True)
+            ax2.legend(loc="upper right")
+            ax2.set_ylabel('Radius (r) [cm]')
+            ax2.set_xlabel('Height from the the filter holder(h) [cm]')
+            fig2.savefig(Directory + tests[j] + '/opening_angle/Depth_radius_linear' + tests[j] + '.png', bbox_inches='tight')
+            PdfPages.savefig()
+            h_space= np.linspace(0,h[-1],50)
+            r_space = self.linear(h_space,*popt)
+            theta = np.degrees(popt[0])
+            fig = plt.figure()
+            fig.add_subplot(111)
+            ax = plt.gca()
+            for i in range(len(r_space)):
+                x, y = np.linspace(-r_space[i], r_space[i], 2) , [h_space[i] for _ in xrange(2)]
+                plt.plot(x, y, linestyle="solid")
+            ax.text(0.95, 0.90, "$\Theta^{rad}$ = %.2f\n $h_0$=%.2f$\pm$ %.2f" % (popt[0],popt[1]/popt[0],np.absolute(pcov[1][1]) ** 0.5/popt[0]),
+                    horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
+                    bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
+            #ax.set_title('Diameter covered by beam spot %s'%(tests[j]), fontsize=12)
+            ax.invert_yaxis()
+            ax.set_xlabel('Diameter (d) [cm]')
+            ax.set_ylabel('Height from the the exit window(h) [cm]')
+            ax.grid(True)
+            fig.savefig(Directory + tests[j] + '/opening_angle/Depth_Diameter_' + tests[j] + '.png', bbox_inches='tight')
+            PdfPages.savefig()
+            
+    def opening_angle2(self, Directory=False, Unknown_diameter=np.linspace(3, 10, 20), PdfPages=False, tests=["without_Al_Filter"]):
         '''
         To get the estimated beam diameter relative to the depth
         '''
@@ -193,8 +244,6 @@ class Calibration_Curves():
             fig.add_subplot(111)
             ax = plt.gca()
             Factor = 9.76  # Calibration Factor
-            y1 = []
-            r1 = []
             diameter = []
             height = []
             with open(Directory + tests[j] +"/Dose_Depth/Dose_Depth_"+tests[j] +".csv", 'r')as data:
@@ -206,27 +255,26 @@ class Calibration_Curves():
                         diameter = np.append(diameter, float(row[2]) * 2)  # Diameter of the beam
             # calculate the focal point (distance between focal point and window)
             hpf = []
-            for l in range(len(diameter)):
+            for l in range(len(diameter[0:4])):
                 _, Theta = New_height(dx=diameter[l], diameter=diameter, height=height)
                 hpf = np.append(hpf, np.float(diameter[l] / 2.0) / np.float(np.tan(np.mean(Theta / 2))) - height[l])  # hpf=r/tan(theta/2)-h
+                print hpf[l], diameter[l], height[l]
             # Unknown_diameter is an array of all the diameters that we might need in irradiation
             #(simply substitute any number ther with your prefered value)
-
             for k in range(len(Unknown_diameter)):
                 Unknown_height, Theta = New_height(dx=Unknown_diameter[k], diameter=diameter, height=height)
                 diameter = np.append(diameter, Unknown_diameter[k])
                 height = np.append(height, Unknown_height)
             # print Unknown_height,height # Theta    ,diameter
+            #plot the cone represents the beam angle   
             for i in range(len(diameter)):
                 x = np.linspace(-diameter[i] / 2.0, diameter[i] / 2.0, 10)  # make 10 points of radius from -r to r to draw the line
-                y = np.arange(height[i] / 10.0, height[i] + height[i] / 10.0, height[i] / 10.0)  # make 10 points of height from -r to r to draw the line
-
-                if i <= 4:  # These values are measured experimentaly
+                y = [height[i] for _ in xrange(10)]
+                if i <= 6:  # These values are measured experimentaly
                     linestyle = "solid"
                 else:
                     linestyle = "dashed"  # These are Theoritical values
-                plt.plot(x, self.linear(y, m=0, c=height[i]), linestyle=linestyle)
-
+                plt.plot(x, y, linestyle=linestyle)
             ax.text(0.95, 0.90, "$\Theta$ = %.2f$\pm$ %.2f\n $h_{fp}$=%.2f$\pm$ %.2f" % (np.mean(Theta), np.std(Theta), np.mean(hpf), np.std(hpf)),
                     horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
                     bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
@@ -237,8 +285,25 @@ class Calibration_Curves():
             ax.grid(True)
             fig.savefig(Directory + tests[j] + '/opening_angle/Depth_Diameter_' + tests[j] + '.png', bbox_inches='tight')
             PdfPages.savefig()
-
-    def Dose_Depth(self, Directory=False, colors=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.2, tests=["without_Al_Filter"], theta=0.16):
+            fig2 = plt.figure()
+            fig2.add_subplot(111)
+            ax2 = plt.gca()
+            d =diameter[:6]
+            h = height[:6]
+            sig = [0.01 * h[k] for k in range(len(d))]
+            ax2.errorbar(h, d, xerr=0.0, yerr=sig, fmt='o', color='black', markersize=3)  # plot points
+            line_fit, pcov = np.polyfit(h, d, 1, full=False, cov=True)
+            fit_fn = np.poly1d(line_fit)
+            line_fit_legend_entry = 'line fit: ax + b\n a=$%.2f\pm%.2f$\nb=$%.2f\pm%.2f$' % (line_fit[0], np.absolute(pcov[0][0]) ** 0.5, line_fit[1], np.absolute(pcov[1][1]) ** 0.5)
+            ax2.plot(h, fit_fn(h), '-', lw=2, label=line_fit_legend_entry)
+            ax2.grid(True)
+            ax2.legend(loc="upper right")
+            ax2.set_ylabel('Diameter (d) [cm]')
+            ax2.set_xlabel('Height from the the exit window(h) [cm]')
+            fig.savefig(Directory + tests[j] + '/opening_angle/Depth_Diameter_linear' + tests[j] + '.png', bbox_inches='tight')
+            PdfPages.savefig()
+            
+    def Dose_Depth(self, Directory=False, colors=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.6, tests=["without_Al_Filter"], theta=0.16):
         '''
         Relation between the depth and  the Dose rate
         '''
@@ -256,17 +321,18 @@ class Calibration_Curves():
                 reader.next()
                 for row in reader:
                     height = np.append(height, float(row[0]))  # Distance from the source
-                    y1 = np.append(y1, (float(row[1])) * Factor)  # Dose rate
+                    y1 = np.append(y1, (float(row[1])))  # Dose rate
                     r1 = np.append(r1, float(row[2]))  # radius of the beam
                     d1 = np.append(d1, float(row[2]) * 2)  # Diameter of the beam
-                    b1 = np.append(b1, (float(row[3])) * Factor)  # Background
+                    b1 = np.append(b1, (float(row[3])) )  # Background
             y1 = [y1[k] - b1[k] for k in range(len(y1))]  # Subtrac Background
             sig = [stdev * y1[k] for k in range(len(y1))]
-            xfine = np.linspace(height[0], height[-1], 100)  # define values to plot the function for
+            y1 = [y1[k]* Factor for k in range(len(y1))]  
             popt1, pcov = curve_fit(self.Inverse_square, height, y1, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(300, 10))
-            chisq1 = self.red_chisquare(np.array(y1), self.Inverse_square(np.array(height), *popt1), sig, popt1)
+            #chisq1 = self.red_chisquare(np.array(y1), self.Inverse_square(np.array(height), *popt1), sig, popt1)
             ax.errorbar(height, y1, yerr=sig, color=colors[i + 1], fmt='o', label=tests[i])
-            ax.plot(xfine, self.Inverse_square(xfine, *popt1), colors[i + 1], label='Fit: a=%.2f, b=%.2f \n $\chi^2_{red}$ =%.2f' % (popt1[0], popt1[1], chisq1))
+            xfine = np.linspace(0, height[-1], 100)  # define values to plot the function
+            ax.plot(xfine, self.Inverse_square(xfine, *popt1), colors[i + 1], label='Fit: a=%.2f, b=%.2f' % (popt1[0], popt1[1]))
             ax.text(0.9, 0.56, r'$R= \frac{a}{(h+b)^2}$',
                     horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
                     bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.6))
@@ -419,7 +485,7 @@ if __name__ == '__main__':
     colors = ['#33D1FF', 'maroon', '#006381', 'green', 'orange', 'red']
     scan = Calibration_Curves()
 #     scan.Plot_Beam_profile_2d(Scan_file=Scan_file, Steps=200, width=20)
-#     scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
+    #scan.Plot_Beam_profile_3d(Scan_file=Scan_file, Steps=200, width=20)
     PdfPages = PdfPages('output_data/CalibrationCurve_Bonn' + '.pdf')
     #scan.calibration_curve(stdev=0.04, PdfPages=PdfPages, Directory=Directory)
     scan.opening_angle(Directory=Directory, PdfPages=PdfPages, tests=["without_Al_Filter"])
