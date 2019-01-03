@@ -65,10 +65,11 @@ def beamspot(size_x=60000, z=3, x_Delay=2, x=5,intialise=False,
             dut["ms"].read_write("MR%d" % (size_x), address=1) # x 50000,100,50 = 4.5 cm
             time.sleep(x_Delay)
             beamspot[step_z,step_x] = float(current)
+            plt.imshow(beamspot, aspect='auto', origin='lower', interpolation='gaussian', cmap=plt.get_cmap('tab20c'))
+            plt.pause(0.05)
             print beamspot[step_z,step_x],step_x,step_z
         dut["ms"].read_write("MR%d" % (size_x), address=3)  # x# x 50000,100,50 = 4.5 cm 
-    
-    
+    plt.show()
     t0 = time.time()
     if intialise:
         dut["ms"]._write_command("FE1,RP", address=3)  # Search starts in negative direction (To start from the extreme left)
@@ -89,6 +90,8 @@ step2: show GUI to control the motor stage
 '''
 Directory = "/home/silab62/git/XrayMachine_Bonn/tools/motorsatge/"
 #Restore_intial_positions()
-beamspot(Directory=Directory)
+#beamspot(Directory=Directory)
+
+
 #scan.Plan(Size_x=20000, Steps=442, width=20, Sourcemeter=True, Motor_Delay=2)
 #scan.Plan2(Size_x=20000, Steps=150, width=50, Sourcemeter=True, Motor_Delay=2)
