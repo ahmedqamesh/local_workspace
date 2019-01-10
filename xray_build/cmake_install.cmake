@@ -1,4 +1,4 @@
-# Install script for directory: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test
+# Install script for directory: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

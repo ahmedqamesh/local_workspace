@@ -2,7 +2,7 @@ transfer_layer:
   - name     : Serial_th
     type     : Serial
     init     :
-        port     : /dev/ttyUSB2
+        port     : /dev/ttyUSB4
         read_termination : ""
         baudrate : 115200
         timeout : 2.0
@@ -10,7 +10,7 @@ transfer_layer:
   - name     : Serial
     type     : Serial
     init     :
-        port     : /dev/ttyUSB1
+        port     : /dev/ttyUSB3
         read_termination : "\r"
         baudrate : 19200  
 
@@ -19,8 +19,8 @@ hw_drivers:
     type      : temprature_sensor
     interface : Serial_th
 
-  - name      : ts
-    type      : temprature_sensor
+  - name      : sm
+    type      : sourcemeter
     interface : Serial
     init      :
         device : Keithley 2400

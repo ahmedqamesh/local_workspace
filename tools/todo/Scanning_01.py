@@ -40,14 +40,12 @@ class Scanning(HardwareLayer):
         if msg:
             with self.lock:
                 msg = value + '\r'  # msg has CR at the end
-                # print str(msg)
+                #print str(msg)
                 answer = self._intf.write(str(msg))
                 # print answer
         else:
             answer = self._intf.write(str(value))
-
         return answer
-
     def read(self):
         answer = self._intf._readline()
         return answer

@@ -375,11 +375,11 @@ CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/HEP/geant4.10.01-install/
 CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/Xray_Test.cc
-CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/ActionInitialization.hh
-CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PhysicsList.hh
-CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/SteppingVerbose.hh
+CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/Xray_Test.cc
+CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/ActionInitialization.hh
+CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PhysicsList.hh
+CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/SteppingVerbose.hh
 
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -607,17 +607,17 @@ CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/HEP/geant4
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/ActionInitialization.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EventAction.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PrimaryGeneratorAction.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/RunAction.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StackingAction.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/SteppingAction.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/SteppingVerbose.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackingAction.hh
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/ActionInitialization.cc
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/ActionInitialization.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/EventAction.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PrimaryGeneratorAction.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/RunAction.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StackingAction.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/SteppingAction.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/SteppingVerbose.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackingAction.hh
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/ActionInitialization.cc
 
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -939,11 +939,11 @@ CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/HEP/geant4.10.0
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tools/zfunc
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/AnalysisManager.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/AnalysisMessenger.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DataSet.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisManager.cc
+CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/AnalysisManager.hh
+CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/AnalysisMessenger.hh
+CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DataSet.hh
+CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisManager.cc
 
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/SystemOfUnits.h
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/defs.h
@@ -970,10 +970,10 @@ CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/HEP/geant4.10
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/globals.hh
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/AnalysisManager.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/AnalysisMessenger.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DataSet.hh
-CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisMessenger.cc
+CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/AnalysisManager.hh
+CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/AnalysisMessenger.hh
+CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DataSet.hh
+CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/SystemOfUnits.h
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/defs.h
@@ -989,8 +989,8 @@ CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/HEP/geant4.10.01-instal
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/globals.hh
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
-CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DataSet.hh
-CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DataSet.cc
+CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DataSet.hh
+CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DataSet.cc
 
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -1335,11 +1335,11 @@ CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorMessenger.hh
-CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerSD.hh
-CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorConstruction.cc
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorMessenger.hh
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerSD.hh
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorConstruction.cc
 
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -1417,9 +1417,9 @@ CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorMessenger.hh
-CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorMessenger.cc
+CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorMessenger.hh
+CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4ExceptionSeverity.hh
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/G4String.hh
@@ -1429,8 +1429,8 @@ CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/HEP/geant4.10.01-i
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/globals.hh
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
-CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EmAcceptance.hh
-CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EmAcceptance.cc
+CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/EmAcceptance.hh
+CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EmAcceptance.cc
 
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -1846,12 +1846,12 @@ CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/HEP/geant4.10.01-in
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkgdefs.hh
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EventAction.hh
-CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Run.hh
-CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EventAction.cc
+CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/EventAction.hh
+CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Run.hh
+CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EventAction.cc
 
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -2017,9 +2017,9 @@ CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/HEP/geant4.10.01-i
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tools/wroot/wbuf
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tools/zfunc
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/HistoManager.cc
+CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/HistoManager.cc
 
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/SystemOfUnits.h
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/defs.h
@@ -2037,9 +2037,9 @@ CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/HEP/geant4.10.01-
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/globals.hh
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
-CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DataSet.hh
-CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Normalization.hh
-CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Normalization.cc
+CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DataSet.hh
+CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Normalization.hh
+CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Normalization.cc
 
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Random/DRand48Engine.h
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Random/DualRand.h
@@ -2343,8 +2343,8 @@ CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/HEP/geant4.1
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PhysListEmStandard.hh
-CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysListEmStandard.cc
+CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PhysListEmStandard.hh
+CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysListEmStandard.cc
 
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -2618,12 +2618,12 @@ CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/HEP/geant4.10.01-in
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PhysListEmStandard.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PhysicsList.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PhysicsListMessenger.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StepMax.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsList.cc
+CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PhysListEmStandard.hh
+CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PhysicsList.hh
+CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PhysicsListMessenger.hh
+CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StepMax.hh
+CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsList.cc
 
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/PhysicalConstants.h
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/SystemOfUnits.h
@@ -2673,9 +2673,9 @@ CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/HEP/geant4
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PhysicsList.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PhysicsListMessenger.hh
-CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsListMessenger.cc
+CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PhysicsList.hh
+CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PhysicsListMessenger.hh
+CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsListMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -3077,15 +3077,15 @@ CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/HEP/gean
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/AnalysisManager.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/AnalysisMessenger.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DataSet.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PrimaryGeneratorAction.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PrimaryGeneratorMessenger.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/RunAction.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorAction.cc
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/AnalysisManager.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/AnalysisMessenger.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DataSet.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PrimaryGeneratorAction.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PrimaryGeneratorMessenger.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/RunAction.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/PhysicalConstants.h
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Units/SystemOfUnits.h
@@ -3129,9 +3129,9 @@ CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/HEP/g
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PrimaryGeneratorAction.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PrimaryGeneratorMessenger.hh
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorMessenger.cc
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PrimaryGeneratorAction.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PrimaryGeneratorMessenger.hh
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -3368,12 +3368,12 @@ CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/HEP/geant4.10.01-install/in
 CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tools/zfunc
 CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EmAcceptance.hh
-CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PrimaryGeneratorAction.hh
-CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Run.hh
-CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Run.cc
+CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/EmAcceptance.hh
+CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PrimaryGeneratorAction.hh
+CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Run.hh
+CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Run.cc
 
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -3776,15 +3776,15 @@ CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-inst
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DataSet.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Normalization.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/PrimaryGeneratorAction.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Run.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/RunAction.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/RunActionMessenger.hh
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunAction.cc
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DataSet.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Normalization.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/PrimaryGeneratorAction.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Run.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/RunAction.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/RunActionMessenger.hh
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunAction.cc
 
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Vector/ThreeVector.h
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Vector/ThreeVector.icc
@@ -3807,9 +3807,9 @@ CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.1
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/globals.hh
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
-CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/RunAction.hh
-CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/RunActionMessenger.hh
-CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunActionMessenger.cc
+CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/RunAction.hh
+CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/RunActionMessenger.hh
+CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunActionMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -4211,15 +4211,15 @@ CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/HEP/geant4.10.01
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EventAction.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Run.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/RunAction.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StackingAction.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StackingMessenger.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingAction.cc
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/EventAction.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Run.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/RunAction.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StackingAction.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StackingMessenger.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingAction.cc
 
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Vector/ThreeVector.h
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Vector/ThreeVector.icc
@@ -4242,9 +4242,9 @@ CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/HEP/geant4.10
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/globals.hh
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
-CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StackingAction.hh
-CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StackingMessenger.hh
-CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingMessenger.cc
+CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StackingAction.hh
+CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StackingMessenger.hh
+CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -4462,10 +4462,10 @@ CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/HEP/geant4.10.01-instal
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StepMax.hh
-CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StepMaxMessenger.hh
-CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMax.cc
+CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StepMax.hh
+CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StepMaxMessenger.hh
+CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMax.cc
 
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -4683,10 +4683,10 @@ CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/HEP/geant4.10.
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StepMax.hh
-CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/StepMaxMessenger.hh
-CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMaxMessenger.cc
+CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StepMax.hh
+CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/StepMaxMessenger.hh
+CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMaxMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -5087,13 +5087,13 @@ CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/HEP/geant4.10.01
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EventAction.hh
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Run.hh
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/SteppingAction.hh
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingAction.cc
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/EventAction.hh
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Run.hh
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/SteppingAction.hh
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingAction.cc
 
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Random/DRand48Engine.h
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Random/DualRand.h
@@ -5426,8 +5426,8 @@ CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/HEP/geant4.10.0
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/SteppingVerbose.hh
-CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingVerbose.cc
+CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/SteppingVerbose.hh
+CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingVerbose.cc
 
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -5486,8 +5486,8 @@ CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/HEP/geant4.10.01-ins
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/globals.hh
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/templates.hh
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/tls.hh
-CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerHit.cc
+CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerHit.cc
 
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -5889,11 +5889,11 @@ CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/HEP/geant4.10.01-inst
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerSD.hh
-CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerSD.cc
+CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerSD.hh
+CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerSD.cc
 
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/BasicVector3D.h
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/HEP/Tools/clhep/install/include/CLHEP/Geometry/Normal3D.h
@@ -6292,11 +6292,11 @@ CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/HEP/geant4.10.01
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trajectoryControl.hh
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/trkdefs.hh
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/HEP/geant4.10.01-install/include/Geant4/windefs.hh
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/DetectorConstruction.hh
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/EventAction.hh
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/HistoManager.hh
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/Run.hh
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackerHit.hh
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/include/TrackingAction.hh
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackingAction.cc
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/DetectorConstruction.hh
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/EventAction.hh
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/HistoManager.hh
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/Run.hh
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackerHit.hh
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/include/TrackingAction.hh
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackingAction.cc
 

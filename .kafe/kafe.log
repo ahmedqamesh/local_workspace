@@ -11,3 +11,10 @@ kafe 2018-12-29 21:52:20,404 :: WARNING :: More than one Fit in the same Plot de
 kafe 2018-12-29 21:55:39,565 :: WARNING :: More than one Fit in the same Plot detected. In this case, axis labels default to `x` and `y` and must be set explicitly if something different is desired.
 matplotlib.legend 2019-01-01 14:07:21,993 :: WARNING :: No handles with labels found to put in legend.
 matplotlib.legend 2019-01-01 14:07:41,126 :: WARNING :: No handles with labels found to put in legend.
+kafe 2019-01-04 19:03:51,246 :: WARNING :: Default values not provided for any parameters of function <Inverse_square>. Setting all default parameter values to 1.0.
+matplotlib.legend 2019-01-04 23:05:26,118 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-04 23:05:43,141 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-04 23:05:54,994 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-04 23:06:05,114 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-04 23:20:39,835 :: WARNING :: No handles with labels found to put in legend.
+kafe 2019-01-08 08:25:47,319 :: WARNING :: More than one Fit in the same Plot detected. In this case, axis labels default to `x` and `y` and must be set explicitly if something different is desired.

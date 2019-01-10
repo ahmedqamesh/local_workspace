@@ -175,7 +175,7 @@ WITH_GEANT4_UIVIS:BOOL=ON
 Xray_Test_BINARY_DIR:STATIC=/home/silab62/git/XrayMachine_Bonn/xray_build
 
 //Value Computed by CMake
-Xray_Test_SOURCE_DIR:STATIC=/home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test
+Xray_Test_SOURCE_DIR:STATIC=/home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test
 
 
 ########################
@@ -250,7 +250,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

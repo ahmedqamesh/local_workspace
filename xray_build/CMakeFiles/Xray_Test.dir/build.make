@@ -43,7 +43,7 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test
+CMAKE_SOURCE_DIR = /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/silab62/git/XrayMachine_Bonn/xray_build
@@ -58,17 +58,17 @@ include CMakeFiles/Xray_Test.dir/progress.make
 include CMakeFiles/Xray_Test.dir/flags.make
 
 CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/Xray_Test.cc
+CMakeFiles/Xray_Test.dir/Xray_Test.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/Xray_Test.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Xray_Test.dir/Xray_Test.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/Xray_Test.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/Xray_Test.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/Xray_Test.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/Xray_Test.cc
 
 CMakeFiles/Xray_Test.dir/Xray_Test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/Xray_Test.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/Xray_Test.cc > CMakeFiles/Xray_Test.dir/Xray_Test.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/Xray_Test.cc > CMakeFiles/Xray_Test.dir/Xray_Test.cc.i
 
 CMakeFiles/Xray_Test.dir/Xray_Test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/Xray_Test.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/Xray_Test.cc -o CMakeFiles/Xray_Test.dir/Xray_Test.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/Xray_Test.cc -o CMakeFiles/Xray_Test.dir/Xray_Test.cc.s
 
 CMakeFiles/Xray_Test.dir/Xray_Test.cc.o.requires:
 
@@ -82,17 +82,17 @@ CMakeFiles/Xray_Test.dir/Xray_Test.cc.o.provides.build: CMakeFiles/Xray_Test.dir
 
 
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisMessenger.cc
+CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisMessenger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisMessenger.cc > CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisMessenger.cc > CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.i
 
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisMessenger.cc -o CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisMessenger.cc -o CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.s
 
 CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o.requires:
 
@@ -106,17 +106,17 @@ CMakeFiles/Xray_Test.dir/src/AnalysisMessenger.cc.o.provides.build: CMakeFiles/X
 
 
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysListEmStandard.cc
+CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysListEmStandard.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysListEmStandard.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysListEmStandard.cc
 
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysListEmStandard.cc > CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysListEmStandard.cc > CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.i
 
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysListEmStandard.cc -o CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysListEmStandard.cc -o CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.s
 
 CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o.requires:
 
@@ -130,17 +130,17 @@ CMakeFiles/Xray_Test.dir/src/PhysListEmStandard.cc.o.provides.build: CMakeFiles/
 
 
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Normalization.cc
+CMakeFiles/Xray_Test.dir/src/Normalization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Normalization.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Xray_Test.dir/src/Normalization.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/Normalization.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Normalization.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/Normalization.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Normalization.cc
 
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/Normalization.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Normalization.cc > CMakeFiles/Xray_Test.dir/src/Normalization.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Normalization.cc > CMakeFiles/Xray_Test.dir/src/Normalization.cc.i
 
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/Normalization.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Normalization.cc -o CMakeFiles/Xray_Test.dir/src/Normalization.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Normalization.cc -o CMakeFiles/Xray_Test.dir/src/Normalization.cc.s
 
 CMakeFiles/Xray_Test.dir/src/Normalization.cc.o.requires:
 
@@ -154,17 +154,17 @@ CMakeFiles/Xray_Test.dir/src/Normalization.cc.o.provides.build: CMakeFiles/Xray_
 
 
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorMessenger.cc
+CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorMessenger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorMessenger.cc > CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorMessenger.cc > CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.i
 
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorMessenger.cc -o CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorMessenger.cc -o CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.s
 
 CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o.requires:
 
@@ -178,17 +178,17 @@ CMakeFiles/Xray_Test.dir/src/DetectorMessenger.cc.o.provides.build: CMakeFiles/X
 
 
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsList.cc
+CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsList.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsList.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsList.cc
 
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsList.cc > CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsList.cc > CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.i
 
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsList.cc -o CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsList.cc -o CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.s
 
 CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o.requires:
 
@@ -202,17 +202,17 @@ CMakeFiles/Xray_Test.dir/src/PhysicsList.cc.o.provides.build: CMakeFiles/Xray_Te
 
 
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingAction.cc
+CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingAction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingAction.cc
 
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/StackingAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingAction.cc > CMakeFiles/Xray_Test.dir/src/StackingAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingAction.cc > CMakeFiles/Xray_Test.dir/src/StackingAction.cc.i
 
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/StackingAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingAction.cc -o CMakeFiles/Xray_Test.dir/src/StackingAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingAction.cc -o CMakeFiles/Xray_Test.dir/src/StackingAction.cc.s
 
 CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o.requires:
 
@@ -226,17 +226,17 @@ CMakeFiles/Xray_Test.dir/src/StackingAction.cc.o.provides.build: CMakeFiles/Xray
 
 
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsListMessenger.cc
+CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsListMessenger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsListMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsListMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsListMessenger.cc > CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsListMessenger.cc > CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.i
 
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PhysicsListMessenger.cc -o CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PhysicsListMessenger.cc -o CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.s
 
 CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o.requires:
 
@@ -250,17 +250,17 @@ CMakeFiles/Xray_Test.dir/src/PhysicsListMessenger.cc.o.provides.build: CMakeFile
 
 
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/ActionInitialization.cc
+CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/ActionInitialization.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/ActionInitialization.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/ActionInitialization.cc
 
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/ActionInitialization.cc > CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/ActionInitialization.cc > CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/ActionInitialization.cc -o CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/ActionInitialization.cc -o CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o.requires:
 
@@ -274,17 +274,17 @@ CMakeFiles/Xray_Test.dir/src/ActionInitialization.cc.o.provides.build: CMakeFile
 
 
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DataSet.cc
+CMakeFiles/Xray_Test.dir/src/DataSet.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DataSet.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Xray_Test.dir/src/DataSet.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/DataSet.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DataSet.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/DataSet.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DataSet.cc
 
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/DataSet.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DataSet.cc > CMakeFiles/Xray_Test.dir/src/DataSet.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DataSet.cc > CMakeFiles/Xray_Test.dir/src/DataSet.cc.i
 
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/DataSet.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DataSet.cc -o CMakeFiles/Xray_Test.dir/src/DataSet.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DataSet.cc -o CMakeFiles/Xray_Test.dir/src/DataSet.cc.s
 
 CMakeFiles/Xray_Test.dir/src/DataSet.cc.o.requires:
 
@@ -298,17 +298,17 @@ CMakeFiles/Xray_Test.dir/src/DataSet.cc.o.provides.build: CMakeFiles/Xray_Test.d
 
 
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EmAcceptance.cc
+CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EmAcceptance.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EmAcceptance.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EmAcceptance.cc
 
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EmAcceptance.cc > CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EmAcceptance.cc > CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.i
 
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EmAcceptance.cc -o CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EmAcceptance.cc -o CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.s
 
 CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o.requires:
 
@@ -322,17 +322,17 @@ CMakeFiles/Xray_Test.dir/src/EmAcceptance.cc.o.provides.build: CMakeFiles/Xray_T
 
 
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMax.cc
+CMakeFiles/Xray_Test.dir/src/StepMax.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMax.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Xray_Test.dir/src/StepMax.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StepMax.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMax.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StepMax.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMax.cc
 
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/StepMax.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMax.cc > CMakeFiles/Xray_Test.dir/src/StepMax.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMax.cc > CMakeFiles/Xray_Test.dir/src/StepMax.cc.i
 
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/StepMax.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMax.cc -o CMakeFiles/Xray_Test.dir/src/StepMax.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMax.cc -o CMakeFiles/Xray_Test.dir/src/StepMax.cc.s
 
 CMakeFiles/Xray_Test.dir/src/StepMax.cc.o.requires:
 
@@ -346,17 +346,17 @@ CMakeFiles/Xray_Test.dir/src/StepMax.cc.o.provides.build: CMakeFiles/Xray_Test.d
 
 
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingVerbose.cc
+CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingVerbose.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingVerbose.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingVerbose.cc
 
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingVerbose.cc > CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingVerbose.cc > CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.i
 
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingVerbose.cc -o CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingVerbose.cc -o CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.s
 
 CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o.requires:
 
@@ -370,17 +370,17 @@ CMakeFiles/Xray_Test.dir/src/SteppingVerbose.cc.o.provides.build: CMakeFiles/Xra
 
 
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunAction.cc
+CMakeFiles/Xray_Test.dir/src/RunAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Xray_Test.dir/src/RunAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/RunAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunAction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/RunAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunAction.cc
 
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/RunAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunAction.cc > CMakeFiles/Xray_Test.dir/src/RunAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunAction.cc > CMakeFiles/Xray_Test.dir/src/RunAction.cc.i
 
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/RunAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunAction.cc -o CMakeFiles/Xray_Test.dir/src/RunAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunAction.cc -o CMakeFiles/Xray_Test.dir/src/RunAction.cc.s
 
 CMakeFiles/Xray_Test.dir/src/RunAction.cc.o.requires:
 
@@ -394,17 +394,17 @@ CMakeFiles/Xray_Test.dir/src/RunAction.cc.o.provides.build: CMakeFiles/Xray_Test
 
 
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMaxMessenger.cc
+CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMaxMessenger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMaxMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMaxMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMaxMessenger.cc > CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMaxMessenger.cc > CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.i
 
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StepMaxMessenger.cc -o CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StepMaxMessenger.cc -o CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.s
 
 CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o.requires:
 
@@ -418,17 +418,17 @@ CMakeFiles/Xray_Test.dir/src/StepMaxMessenger.cc.o.provides.build: CMakeFiles/Xr
 
 
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/HistoManager.cc
+CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/HistoManager.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/HistoManager.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/HistoManager.cc
 
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/HistoManager.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/HistoManager.cc > CMakeFiles/Xray_Test.dir/src/HistoManager.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/HistoManager.cc > CMakeFiles/Xray_Test.dir/src/HistoManager.cc.i
 
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/HistoManager.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/HistoManager.cc -o CMakeFiles/Xray_Test.dir/src/HistoManager.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/HistoManager.cc -o CMakeFiles/Xray_Test.dir/src/HistoManager.cc.s
 
 CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o.requires:
 
@@ -442,17 +442,17 @@ CMakeFiles/Xray_Test.dir/src/HistoManager.cc.o.provides.build: CMakeFiles/Xray_T
 
 
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackingAction.cc
+CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackingAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackingAction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackingAction.cc
 
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackingAction.cc > CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackingAction.cc > CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.i
 
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackingAction.cc -o CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackingAction.cc -o CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.s
 
 CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o.requires:
 
@@ -466,17 +466,17 @@ CMakeFiles/Xray_Test.dir/src/TrackingAction.cc.o.provides.build: CMakeFiles/Xray
 
 
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerSD.cc
+CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerSD.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerSD.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerSD.cc
 
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerSD.cc > CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerSD.cc > CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.i
 
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerSD.cc -o CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerSD.cc -o CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.s
 
 CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o.requires:
 
@@ -490,17 +490,17 @@ CMakeFiles/Xray_Test.dir/src/TrackerSD.cc.o.provides.build: CMakeFiles/Xray_Test
 
 
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisManager.cc
+CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisManager.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisManager.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisManager.cc
 
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisManager.cc > CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisManager.cc > CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.i
 
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/AnalysisManager.cc -o CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/AnalysisManager.cc -o CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.s
 
 CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o.requires:
 
@@ -514,17 +514,17 @@ CMakeFiles/Xray_Test.dir/src/AnalysisManager.cc.o.provides.build: CMakeFiles/Xra
 
 
 CMakeFiles/Xray_Test.dir/src/Run.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Run.cc
+CMakeFiles/Xray_Test.dir/src/Run.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Run.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Xray_Test.dir/src/Run.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/Run.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Run.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/Run.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Run.cc
 
 CMakeFiles/Xray_Test.dir/src/Run.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/Run.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Run.cc > CMakeFiles/Xray_Test.dir/src/Run.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Run.cc > CMakeFiles/Xray_Test.dir/src/Run.cc.i
 
 CMakeFiles/Xray_Test.dir/src/Run.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/Run.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/Run.cc -o CMakeFiles/Xray_Test.dir/src/Run.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/Run.cc -o CMakeFiles/Xray_Test.dir/src/Run.cc.s
 
 CMakeFiles/Xray_Test.dir/src/Run.cc.o.requires:
 
@@ -538,17 +538,17 @@ CMakeFiles/Xray_Test.dir/src/Run.cc.o.provides.build: CMakeFiles/Xray_Test.dir/s
 
 
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EventAction.cc
+CMakeFiles/Xray_Test.dir/src/EventAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EventAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Xray_Test.dir/src/EventAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/EventAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EventAction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/EventAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EventAction.cc
 
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/EventAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EventAction.cc > CMakeFiles/Xray_Test.dir/src/EventAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EventAction.cc > CMakeFiles/Xray_Test.dir/src/EventAction.cc.i
 
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/EventAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/EventAction.cc -o CMakeFiles/Xray_Test.dir/src/EventAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/EventAction.cc -o CMakeFiles/Xray_Test.dir/src/EventAction.cc.s
 
 CMakeFiles/Xray_Test.dir/src/EventAction.cc.o.requires:
 
@@ -562,17 +562,17 @@ CMakeFiles/Xray_Test.dir/src/EventAction.cc.o.provides.build: CMakeFiles/Xray_Te
 
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorMessenger.cc
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorMessenger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorMessenger.cc > CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorMessenger.cc > CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.i
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorMessenger.cc -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorMessenger.cc -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.s
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o.requires:
 
@@ -586,17 +586,17 @@ CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorMessenger.cc.o.provides.build: CMak
 
 
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingMessenger.cc
+CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingMessenger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingMessenger.cc > CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingMessenger.cc > CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.i
 
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/StackingMessenger.cc -o CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/StackingMessenger.cc -o CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.s
 
 CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o.requires:
 
@@ -610,17 +610,17 @@ CMakeFiles/Xray_Test.dir/src/StackingMessenger.cc.o.provides.build: CMakeFiles/X
 
 
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunActionMessenger.cc
+CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunActionMessenger.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunActionMessenger.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunActionMessenger.cc
 
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunActionMessenger.cc > CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunActionMessenger.cc > CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.i
 
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/RunActionMessenger.cc -o CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/RunActionMessenger.cc -o CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.s
 
 CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o.requires:
 
@@ -634,17 +634,17 @@ CMakeFiles/Xray_Test.dir/src/RunActionMessenger.cc.o.provides.build: CMakeFiles/
 
 
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorConstruction.cc
+CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorConstruction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorConstruction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorConstruction.cc
 
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorConstruction.cc > CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorConstruction.cc > CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/DetectorConstruction.cc -o CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/DetectorConstruction.cc -o CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.s
 
 CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o.requires:
 
@@ -658,17 +658,17 @@ CMakeFiles/Xray_Test.dir/src/DetectorConstruction.cc.o.provides.build: CMakeFile
 
 
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingAction.cc
+CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingAction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingAction.cc
 
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingAction.cc > CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingAction.cc > CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.i
 
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/SteppingAction.cc -o CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/SteppingAction.cc -o CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.s
 
 CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o.requires:
 
@@ -682,17 +682,17 @@ CMakeFiles/Xray_Test.dir/src/SteppingAction.cc.o.provides.build: CMakeFiles/Xray
 
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorAction.cc
+CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorAction.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorAction.cc > CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorAction.cc > CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/PrimaryGeneratorAction.cc -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/PrimaryGeneratorAction.cc -o CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.s
 
 CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o.requires:
 
@@ -706,17 +706,17 @@ CMakeFiles/Xray_Test.dir/src/PrimaryGeneratorAction.cc.o.provides.build: CMakeFi
 
 
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: CMakeFiles/Xray_Test.dir/flags.make
-CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerHit.cc
+CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o: /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerHit.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerHit.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o -c /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerHit.cc
 
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerHit.cc > CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerHit.cc > CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.i
 
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test/src/TrackerHit.cc -o CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test/src/TrackerHit.cc -o CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.s
 
 CMakeFiles/Xray_Test.dir/src/TrackerHit.cc.o.requires:
 
@@ -881,6 +881,6 @@ CMakeFiles/Xray_Test.dir/clean:
 .PHONY : CMakeFiles/Xray_Test.dir/clean
 
 CMakeFiles/Xray_Test.dir/depend:
-	cd /home/silab62/git/XrayMachine_Bonn/xray_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test /home/silab62/git/XrayMachine_Bonn/Simulation/Geant4/Xray_Test /home/silab62/git/XrayMachine_Bonn/xray_build /home/silab62/git/XrayMachine_Bonn/xray_build /home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/Xray_Test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/silab62/git/XrayMachine_Bonn/xray_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test /home/silab62/git/XrayMachine_Bonn/Simulation/Xray_Test /home/silab62/git/XrayMachine_Bonn/xray_build /home/silab62/git/XrayMachine_Bonn/xray_build /home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/Xray_Test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Xray_Test.dir/depend
 
