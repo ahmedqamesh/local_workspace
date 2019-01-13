@@ -20,9 +20,13 @@ from math import pi, cos, sin
 import logging
 from scipy.linalg import norm
 import os
+import matplotlib as mpl
 from matplotlib import gridspec
+import seaborn as sns
+sns.set(style="white", color_codes=True)
 from matplotlib.patches import Circle
 from mpl_toolkits.axes_grid1.anchored_artists import AnchoredDrawingArea
+from mpl_toolkits.axes_grid1 import make_axes_locatable
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - [%(levelname)-8s] (%(threadName)-10s) %(message)s")
 
 
@@ -45,7 +49,7 @@ class Calibration_Curves():
     def Inverse_square(self, x, a, b, c):
         return a / (x + b)**2 - c
 
-    def calibration_curve(self, Directory=False, PdfPages=False, stdev=0.06):
+    def calibration_curve(self, Directory=False, PdfPages=False, stdev=0.06, depth=[0]):
         ''', 
         To get the calibration curves for each current
         For each Measurement you make you need to replace the numbers 0 in Background, Factor, .....by your measurement
@@ -56,9 +60,9 @@ class Calibration_Curves():
         5 cm     0.936 muA    4.402 Mrad/hr            0.3261 muA    3.281 Mrad/hr
         8 cm     0.257 muA    2.471 Mrad/hr            0.2128 muA    2.077 Mrad/hr
 #         '''
-        depth = ["3cm", "5cm", "8cm"]
-        Voltages = ["30KV", "40KV"]
-        colors = ['red', '#006381', '#33D1FF', 'green', 'orange', 'maroon']
+
+        Voltages = ["40KV", "30KV"]
+        colors = ['#006381', 'red', '#33D1FF', 'green', 'orange', 'maroon']
         styles = ['-', '--']
         for i in range(len(depth)):
             fig = plt.figure()
@@ -81,7 +85,8 @@ class Calibration_Curves():
                         x1 = np.append(x1, float(row[0]))
                         y1 = np.append(y1, (float(row[1]) - float(row[2])) * float(row[5]))
                         bkg_y1 = np.append(bkg_y1, float(row[2]))
-                        y2 = np.append(y2, (float(row[3]) - float(row[4])) * float(row[5]))
+
+                        y2 = np.append(y2, (float(row[3]) - float(row[4])) * float(row[5]))  # Data with Al filter
                         bkg_y2 = np.append(bkg_y2, float(row[4]))
                         Factor = np.append(Factor, float(row[5]))
                         difference = np.append(difference, (float(row[3]) - float(row[1])) / float(row[3]) * 100)
@@ -91,15 +96,17 @@ class Calibration_Curves():
                     popt1, pcov = curve_fit(self.linear, x1, y1, sigma=sig1, absolute_sigma=True, maxfev=5000, p0=(1, 1))
                     chisq1 = self.red_chisquare(np.array(y1), self.linear(x1, *popt1), np.array(sig1), popt1)
                     ax.errorbar(x1, y1, yerr=sig1, color=colors[Voltages.index(volt)], fmt='o')
-                    ax.plot(x1, self.linear(x1, *popt1), linestyle=styles[0],
-                            color=colors[Voltages.index(volt)], label=volt + " " + "with_Al_Filter")
+                    label1 = "(%s,%s ,Fit:D[$Mrad/hr$]=%.3fI[mA] %.3f)" % (volt, "Al Filter", popt1[0], popt1[1])
+                    ax.plot(x1, self.linear(x1, *popt1), linestyle=styles[1],
+                            color=colors[Voltages.index(volt)], label=label1)
                     # Calibrating data without Filter
                     sig2 = [stdev * y2[k] for k in range(len(y2))]
                     popt2, pcov = curve_fit(self.linear, x1, y2, sigma=sig2, absolute_sigma=True, maxfev=5000, p0=(1, 1))
                     chisq2 = self.red_chisquare(np.array(y2), self.linear(x1, *popt2), np.array(sig2), popt2)
                     ax.errorbar(x1, y2, yerr=sig2, color=colors[Voltages.index(volt)], fmt='o')
-                    ax.plot(x1, self.linear(x1, *popt2), linestyle=styles[1],
-                            color=colors[Voltages.index(volt)], label=volt + " " + "without_Al_Filter")
+                    label2 = "(%s,%s ,Fit:D[$Mrad/hr$]=%.3fI[mA] %.3f)" % (volt, "No Filter", popt1[0], popt1[1])
+                    ax.plot(x1, self.linear(x1, *popt2), linestyle=styles[0],
+                            color=colors[Voltages.index(volt)], label=label2)
                     sig3 = [stdev * difference[k] for k in range(len(difference))]
                     ax2.errorbar(x1, difference, yerr=sig3, color=colors[Voltages.index(volt)], fmt='o', markersize='1', capsize=2)
                     ax2.set_ylabel('Drop [%]')
@@ -111,12 +118,12 @@ class Calibration_Curves():
             ax.set_ylabel('Dose rate [$Mrad(sio_2)/hr$]')
             ax.grid(True)
             # ax2.set_ylim(0,101,10)
-            ax.legend()
-            ax2.set_xlabel('Tube current (mA)')
+            ax.legend(prop={'size': 8})
+            ax2.set_xlabel('Tube current [mA]')
             plt.savefig(Directory + "/" + depth[i] + '/CalibrationCurve_Bonn_' + depth[i] + ".png", bbox_inches='tight')
             PdfPages.savefig()
 
-    def Dose_Voltage(self, Directory=False, PdfPages=False, Depth="8cm", test="without_Al_Filter", kafe_Fit=False):
+    def dose_voltage(self, Directory=False, PdfPages=False, Depth="8cm", test="without_Al_Filter", kafe_Fit=False):
         '''
         Effect of tube Voltage on the Dose
         '''
@@ -176,6 +183,10 @@ class Calibration_Curves():
         '''
         To get the estimated beam diameter relative to the depth
         '''
+        # Using contourf to provide my colorbar info, then clearing the figure
+        Z = [[0, 0], [0, 0]]
+
+        # plt.clf()
         for j in range(len(tests)):
             r = []
             h = []
@@ -190,30 +201,37 @@ class Calibration_Curves():
             fig2 = plt.figure()
             fig2.add_subplot(111)
             ax2 = plt.gca()
-            sig = std  # [0.04 * r[k] for k in range(len(r))]
-            ax2.errorbar(h, r, xerr=0.0, yerr=sig, fmt='o', color='black', markersize=3)  # plot points
-            popt, pcov = curve_fit(self.linear, h, r, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(1, 1))
-            chisq2 = self.red_chisquare(np.array(r), self.linear(h, *popt), np.array(sig), popt)
-            line_fit_legend_entry = 'line fit: ax + b\n a=$%.2f\pm%.2f$\nb=$%.2f\pm%.2f$' % (popt[0], np.absolute(pcov[0][0]) ** 0.5, popt[1], np.absolute(pcov[1][1]) ** 0.5)
-            ax2.plot(h, self.linear(h, *popt), '-', lw=2, label=line_fit_legend_entry)
-            ax2.set_title('Radius covered by beam spot %s' % (tests[j]), fontsize=12)
+            ax2.errorbar(h, r, xerr=0.0, yerr=std, fmt='o', color='black', markersize=0.9, ecolor='black')  # plot points
 
+            popt, pcov = curve_fit(self.linear, h, r, sigma=std, absolute_sigma=True, maxfev=5000, p0=(1, 1))
+            chisq2 = self.red_chisquare(np.array(r), self.linear(h, *popt), np.array(std), popt)
+            line_fit_legend_entry = 'line fit: ax + b\n a=$%.3f\pm%.3f$\nb=$%.3f\pm%.3f$' % (popt[0], np.absolute(pcov[0][0]) ** 0.5, popt[1], np.absolute(pcov[1][1]) ** 0.5)
+
+            ax2.plot(h, self.linear(h, *popt), '-', lw=1, label=line_fit_legend_entry)
+            cmap = plt.cm.get_cmap('viridis', 15)
+            h_space = np.linspace(h[0], h[-1], 50)
+            # the function uses the fit parameters in dose_depth_scan
+            sc = ax2.scatter(h_space, self.linear(h_space, *popt), c=self.Inverse_square(h_space, a=1410.29, b=6.27, c=0.14),
+                             cmap=cmap, s=50,)
+            cb = fig2.colorbar(sc, ax=ax2, orientation='horizontal')
+            cb.ax.invert_xaxis()
+            cb.set_label("Dose rate [$Mrad/hr$]")
+            ax2.set_title('Radius covered by beam spot %s (40kv and 50 mA)' % (tests[j]), fontsize=12)
             ax2.grid(True)
-            ax2.legend(loc="upper right")
+            ax2.legend()
             ax2.set_ylabel('Radius (r) [cm]')
             ax2.set_xlabel('Height from the  collimator holder(h) [cm]')
             fig2.savefig(Directory + tests[j] + '/opening_angle/Depth_radius_linear' + tests[j] + '.png', bbox_inches='tight')
             PdfPages.savefig()
-            h_space = np.linspace(0, h[-1], 50)
-            r_space = self.linear(h_space, *popt)
-            theta = np.degrees(popt[0])
+
+            r_space = self.linear(h_space, m=popt[0], c=popt[1])
             fig = plt.figure()
             fig.add_subplot(111)
             ax = plt.gca()
             for i in range(len(r_space)):
                 x, y = np.linspace(-r_space[i], r_space[i], 2), [h_space[i] for _ in xrange(2)]
                 plt.plot(x, y, linestyle="solid")
-            ax.text(0.95, 0.90, "$\Theta^{rad}$ = %.3f\n $h_{fp}$=%.2f$\pm$ %.2f" % (popt[0], popt[1] / popt[0], np.absolute(pcov[1][1]) ** 0.5 / popt[0]),
+            ax.text(0.95, 0.90, "$\Theta^{rad}$ = %.3f$\pm$ %.3f\n $h_{0}$=%.3f$\pm$ %.3f" % (2 * popt[0], 2 * np.absolute(pcov[0][0]) ** 0.5, popt[1] / (popt[0]), np.absolute(pcov[1][1]) ** 0.5 / popt[0]),
                     horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
                     bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
             ax.set_title('Diameter covered by beam spot %s' % (tests[j]), fontsize=12)
@@ -224,7 +242,7 @@ class Calibration_Curves():
             fig.savefig(Directory + tests[j] + '/opening_angle/Depth_Diameter_' + tests[j] + '.png', bbox_inches='tight')
             PdfPages.savefig()
 
-    def Dose_Depth(self, Directory=False, colors=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.2, tests=["without_Al_Filter"], theta=0.16):
+    def dose_depth(self, Directory=False, colors=False, PdfPages=False, Voltage="40 kV", current="50 mA", stdev=0.2, tests=["without_Al_Filter"], theta=0.16):
         '''
         Relation between the depth and  the Dose rate
         '''
@@ -284,45 +302,11 @@ class Calibration_Curves():
         plt.tight_layout()
         PdfPages.savefig()
 
-    def Plot_Beam_profile_2d(self, scan_file=False, Directory=False, PdfPages=False):
-        '''
-        Make a 2d scan at specific depth
-        '''
-        Factor = 9.62  # Calibration Factor
-        Background = 0.012
-        binwidth = 1
-        with tb.open_file(scan_file, 'r') as in_file:
-            beamspot = in_file.root.beamspot[:]
-            beamspot = (beamspot * 1000000 - Background) * Factor
-            distribution = []
-            for i in np.arange(25 - 7, 25 + 7, 1):
-                for j in np.arange(15 - 7, 15 + 7, 1):
-                    distribution = np.append(distribution, beamspot[i, j])
-        fig, ax = plt.subplots()
-        r = 6
-        plt.axhline(y=23+r, linewidth=2, color='#d62728', linestyle='dashed')
-        plt.axhline(y=23-r, linewidth=2, color='#d62728', linestyle='dashed')
-        plt.axvline(x=14-r, linewidth=2, color='#d62728', linestyle='dashed')
-        plt.axvline(x=14+r, linewidth=2, color='#d62728', linestyle='dashed')
-        im = ax.imshow(beamspot, aspect='auto',interpolation='gaussian')
-        cb = fig.colorbar(im, ax=ax, fraction=0.0594)
-        cb.set_label("Dose rate [$Mrad/hr$]")
-        ax.set_xlabel('x [mm]')
-        ax.set_ylabel('y[mm]')
-        ax.set_title('Beam profile at 3 cm from the collimator holder (%s and %s)' % ("40 kV", "30mA"), fontsize=12)
-        plt.savefig(Directory + 'beamspot.png')
-        PdfPages.savefig()
-#         fig = plt.figure()
-#         ax2 = fig.add_subplot(111)
-#         ax2.hist(distribution)
-#         plt.savefig(Directory + 'beamdistribution.png')
-#         PdfPages.savefig()
-
     def calibration_temprature(self, data=None, PdfPages=False, Directory=False, colors=None):
         fig = plt.figure()
         ax = fig.add_subplot(111)
         ax2 = ax.twinx()
-        Factor = 9.76  # Calibration Factor
+        Factor = 9.62  # Calibration Factor
         plot_lines = []
         with tb.open_file(data) as in_file:
             temprature_dose = in_file.root.temprature_dose[:]
@@ -330,47 +314,103 @@ class Calibration_Curves():
             current = temprature_dose["current"] * 10**6
             temprature = temprature_dose["temprature"]
         temp = ax2.errorbar(time, temprature, yerr=0.0, color=colors[0], fmt='-')
-        curr = ax.bar(time[1:], current[1:], align='center', width=3, color=colors[1])
-        ax2.set_ylabel('Temprature')
+        curr = ax.errorbar(time[1:], current[1:], fmt='-', color=colors[1])
+        ax2.set_ylabel('Temprature[$^oC$]')
         ax.set_ylabel('current [$\mu$ A]')
         ax.set_xlabel('time [Seconds]')
         ax.grid(True)
-        #ax.legend(loc = "upper right")
-        #ax2.legend(loc = "upper right")
+        ax.set_ylim([0, 1])
         plot_lines.append([temp, curr])
         plt.legend(plot_lines[0], ["temprature", "mean current=%0.2f $\mu$ A" % np.mean(current)])
-        plt.savefig(Directory + 'temprature_dose.png')
+        plt.savefig(Directory + 'without_Al_Filter/temprature/temprature_dose.png')
         plt.tight_layout()
         PdfPages.savefig()
 
-    def Plot_Beam_profile_3d(self, scan_file=False, Directory=False, PdfPages=False):
+    def Plot_Beam_profile_2d(self, Directory=False, PdfPages=False, depth=None):
+        '''
+        Make a 2d scan at specific depth
+        '''
+        Factor = 9.76  # Calibration Factor
+        Background = 0.005
+        binwidth = 1
+        for d in range(len(depth)):
+            with tb.open_file(Directory + "without_Al_Filter/beamspot/" + depth[d] + "/beamspot_" + depth[d] + ".h5", 'r') as in_file:
+                beamspot = in_file.root.beamspot[:]
+                beamspot = (beamspot * 1000000 - Background) * Factor
+            # The aim of the correction is to overcome the problem happened during measurment
+            # because of the timming difference between z and x direction
+            corrected_beamspot = np.zeros(shape=(beamspot.shape[0], beamspot.shape[1]), dtype=np.float64)
+            for z in np.arange(beamspot.shape[0]):
+                for x in np.arange(beamspot.shape[1]):
+                    if z % 2 == 0:
+                        corrected_beamspot[z, x] = beamspot[z, x]
+                    else:
+                        if depth[d] == "3cm":
+                            radius = r'$r=0.65 \pm 0.05$ cm'
+                        if depth[d] == "51cm":
+                            radius = r'$r=4 \pm 0.05$ cm'
+                        if depth[d] == "8cm":
+                            radius = r'$r=1 \pm 0.05$ cm'
+            fig, ax = plt.subplots()
+            mid_x = beamspot.shape[0]
+            mid_z = beamspot.shape[1]
+            plt.axhline(y=mid_z / 2, linewidth=1, color='#d62728', linestyle='dashed')
+            plt.axvline(x=mid_x / 2, linewidth=1, color='#d62728', linestyle='dashed')
+
+            cmap = plt.cm.get_cmap('viridis', 20)
+            im = ax.imshow(beamspot, aspect='auto', interpolation='gaussian', cmap=cmap)
+            cb = fig.colorbar(im, ax=ax, fraction=0.0594)
+            # create new axes on the right and on the top of the current axes
+            divider = make_axes_locatable(ax)
+            axHistx = divider.append_axes("top", 1.2, pad=0.2, sharex=ax)
+            axHisty = divider.append_axes("right", 1.2, pad=0.2, sharey=ax)
+            axHistx.bar(x=range(beamspot.shape[1]), height=np.ma.sum(beamspot, axis=0), align='center',
+                        linewidth=0, color=(0.2, 0.4, 0.6, 0.6), edgecolor='black')
+
+            # make some labels invisible
+            plt.setp(axHistx.get_xticklabels() + axHisty.get_yticklabels(), visible=False)
+            axHistx.set_ylabel('Dose rate [$Mrad/hr$]')
+            axHisty.set_ylabel('Dose rate [$Mrad/hr$]')
+            axHisty.barh(y=range(beamspot.shape[0]), width=np.ma.sum(beamspot, axis=1), align='center',
+                         linewidth=0, color=(0.2, 0.4, 0.6, 0.6), edgecolor='black')
+
+            cb.set_label("Dose rate [$Mrad/hr$]")
+            ax.text(0.9, 0.9, radius,
+                    horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
+                    bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.6))
+            ax.set_xlabel('x [mm]')
+            ax.set_ylabel('y[mm]')
+            plt.title("Beam profile at " + depth[d] + " from the collimator holder (%s and %s)" % ("40 kV", "50mA"), fontsize=12, y=1.7, x=-0.6)
+            plt.savefig(Directory + "without_Al_Filter/beamspot/" + depth[d] + "/beamspot_" + depth[d] + "_2d.png")
+            PdfPages.savefig()
+
+    def Plot_Beam_profile_3d(self, Directory=False, PdfPages=False, depth=[0]):
         '''
         Make a 3d scan at specific depth (The function is under updates)
         '''
-        def f(x, y, Factor=9.62, Background=0.012):
-            with tb.open_file(scan_file, 'r') as in_file:
-                beamspot = in_file.root.beamspot[:]
+        def f(x, y, Factor=9.62, Background=0.012, beamspot=None):
             return (beamspot[y, x] * 1000000 - Background) * Factor
-        y_range = 48
-        x_range = 28
-        y = np.linspace(0, y_range, 50, dtype=int)
-        x = np.linspace(0, x_range, 30, dtype=int)
-        X, Y = np.meshgrid(x, y)
-        Z = f(X, Y)
+        for d in range(len(depth)):
+            with tb.open_file(Directory + "without_Al_Filter/beamspot/" + depth[d] + "/beamspot_" + depth[d] + ".h5", 'r') as in_file:
+                beamspot = in_file.root.beamspot[:]
+            y = np.linspace(0, beamspot.shape[0] - 1, 100, dtype=int)
+            x = np.linspace(0, beamspot.shape[1] - 1, 100, dtype=int)
+            X, Y = np.meshgrid(x, y)
+            Z = f(X, Y, beamspot=beamspot)
 
-        fig = plt.figure()
-        ax = fig.gca(projection='3d')
-        plot = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='viridis', edgecolor='none')
-        plt.axhline(y=25, linewidth=2, color='#d62728', linestyle='dashed')
-        plt.axvline(x=16, linewidth=2, color='#d62728', linestyle='dashed')
-        cb = fig.colorbar(plot, ax=ax, fraction=0.046)
-        cb.set_label("Dose rate [$Mrad/hr$]")
-        ax.set_xlabel('x [mm]')
-        ax.set_ylabel('y[mm]')
-        #plt.axis('off')
-        ax.set_title('Beam profile at 3 cm without collimator support', fontsize=12)
-        plt.savefig(Directory + 'beamspot_3d.png')
-        PdfPages.savefig()
+            fig = plt.figure()
+            ax = fig.gca(projection='3d')
+            plot = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='viridis', edgecolor='none')
+            plt.axhline(y=25, linewidth=2, color='#d62728', linestyle='dashed')
+            plt.axvline(x=16, linewidth=2, color='#d62728', linestyle='dashed')
+            cb = fig.colorbar(plot, ax=ax, fraction=0.046)
+            cb.set_label("Dose rate [$Mrad/hr$]")
+            ax.set_xlabel('x [mm]')
+            ax.set_ylabel('y[mm]')
+            plt.axis('off')
+            ax.set_title("Beam profile at " + depth[d] + "without collimator support", fontsize=12)
+            plt.savefig(Directory + "without_Al_Filter/beamspot/" + depth[d] + "/beamspot_" + depth[d] + "_3d.png")
+            PdfPages.savefig()
 
     def power_2d(self, Directory=False, PdfPages=False, size_I=50, size_V=60, V_limit=50, I_limit=50):
         '''
@@ -413,19 +453,18 @@ class Calibration_Curves():
 if __name__ == '__main__':
     global PdfPages
     Directory = "Calibration_Curves/"
-    scan_file = Directory + "beamspot_combined.h5"
     tests = ["without_Al_Filter", "with_Al_Filter"]
+    depth = ["3cm", "5cm", "8cm", "51cm"]
     colors = ['red', '#006381', '#7e0044', "maroon", 'grey', 'green', 'orange', "magenta", '#33D1FF', 'black', '#7e0044', 'black', "yellow"]
     scan = Calibration_Curves()
-
     PdfPages = PdfPages('output_data/CalibrationCurve_Bonn' + '.pdf')
-    scan.Plot_Beam_profile_2d(scan_file=scan_file, Directory=Directory, PdfPages=PdfPages)
-    scan.Plot_Beam_profile_3d(scan_file=scan_file, Directory=Directory, PdfPages=PdfPages)
-    scan.calibration_curve(stdev=0.04, PdfPages=PdfPages, Directory=Directory)
-    scan.opening_angle(Directory=Directory, PdfPages=PdfPages, tests=tests)
-    scan.Dose_Depth(tests=tests, Directory=Directory, PdfPages=PdfPages, colors=colors)
-    scan.calibration_temprature(data="/home/silab62/git/XrayMachine_Bonn/tools/temprature_sensor/temprature_dose.h5",
+    scan.Plot_Beam_profile_2d(Directory=Directory, PdfPages=PdfPages, depth=["3cm", "8cm", "51cm"])
+    scan.Plot_Beam_profile_3d(Directory=Directory, PdfPages=PdfPages, depth=["3cm", "8cm", "51cm"])
+    #scan.calibration_curve(stdev=0.04, PdfPages=PdfPages, Directory=Directory,depth=["51cm"])
+    scan.opening_angle(Directory=Directory, PdfPages=PdfPages, tests=["without_Al_Filter"])
+    #scan.dose_depth(tests=tests, Directory=Directory, PdfPages=PdfPages, colors=colors)
+    scan.calibration_temprature(data=Directory + "without_Al_Filter/temprature/temprature_dose.h5",
                                 colors=colors, Directory=Directory, PdfPages=PdfPages)
     #scan.power_2d(PdfPages=PdfPages, Directory=Directory, V_limit=50, I_limit=50)
-    scan.Dose_Voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter", kafe_Fit=False)
+    #scan.dose_voltage(PdfPages=PdfPages, Directory=Directory, test="without_Al_Filter", kafe_Fit=False)
     scan.close()

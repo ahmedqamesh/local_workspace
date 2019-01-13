@@ -18,3 +18,9 @@ matplotlib.legend 2019-01-04 23:05:54,994 :: WARNING :: No handles with labels f
 matplotlib.legend 2019-01-04 23:06:05,114 :: WARNING :: No handles with labels found to put in legend.
 matplotlib.legend 2019-01-04 23:20:39,835 :: WARNING :: No handles with labels found to put in legend.
 kafe 2019-01-08 08:25:47,319 :: WARNING :: More than one Fit in the same Plot detected. In this case, axis labels default to `x` and `y` and must be set explicitly if something different is desired.
+matplotlib.legend 2019-01-13 17:06:17,584 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-13 17:07:10,397 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-13 17:07:36,984 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-13 17:07:58,199 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-13 17:09:15,279 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.legend 2019-01-13 17:12:23,116 :: WARNING :: No handles with labels found to put in legend.

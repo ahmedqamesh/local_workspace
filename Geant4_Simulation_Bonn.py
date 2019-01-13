@@ -350,7 +350,7 @@ if __name__ == '__main__':
     spectrum = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum", "Al-0.15mm-Spectrum", "RD53"]
     RD53_layers = ["RD53-No", "RD53"]
     filters = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum", "Al-150um-Spectrum", "Fe-150um-Spectrum", "Mn-150um-Spectrum", "Zr-150um-Spectrum", "Ni-150um-Spectrum", "V-150um-Spectrum"]
-    filters_machine = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum","V-15um-Spectrum"]#"Ni-15um-Spectrum", "Fe-15um-Spectrum", "Mn-25um-Spectrum", "Al-150um-Spectrum" ,"Zr-75um-Spectrum" ,"Ni-15um-Spectrum"]
+    filters_machine = ["Tungsten-Spectrum", "Be-0.3mm-Spectrum","V-15um-Spectrum","Ni-15um-Spectrum", "Fe-15um-Spectrum", "Mn-25um-Spectrum", "Al-150um-Spectrum" ,"Zr-75um-Spectrum"]
     PdfPages = PdfPages('output_data/SimulationCurve_Bonn' + '.pdf')
     scan = Simulation()
 #     Geant4_empenelope_Diffenergys = scan.get_spectrum(Directory=Directory, PdfPages=PdfPages, test=energy, hist_id=["h3", "h3", "h3", "h3", "h3", "h3"], labels=energy,

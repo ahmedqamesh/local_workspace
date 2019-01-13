@@ -61,12 +61,12 @@ class sourcemeter(HardwareLayer):
             length_v=len(voltage_array) 
             current_array = np.zeros(shape=(length_v, Itterations), dtype=np.float64)
             for i in np.arange(length_v):
-                
                 self.write(':SOUR:VOLT ' + str(voltage_array[i]))
-                #self.write(":SOUR:DEL "+str(Delay))
+                self.write(":SOUR:DEL 3")
+                time.sleep(Stat_Delay)
                 c_array = []
                 for j in range(Itterations):
-                    time.sleep(Stat_Delay)
+                    #time.sleep(Stat_Delay)
                     val = self.ask(":MEAS:CURR?")
                     current = val[15:-43]
                     c_array.append(float(current))
@@ -85,23 +85,23 @@ class sourcemeter(HardwareLayer):
             self.Plotting_IV_test(Directory=Directory,diodes=diodes)
 
     def Plotting_IV_test(self, Directory=False,diodes=[0]):
-        #curr_min = []
-        #curr_max = []
-        #plot_min = []
+        fig = plt.figure()
+        fig.add_subplot(111)
+        ax = plt.gca()
         conversion = 10**9
         for diode_id in diodes:
             with tb.open_file(Directory + "IV_"+diode_id+".h5", 'r') as in_file:
                 IV_results = in_file.root.IV_results[:]
                 #curr_min = np.append(curr_min, np.min(IV_results['mean_current']))
                 #plot_min = np.append(plot_min, min(curr_min))
-                plt.errorbar(IV_results['voltage'], IV_results['mean_current']*conversion,yerr=IV_results['std_current']*conversion, 
-                             fmt='o', marker='o',markersize='1',#ecolor="black"
-                             label=("Diode %s " % diode_id))
-            print "finished loading diode", diode_id
+            ax.errorbar(IV_results['voltage'], IV_results['mean_current']*conversion,yerr=IV_results['std_current']*conversion, 
+                         fmt='o', color='black', markersize=0.9, ecolor='black',label=("Diode %s " % diode_id))
+            print "loading diode", diode_id
         plt.legend(loc = "upper right")
-        plt.ylim(-6, 1)
-        #plt.xlim(1,52)
-        plt.xlabel("Negative Voltage [V]")
+        #plt.ylim(-6, 1)
+        #plt.xlim(0,52)
+        #ax.set_yscale('log')
+        plt.xlabel("Reverse Voltage [V]")
         plt.ylabel("Current [nA]")
         plt.title('IV_Curve')
         plt.savefig(Directory+ "IV_"+diode_id+ ".png")

@@ -23,8 +23,8 @@ def Restore_intial_positions(Limit=6e6):
     dut.init()
     # Auto-Referencing Option: With standard PI stages
     dut["ms"]._write_command("FE2", address=1)
-    dut["ms"]._write_command("FE2", address=2)
-    dut["ms"]._write_command("FE2", address=3)
+    #dut["ms"]._write_command("FE2", address=2)
+    #dut["ms"]._write_command("FE2", address=3)
     # Restore intial positions
     # dut["MotorStage"].Read_Write("MR%d" % Limit, address=1)   # y Move to the Border (In-Out)
     # dut["MotorStage"].Read_Write("MR%d" % Limit, address=2)   # z Move to the Border (Up-Down)
@@ -40,6 +40,11 @@ def GUI_scan():
 '''
 Step1: Restore the intial position with Auto-Referencing Option: With standard PI stages
 step2: show GUI to control the motor stage 
+A: address=1
+B: address=2
+C: address=3
+
 '''
 #Restore_intial_positions()
+
 GUI_scan()
