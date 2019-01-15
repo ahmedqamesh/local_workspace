@@ -84,9 +84,9 @@ class Sourcemeter(HardwareLayer):
         df = pd.DataFrame({"Voltage": Voltage_array, "Mean_Current": mean_array, "std_Current": std_array})
         df.to_csv('/home/silab62/MasterWork/' + str(chip_num) + ".CSV", index=True)
         if Plot:
-            self.Plotting_IVcurve_Stat(Directory='/home/silab62/MasterWork/', h5=True, Multiple=True)
+            self.Plotting_IVcurve_Stat(Directory='/home/silab62/MasterWork/', h5=True)
 
-    def Plotting_IVcurve_Stat(self, Directory=False, h5=False, Multiple=True):
+    def Plotting_IVcurve_Stat(self, Directory=False, h5=False):
         meas_curr = []
         meas_stdcurr = []
         meas_volt = []

@@ -22,5 +22,5 @@ dut['Sourcemeter'].write(":SOUR:VOLT:RANG 60")
 
 #dut['Sourcemeter'].Plotting_IVcurve(start_V=0,step_V=-1,end_V=-20,
 #                                    F='/home/silab62/MasterWork/IV_table.csv')
-#dut['Sourcemeter'].Plotting_IVcurve_Stat(Directory='/home/silab62/MasterWork/',h5=True,Multiple=True)
+#dut['Sourcemeter'].Plotting_IVcurve_Stat(Directory='/home/silab62/MasterWork/',h5=True)
 #dut['Sourcemeter'].write(":OUTP OFF")

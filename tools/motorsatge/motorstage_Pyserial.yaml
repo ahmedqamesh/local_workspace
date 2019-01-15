@@ -2,7 +2,7 @@ transfer_layer:
   - name     : Serial_ms
     type     : Serial
     init     :
-        port     : /dev/ttyUSB2
+        port     : /dev/ttyUSB1
         read_termination : "\x03"
         baudrate : 9600
         timeout : 0.1

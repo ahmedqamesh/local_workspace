@@ -27,7 +27,7 @@ def Restore_intial_positions(Limit=6e6):
     dut["ms"]._write_command("FE1,RP", address=3)  #(To start from the extreme left)
     dut["ms"]._write_command("FE0,RP", address=2)  # (To start from the extreme in)
     
-def beamspot(size_x=1, z=30, x_Delay=5, x=30,size_z=1,
+def beamspot(size_x=1, z=20, x_Delay=5, x=20,size_z=1,
          Directory=False, Sourcemeter=True, CurrentLimit=1.000000E-06):
     '''
     Assuming that the cabinet door is the -z
@@ -85,7 +85,7 @@ def beamspot(size_x=1, z=30, x_Delay=5, x=30,size_z=1,
     for step_z in range(z):
         Move(step_z=step_z)
     plt.show()
-    file = Directory + "beamspot_3cm.h5"
+    file = Directory + "beamspot_3cm_collimator.h5"
     with tb.open_file(file, "w") as out_file_h5:
         out_file_h5.create_array(out_file_h5.root, 'beamspot', beamspot, "beamspot")  
     print "The beamspot file is saved as%s" %(file)

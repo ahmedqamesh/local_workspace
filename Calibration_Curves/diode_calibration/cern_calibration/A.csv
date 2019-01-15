@@ -1,0 +1,4 @@
+Depth[cm],Background[uA],reading[uA],result[uA],"known dose[CERN, Mrad/hr]","factor =known dose[CERN, Mrad/hr]/result",factor
+3,0.00111,0.6951,0.6951,6.714,9.6744909869,
+5,0.00111,0.440765,0.440765,4.402,10.0196888479,
+8,0.00111,0.254326,0.254326,2.471,9.157,
