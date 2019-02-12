@@ -1,0 +1,6 @@
+# define a beam with the general particle source
+/gps/particle e- 
+/gps/energy 3.2 GeV
+/gps/direction 0 0 1
+/gps/position 0. 0. -8 cm
+

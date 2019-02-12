@@ -1,0 +1,35 @@
+# THe Card will fire 100000 e on W target (Filter) defined as a scoring region followed by several layers of Metals
+# Check it using /control/execute init_vis_gui.mac
+/control/verbose 2
+/control/cout/ignoreThreadsExcept 0
+/run/verbose 2
+/run/numberOfThreads 4
+#
+/testem/phys/addPhysics  empenelope
+#
+#/testem/det/setNbOfLayers 1
+/testem/det/setNbOfAbsor 1
+/testem/det/setNbOfFilter 1
+/testem/det/setAbsor 1  G4_Be  0.3  mm
+/testem/det/setFilter 1 Tungsten 5.0 mm
+
+#
+/run/initialize
+# read from beam 
+/gun/particle e-
+/gun/energy 50 keV
+/gun/position    -2.8 0.0 0.0 cm
+/gun/direction 1 0 0
+/testem/det/setfilter/pos -2 0 0 cm   # Target is at  8 mm from the gun
+/testem/det/setXposAbs 3 cm # keep the absorber away
+#/testem/det/setfilter/rot 135 deg
+/run/setCut 1 um
+
+/analysis/setFileName gammaSpectrum_Tungsten-Spectrum.root
+/analysis/h1/set 28  200  0.   50. keV		#secondary neutral particles
+/analysis/h1/set 51  200  0.   50. keV		#secondary charged particles
+/analysis/h1/set 32  200  0.   50. keV		#transmited  neutral  secondaries in the absorber
+
+/run/printProgress 1000
+#
+/run/beamOn 100000000

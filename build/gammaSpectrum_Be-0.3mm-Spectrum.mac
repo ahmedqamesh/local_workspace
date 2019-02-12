@@ -1,0 +1,32 @@
+# THe Card will fire 1095098 photons from spectrum on Be target (Filter) 
+/control/verbose 2
+/control/cout/ignoreThreadsExcept 0
+/run/verbose 2
+# Check it using /control/execute init_vis_gui.mac
+/run/numberOfThreads 4
+/testem/phys/addPhysics  empenelope
+#
+#/testem/det/setNbOfLayers 1
+/testem/det/setNbOfAbsor 1
+/testem/det/setNbOfFilter 1
+/testem/det/setAbsor 1 G4_Be 0.3 mm
+#
+/run/initialize
+# read from specrum
+/testem/gun/spectrum on 
+/gun/particle gamma 
+/testem/run/loadGunData gammaSpectrum_Tungsten-Spectrum
+
+/gun/position   -3.0 0.0 0.0 cm   # 1cm away from the Be Target Which is at 3 cm
+/gun/direction  1 0 0
+/testem/det/setXposAbs -2 cm # Be windo at 1 cm from the source
+/testem/det/setfilter/pos 0 0 0 cm # Keep filter 1 away
+#/run/setCut 1 um   # it is 0.7 mm by default
+
+/analysis/setFileName gammaSpectrum_Be-0.3mm-Spectrum.root
+/analysis/h1/set 1  200   0.  50. keV		#Edep in absorber 1
+/analysis/h1/set 23  200   0.  50. keV		#Original Spectrum
+/analysis/h1/set 32  200   0.  50. keV		#Photon transmitted Spectrum through Be
+/analysis/h1/set 28  200   0.  50. keV		#Secondary neutral particles(Everywhere)
+/run/printProgress 10000
+/run/beamOn 1562209

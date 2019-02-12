@@ -1,0 +1,97 @@
+# THe Card will fire 1095098 photons from spectrum on Al target (Filter)
+/control/verbose 2
+/control/cout/ignoreThreadsExcept 0
+/run/verbose 2
+/run/numberOfThreads 4
+#
+/testem/phys/addPhysics  empenelope
+#
+#/testem/det/setNbOfLayers 1
+/testem/det/setNbOfAbsor 21
+/testem/det/setAbsor 1  quartz  0.001  	 mm
+/testem/det/setAbsor 2  G4_Al   0.0028 	 mm
+/testem/det/setAbsor 3   quartz 0.0008 	 mm
+/testem/det/setAbsor 4   G4_Cu  0.0034 	 mm
+/testem/det/setAbsor 5  quartz 0.00067 	 mm
+/testem/det/setAbsor 6  G4_Cu  0.0009 	 mm
+/testem/det/setAbsor 7  quartz 0.00067   mm
+/testem/det/setAbsor 8  G4_Cu  0.00022   mm
+/testem/det/setAbsor 9  quartz 0.000175  mm
+/testem/det/setAbsor 10 G4_Cu  0.00022   mm
+/testem/det/setAbsor 11 quartz 0.000175  mm
+/testem/det/setAbsor 12 G4_Cu  0.00022   mm
+/testem/det/setAbsor 13 quartz 0.000175  mm
+/testem/det/setAbsor 14 G4_Cu  0.00022   mm
+/testem/det/setAbsor 15 quartz 0.000175  mm
+/testem/det/setAbsor 16 G4_Cu  0.00022   mm
+/testem/det/setAbsor 17 quartz 0.000175  mm
+/testem/det/setAbsor 18 G4_Cu  0.00022   mm
+/testem/det/setAbsor 19 quartz 0.000175  mm
+/testem/det/setAbsor 20 G4_Cu  0.00018   mm
+/testem/det/setAbsor 21 quartz 0.00031   mm
+/testem/det/setNbOfFilter 1
+#
+/run/initialize
+# read from specrum
+/testem/gun/spectrum on 
+/gun/particle gamma 
+/testem/run/loadGunData gammaSpectrum_Al-0.15mm-Spectrum
+
+
+/gun/position   -2 0.0 0.0 cm   
+/gun/direction  1 0 0
+/testem/det/setXposAbs 0 cm
+/testem/det/setfilter/pos 1 0 0 cm # Keep filter 1 away
+
+#Activation of Emission 
+#to have Auger emission it is mandatory to activate Auger electron production for the region
+# fluorescence from photons and e- is activated by default in Livermore and Penelope , while Auger production and PIXE are not.
+/process/em/deexcitation region true true true	#region is World region 
+/process/em/fluo true
+/process/em/auger true
+/process/em/pixe true
+#
+
+/run/setCut 100 nm  # it is 0.7 mm by default
+
+/analysis/setFileName gammaSpectrum_RD53.root
+/analysis/h1/set 7  200   0.  60. keV		#Edep in absorber 1
+/analysis/h1/set 8  200   0.  60. keV		#Edep in absorber 1
+/analysis/h1/set 9  200   0.  60. keV		#Edep in absorber 1
+/analysis/h1/set 23  200   0.  60. keV		#Original Spectrum
+/analysis/h1/set 31  200   0.  60. keV		#Charged particles transmitted Spectrum through last layer
+/analysis/h1/set 32  200   0.  60. keV		#Photon transmitted Spectrum through last layer
+
+/analysis/h1/set 28  200   0.  60. keV		#Secondary neutral particles(all)
+/analysis/h1/set 51  200   0.  1. keV		#Secondary charged particles(all)
+
+/analysis/h1/set 52  200   0.  60. keV	#
+/analysis/h1/set 53  200   0.  60. keV	#
+/analysis/h1/set 54  200   0.  60. keV		#
+/analysis/h1/set 55  200   0.  60. keV		#
+/analysis/h1/set 57  200   0.    1 mm		#Track length of Secondary transmitted e-
+
+/analysis/h1/set 35  200   0.  1. keV		#Secondary charged particles(in absorbers)
+/analysis/h1/set 36  200   0.  1. keV		#
+/analysis/h1/set 37  200   0.  1. keV		#
+/analysis/h1/set 38  200   0.  1. keV		#
+
+/analysis/h1/set 39  200   0.    1 mm		#Track length of Secondary e-
+
+/analysis/h1/set 40  200   0  0.03 mm		#Vertex of Secondary e- 
+
+/analysis/h1/set 41  200   0.  1. keV		#
+/analysis/h1/set 42  200   0.  1. keV		#
+/analysis/h1/set 43  200   0.  1. keV		#
+/analysis/h1/set 44  200   0.  1. keV		#
+
+/analysis/h1/set 46  200    0    0.002 mm 	#Position of Metal Layers
+/analysis/h1/set 47  200   -4.    4. mm	    #(transmit, charged) : projected position at exit
+/analysis/h1/set 48  200   0.  0.1 mm		#(transmit, charged) : radius at exit
+
+
+/analysis/h1/set 49  200   0.    1 mm		#x_vertex of charged secondaries in the last layer
+/analysis/h1/set 50  200   0  0.03 mm		#x_vertex of charged secondaries in the last layer (not absorbed)
+
+/run/printProgress 10000
+/run/beamOn 10000000 # before 267892

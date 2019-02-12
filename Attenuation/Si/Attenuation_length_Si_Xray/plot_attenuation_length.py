@@ -12,7 +12,7 @@ y_offset = np.array([y_dat[0]+55, y_dat[1]+65, y_dat[2]+36, y_dat[3]+36, y_dat[4
 n=[r'', r'$\mathregular{K}^{\mathregular{Fe}}_{\alpha,\beta}$', r'$\mathregular{K}^{\mathregular{Cd}}_{\alpha}$', r'$\mathregular{K}^{\mathregular{Cd}}_{\beta}$', r'', r'$\mathregular{K}^{\mathregular{Cu}}_{\alpha,\beta}$', r'$\mathregular{K}^{\mathregular{Rb}}_{\alpha}$', r'$\mathregular{K}^{\mathregular{Rb}}_{\beta}$', r'$\mathregular{K}^{\mathregular{Mo}}_{\alpha}$', r'$\mathregular{K}^{\mathregular{Mo}}_{\beta}$', r'', r'$\mathregular{K}^{\mathregular{Ti}}_{\alpha,\beta}$']
 plt.grid(True)
 #plt.errorbar(x_dat, y_dat, yerr=0, fmt='o', color='black')  # plot points with errorbars
-plt.plot(x_dat, y_dat, '.', color='#ba0034', markersize=8)
+plt.plot(x_dat, y_dat, '.', color='red', markersize=8)
 ax = plt.gca()
 
 for i, txt in enumerate(n):
@@ -45,8 +45,8 @@ plt.legend(["data points"], loc='upper left')
 
 plt.xlim(0, 30)
 plt.ylim(0, 2500)
-plt.xlabel('Photon energy / keV')
-plt.ylabel('Attenuation length in silicon / $\mu$m')
+plt.xlabel('Photon energy [keV]')
+plt.ylabel('Attenuation length in silicon [$\mu$m]')
 plt.legend(["Data"], loc= 'upper left')
 #ax.set_xscale('log')
 #ax.set_yscale('log')

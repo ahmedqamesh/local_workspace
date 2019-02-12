@@ -16,7 +16,8 @@ class Amptel_Spectrum():
         # line fit
         line_fit, pcov = np.polyfit(x, y, 1, full=False, cov=True)
         fit_fn = np.poly1d(line_fit)
-        line_fit_legend_entry = 'Line fit: ax+b\na=$%.5f\pm%.5f$\nb=$%.5f\pm%.5f$' % (line_fit[0], np.absolute(pcov[0][0]) ** 0.5, line_fit[1], np.absolute(pcov[1][1]) ** 0.5)
+        #line_fit_legend_entry = 'Line fit: ax+b\na=$%.3f\pm%.3f$\nb=$%.3f\pm%.3f$' % (line_fit[0], np.absolute(pcov[0][0]) ** 0.5, line_fit[1], np.absolute(pcov[1][1]) ** 0.5)
+        line_fit_legend_entry = 'Line fit: ax+b'
         line1, = plt.plot(np.arange(0, 1500), fit_fn(np.arange(0, 1500)), '-', color='darkgrey', label=line_fit_legend_entry)
         points1, = plt.plot(x, y, '.', color='black', label="Data")   
         for i, txt in enumerate(point_label):
@@ -31,7 +32,7 @@ class Amptel_Spectrum():
         plt.xlim(0, 1600)
         plt.ylim(0, 70)
         plt.xlabel('Channel number')
-        plt.ylabel('Energy / keV')
+        plt.ylabel('Energy [keV]')
         plt.tight_layout()
         plt.savefig(Directory+"Energy_channel_calibration/channel_energy_calibration.png", bbox_inches='tight')
         PdfPages.savefig()
@@ -72,7 +73,7 @@ class Amptel_Spectrum():
                     ax.annotate(txt, xy=(x[j], y[j]), xytext=(-5, 5), ha='right', textcoords='offset points', fontsize=8)
                 plt.xlim(0, 45)
             ax.set_ylim(bottom=0)
-            plt.xlabel('Energy / keV')
+            plt.xlabel('Energy [keV]')
             plt.ylabel('Counts (normalized)')
             #ax.set_xscale('log')
             #ax.set_yscale('log')
@@ -141,7 +142,7 @@ if __name__ == '__main__':
     PdfPages = PdfPages('output_data/Amptel_Spectrum' + '.pdf')
     scan = Amptel_Spectrum()
     a, a_error, b, b_error = scan.channel_energy_calibration(PdfPages=PdfPages, Directory=Directory,point_label=point_label)
-    #scan.energy_spectrum(PdfPages=PdfPages, Directory=Directory, sources =sources,real_time =real_time,color=color)
+    scan.energy_spectrum(PdfPages=PdfPages, Directory=Directory, sources =sources,real_time =real_time,color=color)
     scan.plot_calibration_charge(PdfPages=PdfPages, Directory=Directory,point_label=point_label)
     scan.close()
     

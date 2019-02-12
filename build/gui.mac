@@ -1,0 +1,51 @@
+# Macro file for the visualization setting for the initialization phase 
+# Add icons to steer simulation
+#
+/control/execute icons.mac
+#
+# File menu :
+/gui/addMenu file File
+/gui/addButton file Quit exit
+# Run menu :
+/gui/addMenu run Run
+/gui/addButton run "Init" "/run/initialize"
+/gui/addButton run "1 events" "/run/beamOn 1"
+/gui/addButton run "10 events" "/run/beamOn 10"
+/gui/addButton run "1e4 events" "/run/beamOn 10000"
+/gui/addButton run "1e5 events" "/run/beamOn 100000"
+/gui/addButton run "1e6 events" "/run/beamOn 1000000"
+/gui/addButton run "1e7 events" "/run/beamOn 10000000"
+
+# Physics menu :
+/gui/addMenu physics Physics
+/gui/addButton physics "HADRON_QGSP_BERT" "/setup/physics/SelectHadronPhysics QGSP_BERT"
+/gui/addButton physics "HADRON_QGSP_BERT_HP" "/setup/physics/SelectHadronPhysics QGSP_BERT_HP"
+/gui/addButton physics "HADRON_QGSP_BIC" "/setup/physics/SelectHadronPhysics QGSP_BIC"
+/gui/addButton physics "HADRON_QGSP_BIC_HP" "/setup/physics/SelectHadronPhysics QGSP_BIC_HP"
+/gui/addButton physics "EM_Livermore" "/setup/physics/SelectEMPhysics emlivermore"
+/gui/addButton physics "EM_Penelope" "/setup/physics/SelectEMPhysics empenelope"
+/gui/addButton physics "EM_Standard" "/setup/physics/SelectEMPhysics emstandard"
+/gui/addButton physics "EM_Standard_v4" "/setup/physics/SelectEMPhysics emstandard_opt4"
+/gui/addButton physics "DECAY_Decay" "/setup/physics/SelectDecayPhysics decay"
+/gui/addButton physics "DECAY_Radioactive Decay" "/setup/physics/SelectDecayPhysics radioactivedecay"
+
+# Source menu :
+/gui/addMenu source Setup
+/gui/addButton source "Beam"      "/control/execute beam.mac"
+/gui/addButton source "Test01"   "/control/execute Test01.mac"
+
+# Viewer menu :
+/gui/addMenu viewer Viewer
+/gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
+/gui/addButton viewer "Set style wireframe" "/vis/viewer/set/style wireframe"
+/gui/addButton viewer "Refresh viewer" "/vis/viewer/refresh"
+/gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
+/gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
+/gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
+
+# To limit the output flow in the "dump" widget :
+/run/printProgress 100
+
+# User defined icon :
+/gui/addIcon "Run beam on" user_icon "/run/beamOn 10" run.png 
+#######################################################################################################
