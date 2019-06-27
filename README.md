@@ -9,7 +9,7 @@ https://physics.nist.gov/PhysRefData/XrayTrans/Html/search.html			 (X-ray transi
 # Need to install 
 pip install lmfit
 
-#Geant4 installation
+# Geant4 installation
 wget http://geant4.cern.ch/support/source/geant4.10.01.p01.tar.gz
 cmake -DGEANT4_USE_GDML=ON -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_G3TOG4=ON -DGEANT4_USE_OPENGL_X11=ON -DCMAKE_INSTALL_PREFIX=/home/silab62/HEP/geant4.10.01-install -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_QT=ON -DCLHEP_ROOT_DIR=/home/silab62/HEP/Tools/clhep/install ../geant4.10.01.p01
 make -j
@@ -17,7 +17,7 @@ make install
 source /home/silab62/HEP/geant4-install/bin/geant4.sh
 
 
-#CLHEP installation  
+# CLHEP installation  
 mkdir Tools 
 mkdir build install source
 cd /home/silab62/HEP/Tools/clhep/build/
@@ -29,7 +29,7 @@ ccmake .
 make 
 make install
 
-#Root installation 
+# Root installation 
 sudo apt-get install git dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
 sudo apt-get install build-essential git subversion
 sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev cfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev ccache
