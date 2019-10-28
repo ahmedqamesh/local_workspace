@@ -1,12 +1,9 @@
 from __future__ import division
-
 import os.path
-
 import numpy as np
 import logging
 import yaml
 import numba
-
 import tables as tb
 from tqdm import tqdm
 from scipy.optimize import curve_fit
@@ -15,9 +12,27 @@ loglevel = logging.getLogger('Analysis').getEffectiveLevel()
 np.warnings.filterwarnings('ignore')
 
 class Analysis(object):
+    
+    def __init__(self):
+        print("Analysis initialized")
+    # Fit functions
+    def linear(self, x, m, c):
+        return m * x + c
 
-    def __enter__(self):
-        return self
+    def quadratic(self, x, a, b, c):
+        return a * x**2 + b * x + c
 
+    def red_chisquare(self, observed, expected, observed_error, popt):
+        return np.sum(((observed - expected) / observed_error)**2 / (len(observed_error) - len(popt) - 1))
+
+    def ln(self, x, a, b, c):
+        return a * np.log(x + b) - c
+
+    def exp(self, x, a, b, c):
+        return a * np.exp(-b * x) + c
+
+    def Inverse_square(self, x, a, b, c):
+        return a / (x + b)**2 - c
+    
 if __name__ == "__main__":
-    pass
+        pass
