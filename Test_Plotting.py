@@ -43,9 +43,6 @@ def cableresistanceTemprature(delta_T=np.arange(10,50,1),Rc=4,alpha=.0039):
     '''
     return [Rc*(1+alpha*delta_T[i]) for i in range(len(delta_T))]
 
-
-
-   
 if __name__ == '__main__':
     Directory = "DCConverter/"
     PdfPages = PdfPages('output_data/DCConverter' + '.pdf')

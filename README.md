@@ -1,5 +1,35 @@
-# XrayMachine_Bonn
+# MyWorkSpace includes a set of libraries and functions for analysis and plotting.
+#Step-by-step Installation Guide
+The following step-by-step installation guide explains in detail how you can setup under Windows, Linux or OS X operating system. This guide addresses users, that do not have python or git experience.
+Make an Installation Directory for all the installed packages
 
+Installing Miniconda Python
+Miniconda Python is a Python distribution providing a simple to use package manager to install lots of Python packages for data analysis, plotting and I/O. These packages are heavily used in pyBAR.
+Download and install Miniconda by following this link: Continuum Miniconda. PyBar supports Python 2.7.x but not Python 3 and newer.
+Note: Select the Python 2.7 version according to your operating system architecture (e.g. 64-bit Python on 64-bit operating system)
+Note: We strongly recommend installing a 64-bit operating system.
+ 
+Installing C++ Compiler
+Linux: Install gcc via package manager, e.g. on Ubuntu run:
+sudo apt-get install build-essential
+Windows: Install Microsoft Visual C++ Compiler for Python 2.7
+OS X: Install Xcode from App Store and install Xcode Command Line Tools by running:
+xcode-select --install
+Installing Eclipse with PyDev
+Eclipse is a state of the art Integrated Development Environment (IDE) for almost every important software programming language (JAVA, C++, Python, Fortran, Ruby, Mathematica). It has a plug in system to extend the development environment. PyDev is the Python IDE plugin for Eclipse.
+Eclipse needs a Java runtime environmet (JRE) and will not start if this is not installed. Windows: It is recommend to use the Eclipse 32-bit version, even on a 64-bit machine. Since Eclipse 64-bit needs JRE 64-bit and Oracle JRE 64-bit does not provide automatic updates. This puts the PC at risk of viruses.
+Download the Eclipse installer from Eclipse Homepage and choose Eclipse for C/C++ developers during installation.
+Eclipse asks for a workspace path where the projects will be located on your hard drive. Standard settings are sufficient.
+Close the welcome screen.
+Install the PyDev plugin by clicking on Help → Install New Software . Press add and fill the form (name = PyDev, location = http://pydev.org/updates):
+<img src = "images/PyDev.jpg">
+Select PyDev and install (accept license agreement and trust the certificate).
+Add PyDev perspective to Eclipse and select it. The button is located in the upper rigt corner:
+<img src = "images/Perspective.jpg">
+Goto Window → Preferences → PyDev → Interpreters→ Python Interpreter and press new.
+<img src = "images/AnacondaSetup1.jpg">
+Select the Python executable in /home//miniconda/bin/ on Linux or c:\Miniconda\ on Windows (optionally use the Miniconda/env// folder if you are using Miniconda environments) and press the OK button. Everything is set up automatically.
+More details are given here. https://docs.continuum.io/anaconda/ide_integration/
 # Links
 Geant4 :http://geant4.cern.ch/support/download.shtml
 Attenuation Data: http://henke.lbl.gov/optical_constants/
