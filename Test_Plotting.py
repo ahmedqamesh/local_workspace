@@ -65,10 +65,7 @@ if __name__ == '__main__':
                   line= True, data_line=Pc)
    
     # Stage II calculations
-
     Rc2=24.4
-
-    
     #We should start with more than 11,76 Volt to achieve 2V on Mops
     #Temperatures coefficient of copper is 0,39%
     T0 = 20

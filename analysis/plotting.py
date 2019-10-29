@@ -17,7 +17,6 @@ from matplotlib.colors import LogNorm
 from matplotlib import pyplot as p
 from mpl_toolkits.mplot3d import Axes3D    # @UnusedImport
 from math import pi, cos, sin
-import logging
 from scipy.linalg import norm
 import os
 import matplotlib as mpl
@@ -35,18 +34,17 @@ from matplotlib.patches import Rectangle
 from matplotlib.collections import PatchCollection
 import matplotlib.patches as patches
 import pylab as P
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - [%(levelname)-8s] (%(threadName)-10s) %(message)s")
 from matplotlib.pyplot import *
 import matplotlib.pyplot as plt
 from analysis import analysis
-
-
+from analysis import logger
 colors = ['black', 'red', '#006381',"blue",  '#33D1FF', '#F5A9BC', 'grey', '#7e0044', 'orange', "maroon", 'green', "magenta", '#33D1FF','#7e0044',  "yellow"]
 
 class Plotting(object):     
     def __init__(self):
-        print("Plotting initialized")
-    
+        self.log = logger.setup_derived_logger('Plotting')
+        self.log.info('Plotting initialized')
+        
     def plot_linear(self, Directory=False, colors=colors, PdfPages=False,text =False,txt ="Text",
                      x=np.arange(1,10),x_label="Supply current I_s [A]",y=np.arange(1,10),y_label="Needed Voltage U_S [V]",
                      map= False,z=np.arange(1,10),z_label="Transferred Efficiency",test= "DCConverter",title="powerSupply_Voltage", p=[1,2,3],

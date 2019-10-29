@@ -65,3 +65,19 @@ matplotlib.legend 2019-10-23 16:37:44,339 :: WARNING :: No handles with labels f
 matplotlib.legend 2019-10-23 16:43:29,101 :: WARNING :: No handles with labels found to put in legend.
 matplotlib.legend 2019-10-23 16:43:41,391 :: WARNING :: No handles with labels found to put in legend.
 matplotlib.legend 2019-10-23 16:44:35,110 :: WARNING :: No handles with labels found to put in legend.
+Plotting 2019-10-29 11:03:12,081 :: INFO :: Creating selected plots...
+Plotting 2019-10-29 11:03:34,705 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:03:40,592 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:04:06,323 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:04:17,400 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:04:33,528 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:05:18,454 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:35:01,822 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:35:18,097 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:35:33,210 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:35:48,454 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:35:57,470 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:36:10,371 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:36:47,063 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:37:26,872 :: INFO :: Plotting initialized
+Plotting 2019-10-29 11:39:55,729 :: INFO :: Plotting initialized
