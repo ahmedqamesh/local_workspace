@@ -50,13 +50,13 @@ if __name__ == '__main__':
     # Stage I calculations
     Rc=4
     pf=4*5
-    fl=1/0.8
-    Is=np.arange(0.1,5,0.01)
+    fl=1/0.88
+    Is=np.arange(0.6,0.8,0.01)
     Us, Trans_eff = voltagesupply(pf=pf,fl=fl,Is=Is,Rc=Rc)
     Pc = cablepowerloss(Is=Is,Rc=Rc)
     
-    #DataFrame = pd.DataFrame({"Is":Is, "Us":Us,"Transferred efficiency":Trans_eff,"cable power loss":Pc})  
-    #print(DataFrame)
+    DataFrame = pd.DataFrame({"Is":Is, "Us":Us,"Transferred efficiency":Trans_eff,"cable power loss":Pc})  
+    print(DataFrame)
         
     p =plotting.Plotting()
     p.plot_linear(Directory=Directory , PdfPages=PdfPages, x=Is,x_label=r'Delivered current $I_s$ [A]',y=Us,y_label="Output Voltage $U_S$ [V]",

@@ -117,7 +117,6 @@ axSpot.set_xlabel("x [cm]")
 axSpot.set_ylabel("z [cm]")
 
 axrange=np.arange(-6, +6.5, 0.5)
-print axrange
 print data
 print data[:, 12]
 print data[12, :]
