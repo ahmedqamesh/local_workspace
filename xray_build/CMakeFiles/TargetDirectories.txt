@@ -1,7 +1,0 @@
-/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/edit_cache.dir
-/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/rebuild_cache.dir
-/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/list_install_components.dir
-/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/install.dir
-/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/install/local.dir
-/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/install/strip.dir
-/home/silab62/git/XrayMachine_Bonn/xray_build/CMakeFiles/Xray_Test.dir

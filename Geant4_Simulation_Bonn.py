@@ -332,8 +332,6 @@ def Metal_layers(self, Directory=False, PdfPages=False, test=False, hist_id=[0],
     plt.savefig(Directory + location + "/" + outputname + ".png", dpi=300)
     plt.tight_layout()
     PdfPages.savefig()
-    
-
 
 if __name__ == '__main__':
     
