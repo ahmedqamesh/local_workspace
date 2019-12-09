@@ -11,6 +11,8 @@ loglevel = logging.getLogger('Analysis').getEffectiveLevel()
 from analysis import logger
 np.warnings.filterwarnings('ignore')
 
+
+
 class Analysis(object):
     
     def __init__(self):
@@ -36,5 +38,6 @@ class Analysis(object):
     def Inverse_square(self, x, a, b, c):
         return a / (x + b)**2 - c
     
+ 
 if __name__ == "__main__":
         pass
