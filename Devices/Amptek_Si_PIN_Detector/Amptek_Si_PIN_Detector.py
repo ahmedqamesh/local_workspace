@@ -6,8 +6,8 @@ import csv
 from matplotlib import gridspec
 from scipy.optimize import curve_fit
 class Amptel_Spectrum():
-    def channel_energy_calibration(self, Directory=False, PdfPages=False, point_label = False):
-        data = loadtxt(Directory+'Energy_channel_calibration/channel_energy_calibration_full_range.txt')
+    def channel_energy_calibration(self, file=None, PdfPages=False, point_label = False):
+        data = loadtxt(file)
         x = data[:, 0]
         y = data[:, 1]
         x_offset = np.array([x[0]-60, x[1]-20, x[2]-50, x[3]-50, x[4]-50,x[5]-100])
@@ -34,9 +34,10 @@ class Amptel_Spectrum():
         plt.xlabel('Channel number')
         plt.ylabel('Energy [keV]')
         plt.tight_layout()
-        plt.savefig(Directory+"Energy_channel_calibration/channel_energy_calibration.png", bbox_inches='tight')
+        plt.savefig("Energy_channel_calibration/channel_energy_calibration.png", bbox_inches='tight')
         PdfPages.savefig()
-        return a, a_error, b, b_error       
+        return a, a_error, b, b_error
+    
     def energy_spectrum(self, Directory=False, PdfPages=False,sources=False,real_time=False,color = False):
         # energy calib E=a*x + b, x is the channel number
         a = 0.04258
@@ -44,7 +45,7 @@ class Amptel_Spectrum():
         for i in np.arange(len(sources)):
             fig = plt.figure()
             ax = fig.add_subplot(111)
-            data = loadtxt(Directory +"Source_spectra/"+sources[i]+"/"+sources[i]+"_spectrum_calibrated.txt")
+            data = loadtxt("Source_spectra/"+sources[i]+"/"+sources[i]+"_spectrum_calibrated.txt")
             x1 = np.arange(0, len(data), 1)
             x_calib = a * x1 + b
             y1 = data
@@ -79,11 +80,11 @@ class Amptel_Spectrum():
             #ax.set_yscale('log')
             ax.legend(loc='upper right')
             plt.tight_layout()
-            plt.savefig(Directory+"Source_spectra/"+sources[i]+"/"+sources[i]+"_spectrum_calibrated.png", bbox_inches='tight')
+            plt.savefig("Source_spectra/"+sources[i]+"/"+sources[i]+"_spectrum_calibrated.png", bbox_inches='tight')
             PdfPages.savefig()
                         
     def plot_calibration_charge(self, Directory=False, PdfPages=False, point_label=False):
-        data = loadtxt(Directory+'Energy_channel_calibration/channel_energy_calibration_full_range.txt')
+        data = loadtxt('Energy_channel_calibration/channel_energy_calibration_full_range.txt')
         y = data[:, 1]
         x = data[:, 0]
         fig = plt.figure()
@@ -105,7 +106,7 @@ class Amptel_Spectrum():
         ax.grid(True)
         plt.xlabel('Channel number')
         plt.tight_layout()
-        plt.savefig(Directory + "DeltaVcal_Charge_calibration_test.png", bbox_inches='tight')
+        plt.savefig("DeltaVcal_Charge_calibration_test.png", bbox_inches='tight')
         PdfPages.savefig()
         
     def plot_FWHM(self, x, sigma, sigma_err=None, a=None, a_error=None, b=None, b_error=None, point_label=False):
@@ -125,7 +126,7 @@ class Amptel_Spectrum():
         ax.set_xlabel(r'Energy / keV', fontsize=10)
         ax.grid(True)
         plt.tight_layout()
-        plt.savefig(Directory + "Energy_Resolution_test.png", bbox_inches='tight')
+        plt.savefig("Energy_Resolution_test.png", bbox_inches='tight')
         PdfPages.savefig()
         
     def close(self):
@@ -139,9 +140,9 @@ if __name__ == '__main__':
     point_label=[r'${K}_{\alpha}^{Fe}$',r'${K}_{\beta}^{Fe}$', r'${K}_{\alpha}^{Mo}$', r'${K}_{\alpha}^{Cd}$',r'${K}_{\beta}^{Cd}$', r'$Am\ {\gamma}_{2,0}$']
     real_time=[661.16,60.715000,2148.976000 , 1.011000,6272.115000]  # Number is accumulation time
     
-    PdfPages = PdfPages('output_data/Amptel_Spectrum' + '.pdf')
+    PdfPages = PdfPages('Amptel_Spectrum.pdf')
     scan = Amptel_Spectrum()
-    a, a_error, b, b_error = scan.channel_energy_calibration(PdfPages=PdfPages, Directory=Directory,point_label=point_label)
+    a, a_error, b, b_error = scan.channel_energy_calibration(PdfPages=PdfPages, file='Energy_channel_calibration/channel_energy_calibration_full_range.txt',point_label=point_label)
     scan.energy_spectrum(PdfPages=PdfPages, Directory=Directory, sources =sources,real_time =real_time,color=color)
     scan.plot_calibration_charge(PdfPages=PdfPages, Directory=Directory,point_label=point_label)
     scan.close()

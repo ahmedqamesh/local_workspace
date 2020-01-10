@@ -101,3 +101,106 @@ Root 2019-10-31 16:00:10,608 :: INFO :: Root utils initialized
 Root 2019-10-31 16:00:51,500 :: INFO :: Root utils initialized
 Root 2019-10-31 16:01:14,477 :: INFO :: Root utils initialized
 Root 2019-10-31 16:06:03,877 :: INFO :: Root utils initialized
+Plotting 2019-11-28 16:08:33,851 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:16:34,416 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:18:04,255 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:18:54,364 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:19:21,051 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:19:45,040 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:19:53,665 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:20:50,998 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:20:55,298 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:21:24,378 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:22:29,369 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:23:42,067 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:28:12,697 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:28:46,627 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:29:08,709 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:35:44,912 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:39:01,757 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:55:45,212 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:58:28,295 :: INFO :: Plotting initialized
+Plotting 2019-11-28 16:58:43,717 :: INFO :: Plotting initialized
+Plotting 2019-11-28 20:52:58,255 :: INFO :: Plotting initialized
+tornado.application 2019-11-28 20:52:59,259 :: ERROR :: Exception in callback functools.partial(<function Kernel.enter_eventloop.<locals>.advance_eventloop at 0x7f1574cd5f80>)
+Traceback (most recent call last):
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/ipykernel/kernelbase.py", line 310, in advance_eventloop
+    eventloop(self)
+TypeError: 'NoneType' object is not callable
+Plotting 2019-11-28 20:54:08,575 :: INFO :: Plotting initialized
+tornado.application 2019-11-28 20:54:09,579 :: ERROR :: Exception in callback functools.partial(<function Kernel.enter_eventloop.<locals>.advance_eventloop at 0x7f98baec8560>)
+Traceback (most recent call last):
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/ipykernel/kernelbase.py", line 310, in advance_eventloop
+    eventloop(self)
+TypeError: 'NoneType' object is not callable
+Plotting 2019-11-28 20:57:08,218 :: INFO :: Plotting initialized
+Plotting 2019-11-29 10:30:59,289 :: INFO :: Plotting initialized
+tornado.application 2019-11-29 10:31:00,294 :: ERROR :: Exception in callback functools.partial(<function Kernel.enter_eventloop.<locals>.advance_eventloop at 0x7f4d546a59e0>)
+Traceback (most recent call last):
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/ipykernel/kernelbase.py", line 310, in advance_eventloop
+    eventloop(self)
+TypeError: 'NoneType' object is not callable
+Plotting 2019-11-29 10:31:39,680 :: INFO :: Plotting initialized
+Plotting 2019-11-29 12:51:15,928 :: INFO :: Plotting initialized
+Plotting 2019-11-29 12:51:22,309 :: INFO :: Plotting initialized
+Plotting 2019-12-03 13:42:59,445 :: INFO :: Plotting initialized
+tornado.application 2019-12-03 13:43:00,449 :: ERROR :: Exception in callback functools.partial(<function Kernel.enter_eventloop.<locals>.advance_eventloop at 0x7f1a24d3ef80>)
+Traceback (most recent call last):
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/ipykernel/kernelbase.py", line 310, in advance_eventloop
+    eventloop(self)
+TypeError: 'NoneType' object is not callable
+Plotting 2019-12-03 13:44:09,957 :: INFO :: Plotting initialized
+Plotting 2019-12-03 13:44:58,549 :: INFO :: Plotting initialized
+Plotting 2019-12-03 13:49:37,565 :: INFO :: Plotting initialized
+Plotting 2019-12-03 13:54:07,783 :: INFO :: Plotting initialized
+Plotting 2019-12-03 13:59:24,089 :: INFO :: Plotting initialized
+Root 2019-12-13 20:09:09,790 :: INFO :: Root utils initialized
+Plotting 2019-12-17 11:55:21,407 :: INFO :: Plotting initialized
+Plotting 2019-12-17 11:57:20,688 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:01:08,986 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:01:16,259 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:01:57,015 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:02:15,015 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:02:51,701 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:03:16,197 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:07:37,492 :: INFO :: Plotting initialized
+Plotting 2019-12-17 12:12:40,487 :: INFO :: Plotting initialized
+Plotting 2019-12-17 13:09:19,400 :: INFO :: Plotting initialized
+Plotting 2019-12-17 13:09:33,770 :: INFO :: Plotting initialized
+Plotting 2019-12-17 13:56:12,497 :: INFO :: Plotting initialized
+tornado.application 2019-12-17 13:56:13,501 :: ERROR :: Exception in callback functools.partial(<function Kernel.enter_eventloop.<locals>.advance_eventloop at 0x7f65ac50ef80>)
+Traceback (most recent call last):
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/ipykernel/kernelbase.py", line 310, in advance_eventloop
+    eventloop(self)
+TypeError: 'NoneType' object is not callable
+Plotting 2019-12-17 13:56:21,445 :: INFO :: Plotting initialized
+Plotting 2019-12-18 19:32:23,377 :: INFO :: Plotting initialized
+Plotting 2020-01-03 12:21:06,050 :: INFO :: Plotting initialized
+tornado.application 2020-01-03 12:21:07,054 :: ERROR :: Exception in callback functools.partial(<function Kernel.enter_eventloop.<locals>.advance_eventloop at 0x7fa374391f80>)
+Traceback (most recent call last):
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/tornado/ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "/home/dcs/miniconda3/lib/python3.7/site-packages/ipykernel/kernelbase.py", line 310, in advance_eventloop
+    eventloop(self)
+TypeError: 'NoneType' object is not callable
+Plotting 2020-01-03 12:28:37,101 :: INFO :: Plotting initialized
+Plotting 2020-01-03 12:30:33,029 :: INFO :: Plotting initialized
+Plotting 2020-01-03 12:30:33,682 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:41:15,259 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:42:53,339 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:43:47,828 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:44:37,407 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:45:28,380 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:46:01,565 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:46:16,833 :: INFO :: Plotting initialized
+Plotting 2020-01-03 13:46:29,739 :: INFO :: Plotting initialized
