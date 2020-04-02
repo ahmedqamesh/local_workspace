@@ -766,3 +766,259 @@ Plotting 2020-03-25 10:53:14,247 :: INFO :: Plotting initialized
 Plotting 2020-03-25 10:54:50,220 :: INFO :: Plotting initialized
 Plotting 2020-03-25 10:55:02,025 :: INFO :: Plotting initialized
 Plotting 2020-03-25 10:56:11,658 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:20:24,106 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:20:36,424 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:20:51,501 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:21:17,272 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:21:51,388 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:22:00,607 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:22:23,531 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:22:55,305 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:23:25,619 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:24:00,997 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:24:18,540 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:24:40,481 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:26:36,380 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:27:32,164 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:27:44,556 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:27:54,469 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:28:08,905 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:28:23,730 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:28:34,975 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:44:30,782 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:44:47,503 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:44:58,035 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:45:05,325 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:45:13,545 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:45:19,267 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:45:28,118 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:45:49,052 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:47:07,436 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:48:04,599 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:48:26,407 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:50:00,374 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:51:46,687 :: INFO :: Plotting initialized
+Plotting 2020-04-01 17:54:00,100 :: INFO :: Plotting initialized
+Plotting 2020-04-01 18:11:39,023 :: INFO :: Plotting initialized
+Plotting 2020-04-01 18:15:00,647 :: INFO :: Plotting initialized
+Plotting 2020-04-01 18:15:17,980 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:15:19,924 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:15:19,924 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'celluloid_legends.gif']
+Plotting 2020-04-01 18:15:58,537 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:16:00,508 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:16:00,508 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 18:19:59,752 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:20:01,610 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:20:01,610 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 18:25:18,611 :: INFO :: Plotting initialized
+Plotting 2020-04-01 18:25:33,570 :: INFO :: Plotting initialized
+Plotting 2020-04-01 18:25:57,931 :: INFO :: Plotting initialized
+Plotting 2020-04-01 18:26:48,454 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:26:52,804 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:26:52,805 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+matplotlib.animation 2020-04-01 18:26:52,931 :: WARNING :: MovieWriter stderr:
+convert: unexpected end-of-file `-': No such file or directory @ error/rgb.c/ReadRGBImage/230.
+
+Plotting 2020-04-01 18:27:39,159 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:27:42,952 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:27:42,953 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+matplotlib.animation 2020-04-01 18:27:43,070 :: WARNING :: MovieWriter stderr:
+convert: unexpected end-of-file `-': No such file or directory @ error/rgb.c/ReadRGBImage/230.
+
+Plotting 2020-04-01 18:27:56,529 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:28:00,236 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:28:00,236 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+matplotlib.animation 2020-04-01 18:28:00,360 :: WARNING :: MovieWriter stderr:
+convert: unexpected end-of-file `-': No such file or directory @ error/rgb.c/ReadRGBImage/230.
+
+Plotting 2020-04-01 18:28:12,905 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:28:16,673 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:28:16,673 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+matplotlib.animation 2020-04-01 18:28:16,819 :: WARNING :: MovieWriter stderr:
+convert: unexpected end-of-file `-': No such file or directory @ error/rgb.c/ReadRGBImage/230.
+
+Plotting 2020-04-01 18:30:28,046 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:30:31,601 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:30:31,601 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 18:31:42,688 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 18:31:46,316 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 18:31:46,317 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:16:50,978 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:16:54,546 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:16:54,546 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:17:40,775 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:17:44,231 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:17:44,231 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:22:08,723 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:22:12,088 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:22:12,088 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:23:08,733 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:23:12,553 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:23:12,555 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:23:47,491 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:23:51,235 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:23:51,235 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:24:50,430 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:24:54,276 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:24:54,276 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:26:22,456 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:26:26,287 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:26:26,287 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-01 19:30:11,443 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-01 19:30:15,152 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-01 19:30:15,152 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 07:55:33,280 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 07:55:36,802 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 07:55:36,802 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 07:58:37,880 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 07:58:40,149 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 07:58:40,150 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 07:58:58,914 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 07:59:01,322 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 07:59:01,323 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 07:59:23,411 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 07:59:26,918 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 07:59:26,919 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 07:59:55,950 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 07:59:59,485 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 07:59:59,486 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:01:32,936 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:01:36,470 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:01:36,470 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:02:41,665 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:02:43,767 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:02:43,768 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:03:06,041 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:03:08,088 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:03:08,088 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:03:19,303 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:03:23,503 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:03:23,504 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.6666666666666667', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:03:45,416 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:03:49,481 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:03:49,482 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '1.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:03:59,719 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:04:03,967 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:04:03,967 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '5.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:04:16,697 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:04:20,673 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:04:20,673 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:05:08,395 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:05:12,035 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:05:12,035 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:05:52,149 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:05:55,583 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:05:55,583 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:06:12,482 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:06:16,296 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:06:16,296 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:06:23,324 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:06:27,069 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:06:27,069 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:07:23,146 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:07:27,053 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:07:27,053 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:08:01,204 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:08:04,969 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:08:04,969 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:26:48,465 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:26:52,357 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:26:52,358 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:27:55,999 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:27:59,699 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:27:59,700 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:28:34,018 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:28:38,012 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:28:38,012 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:29:16,527 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:29:20,533 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:29:20,534 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:32:35,887 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:32:39,381 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:32:39,382 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:35:22,079 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:35:25,657 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:35:25,657 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:36:11,341 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:36:15,969 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:36:15,969 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:38:22,961 :: INFO :: Plotting initialized
+Plotting 2020-04-02 08:38:48,499 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:38:52,323 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:38:52,324 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:39:32,185 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:39:35,051 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:39:35,051 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:40:04,520 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:40:08,507 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:40:08,507 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:42:04,279 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:42:08,165 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:42:08,165 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:43:06,755 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:43:10,988 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:43:10,989 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:43:21,339 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:43:25,106 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:43:25,106 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:43:33,499 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:43:37,297 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:43:37,298 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:44:32,297 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:44:36,969 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:44:36,970 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:44:49,787 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:44:54,288 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:44:54,289 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:46:24,509 :: INFO :: Plotting initialized
+Plotting 2020-04-02 08:46:31,097 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:46:35,044 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:46:35,044 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:47:09,953 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:47:13,838 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:47:13,839 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:47:28,476 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:47:32,579 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:47:32,580 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:48:29,484 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:48:33,335 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:48:33,336 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:48:48,946 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:48:52,722 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:48:52,722 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:49:10,408 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:49:14,501 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:49:14,501 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:50:50,235 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:50:54,181 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:50:54,181 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:51:38,389 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:51:43,235 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:51:43,236 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:52:08,928 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:52:12,727 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:52:12,727 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:52:43,340 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:52:47,829 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:52:47,830 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:53:13,692 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:53:17,529 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:53:17,529 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '50.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:54:13,676 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:54:17,466 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:54:17,466 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:54:29,243 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:54:32,894 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:54:32,895 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:54:47,229 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:54:50,973 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:54:50,973 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:55:03,907 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:55:07,847 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:55:07,847 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:55:16,082 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:55:21,008 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:55:21,008 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']
+Plotting 2020-04-02 08:55:30,485 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-02 08:55:34,120 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-02 08:55:34,120 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/celluloid_legends.gif']

@@ -13,8 +13,15 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - [%(leve
 logger = logging.getLogger(__name__)
 import pandas as pd
 import csv
+import matplotlib
+from celluloid import Camera
 import matplotlib.image as image
-plt.style.use('ggplot')
+#plt.style.use('ggplot')
+
+#http://www.ti.com/lit/an/slyt079/slyt079.pdf
+#https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1td04/1TD04_0e_RTO_DC-DC-Converter.pdf
+#https://www.maximintegrated.com/en/design/technical-documents/tutorials/2/2031.html
+#https://www.analog.com/media/en/training-seminars/design-handbooks/Practical-Power-Solutions/Section1.pdf
 
 def voltagesupply(pf= 4*5, fl = 1.2, Is=np.arange(0.1,20,0.1),Rc=4):
     '''
@@ -86,7 +93,91 @@ T=np.arange(-50,50,2)
 delta_T= [T[i]-T0 for i in range(len(T))]   
 RT = cableresistanceTemprature(delta_T=delta_T,Rc=Rc2,alpha=.0039)
 
+def plot_delay_dcconverter(dir = None , files =["file"], txt = "txt", div_delay = [0], output="output",PdfPages=PdfPages,directory=directory,ylim=4000,title="title", logo = True):
+    im = image.imread(directory+dir+'icon.png')
+    for file in files:
+        fig = plt.figure()       
+        ax = fig.add_subplot(111)
+        x_axis = []
+        v_cin = []
+        v_cout = []
+        v_in = []
+        with open(directory + dir+ "delay/"+file+"_cable_mops.csv", 'r')as data:  # Get Data for the first Voltage
+            reader = csv.reader(data)
+            next(reader)
+            next(reader)
+            for row in reader:
+                x_axis = np.append(x_axis, float(row[0])+div_delay[files.index(file)])
+                v_in = np.append(v_in, float(row[1]))
+                v_cin = np.append(v_cin, float(row[2]))
+                v_cout = np.append(v_cout, float(row[3]))    
+        ax.errorbar(x_axis, v_in, yerr=0.0, color="yellow", fmt='-',  markerfacecolor='white', ms=3, label="Power supply voltage  $U_S$ [V]")
+        ax.errorbar(x_axis, v_cin, yerr=0.0, color="green", fmt='-' ,  markerfacecolor='white', ms=3, label="supply voltage to the DC/DC module")
+        ax.errorbar(x_axis, v_cout, yerr=0.0, color="blue", fmt='-',  markerfacecolor='white', ms=3, label="Output Voltage from the DC/DC module")
+        ax.text(0.95, 0.35, txt, fontsize=10,
+                horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
+                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.2))    
+        ax.ticklabel_format(useOffset=False)
+        ax.grid(True)
+        ax.legend(loc="upper left", prop={'size': 8})
+        ax.set_ylabel("Voltage [V]")
+        ax.autoscale(enable=True, axis='x', tight=None)
+        ax.set_title(title, fontsize=12)
+        ax.set_ylim([0,25])
+        ax.set_xlim([-0.04,0])
+        ax.grid(True)
+        ax.set_xlabel("time $t$ [ms]")
+        ax.set_ylabel(r'Voltage [V]')
+        fig.figimage(im, 5, 5, zorder=1, alpha=0.08, resize =False)
+        plt.tight_layout()
+        plt.savefig(directory + dir+file+"_cable_mops_delay.png", bbox_inches='tight')
+        plt.clf()
+        
+    #animation
+        #col_row = plt.cm.BuPu(np.linspace(0.5, 2, 20))
+    cam_fig = plt.figure()
+    ax2 = cam_fig.add_subplot(111)
+    camera = Camera(cam_fig)  
+    for file in files:
+        x_axis = []
+        v_cin = []
+        v_cout = []
+        v_in = []
+        with open(directory + dir+ "delay/"+file+"_cable_mops.csv", 'r')as data:  # Get Data for the first Voltage
+            reader = csv.reader(data)
+            next(reader)
+            next(reader)
+            for row in reader:
+                x_axis = np.append(x_axis, float(row[0])+div_delay[files.index(file)])
+                v_in = np.append(v_in, float(row[1]))
+                v_cin = np.append(v_cin, float(row[2]))
+                v_cout = np.append(v_cout, float(row[3]))    
+        vin = ax2.errorbar(x_axis, v_in, yerr=0.0, color="yellow", fmt='-',  markerfacecolor='white', ms=3, label="Power supply voltage  $U_S$ [V]")
+        vcin = ax2.errorbar(x_axis, v_cin, yerr=0.0, color="green", fmt='-' ,  markerfacecolor='white', ms=3, label="supply voltage to the DC/DC module")
+        vcout = ax2.errorbar(x_axis, v_cout, yerr=0.0, color="blue", fmt='-',  markerfacecolor='white', ms=3, label="Output Voltage from the DC/DC module")
+        ax2.text(0.85, 0.35, txt+"\n"+file+"V              ", fontsize=10,
+            horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
+            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.2))    
+        camera.snap()
 
+    ax2.ticklabel_format(useOffset=False)
+    ax2.grid(True)
+    ax2.legend([vin,vcin,vcout],["Power supply voltage  $U_S$ [V]","supply voltage to the DC/DC module","Output Voltage from the DC/DC module"],loc="upper left", prop={'size': 8})
+    ax2.set_ylabel("Voltage [V]")
+    ax2.autoscale(enable=True, axis='x', tight=None)
+    ax2.set_title(title, fontsize=12)
+    ax2.set_ylim([0,25])
+    ax2.set_xlim([-0.04,0])
+    ax2.get_xaxis().set_ticks([])
+    ax2.grid(True)
+    ax2.set_xlabel("time $t$ [ms]")
+    ax2.set_ylabel(r'Voltage [V]')
+    cam_fig.figimage(im, 5, 5, zorder=1, alpha=0.08, resize =False)  
+            
+    animation = camera.animate()
+    animation.save(directory + dir+ 'celluloid_legends.gif', writer = 'imagemagick', fps=1)
+    PdfPages.savefig()
+    
 def plot_efficiency_dcconverter(dir = None , txt = "txt", a = 8 , file =None, output="output",PdfPages=PdfPages,directory=directory,xlim=[5,40],title="title", logo = True):
     im = image.imread(directory+dir+'icon.png')
     col_row = plt.cm.BuPu(np.linspace(0.3, 0.9, 5))
@@ -202,25 +293,29 @@ def plot_voltage_dcconverter(dir = None , file =None, txt = "txt",  output="outp
     plt.tight_layout()
     plt.savefig(directory + dir+ output, bbox_inches='tight')
     PdfPages.savefig()
-    
+
+
+
+# plot_delay_dcconverter   
+plot_delay_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF",files=["05","07","10","15","20"], div_delay = [3.904,3.446,2.682,2.678,3.368], output="LTM8067EY-PBF_MoPS_update_delay.png", title = "Delay")
 # Efficiency of the module
-plot_efficiency_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF", a = 8, file="LTM8067EY-PBF_MoPS_results_update.csv",output="LTM8067EY-PBF_MoPS_results_update_efficiency.png",xlim = [0,45], title = "Efficiency of the isolation module [MOPS powering]")
-plot_efficiency_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF", a = 14, file="LTM8067EY-PBF_MoPS_NoCable_update.csv", output="LTM8067EY-PBF_MoPS_NoCable_update_efficiency.png",xlim = [0,45], title = "Efficiency of the isolation module [MOPS powering/No Cables]")
-plot_efficiency_dcconverter(dir = "AP64500SP-EVM/",txt = "AP64500SP-EVM",a = 16, file="AP64500SP-EVM_FPGA_results.csv",output="AP64500SP-EVM_FPGA_efficiency.png",xlim = [0,45], title = "Efficiency of the step down module [FPGA powering]")
-plot_efficiency_dcconverter(dir = "AP64500SP-EVM/",txt = "AP64500SP-EVM",a = 7, file="AP64500SP-EVM_FPGA_NoCable.csv", output="AP64500SP-EVM_FPGA_NoCable_efficiency.png",xlim = [0,45], title = "Efficiency of the step down module [FPGA powering/No Cables]")
-       
- # Current Voltage of Power supply
-#plot_voltage_dcconverter(dir = "MAXM17536ALY/", txt = "MAXM17536ALY",file="MAXM17536ALY_FPGA_Full.csv",output="MAXM17536ALY_FPGA_Full.png",ylim = 5000,title ="Testing results of the step down module [FPGA powering]")
-#plot_voltage_dcconverter(dir = "MAXM17536ALY/", txt = "MAXM17536ALY",file="MAXM17536ALY_FPGA2_Operation.csv",output="MAXM17536ALY_FPGA2_Operation.png",ylim = 4000,title ="Testing results of the step down module [FPGA powering]")
-#plot_voltage_dcconverter(dir = "MAXM17536ALY/", txt = "MAXM17536ALY",file="MAXM17536ALY_FPGA1.csv",output="MAXM17536ALY_FPGA1.png",ylim = 4000,title ="Testing results of the step down module [FPGA powering]")
-
-plot_voltage_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF",file="LTM8067EY-PBF_MoPS_results.csv",output="LTM8067EY-PBF_MoPS_results.png",ylim = 100, title = "Testing results of the isolation module [MOPS powering]")
-plot_voltage_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF",file="LTM8067EY-PBF_MoPS_results_update.csv", output="LTM8067EY-PBF_MoPS_results_update.png",ylim = 300, title = "Testing results  of the isolation module [MOPS powering]")
-plot_voltage_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF",file="LTM8067EY-PBF_MoPS_NoCable_update.csv", output="LTM8067EY-PBF_MoPS_NoCable_update.png",ylim = 300, title = "Testing results  of the isolation module [MOPS powering/No Cables]")
-
-plot_voltage_dcconverter(dir = "AP64500SP-EVM/", txt = "AP64500SP-EVM",file="AP64500SP-EVM_FPGA_results.csv",output="AP64500SP-EVM_FPGA.png",ylim = 4000, title = "Testing results of the step down module [FPGA powering]")
-plot_voltage_dcconverter(dir = "AP64500SP-EVM/", txt = "AP64500SP-EVM",file="AP64500SP-EVM_FPGA_NoCable.csv", output="AP64500SP-EVM_FPGA_NoCable.png",ylim = 4000, title = "Testing results of the step down module [FPGA powering/No Cables]")
-            
+# plot_efficiency_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF", a = 8, file="LTM8067EY-PBF_MoPS_results_update.csv",output="LTM8067EY-PBF_MoPS_results_update_efficiency.png",xlim = [0,45], title = "Efficiency of the isolation module [MOPS powering]")
+# plot_efficiency_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF", a = 14, file="LTM8067EY-PBF_MoPS_NoCable_update.csv", output="LTM8067EY-PBF_MoPS_NoCable_update_efficiency.png",xlim = [0,45], title = "Efficiency of the isolation module [MOPS powering/No Cables]")
+# plot_efficiency_dcconverter(dir = "AP64500SP-EVM/",txt = "AP64500SP-EVM",a = 16, file="AP64500SP-EVM_FPGA_results.csv",output="AP64500SP-EVM_FPGA_efficiency.png",xlim = [0,45], title = "Efficiency of the step down module [FPGA powering]")
+# plot_efficiency_dcconverter(dir = "AP64500SP-EVM/",txt = "AP64500SP-EVM",a = 7, file="AP64500SP-EVM_FPGA_NoCable.csv", output="AP64500SP-EVM_FPGA_NoCable_efficiency.png",xlim = [0,45], title = "Efficiency of the step down module [FPGA powering/No Cables]")
+#        
+#  # Current Voltage of Power supply
+# #plot_voltage_dcconverter(dir = "MAXM17536ALY/", txt = "MAXM17536ALY",file="MAXM17536ALY_FPGA_Full.csv",output="MAXM17536ALY_FPGA_Full.png",ylim = 5000,title ="Testing results of the step down module [FPGA powering]")
+# #plot_voltage_dcconverter(dir = "MAXM17536ALY/", txt = "MAXM17536ALY",file="MAXM17536ALY_FPGA2_Operation.csv",output="MAXM17536ALY_FPGA2_Operation.png",ylim = 4000,title ="Testing results of the step down module [FPGA powering]")
+# #plot_voltage_dcconverter(dir = "MAXM17536ALY/", txt = "MAXM17536ALY",file="MAXM17536ALY_FPGA1.csv",output="MAXM17536ALY_FPGA1.png",ylim = 4000,title ="Testing results of the step down module [FPGA powering]")
+# 
+# plot_voltage_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF",file="LTM8067EY-PBF_MoPS_results.csv",output="LTM8067EY-PBF_MoPS_results.png",ylim = 100, title = "Testing results of the isolation module [MOPS powering]")
+# plot_voltage_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF",file="LTM8067EY-PBF_MoPS_results_update.csv", output="LTM8067EY-PBF_MoPS_results_update.png",ylim = 300, title = "Testing results  of the isolation module [MOPS powering]")
+# plot_voltage_dcconverter(dir = "LTM8067EY-PBF/", txt = "LTM8067EY-PBF",file="LTM8067EY-PBF_MoPS_NoCable_update.csv", output="LTM8067EY-PBF_MoPS_NoCable_update.png",ylim = 300, title = "Testing results  of the isolation module [MOPS powering/No Cables]")
+# 
+# plot_voltage_dcconverter(dir = "AP64500SP-EVM/", txt = "AP64500SP-EVM",file="AP64500SP-EVM_FPGA_results.csv",output="AP64500SP-EVM_FPGA.png",ylim = 4000, title = "Testing results of the step down module [FPGA powering]")
+# plot_voltage_dcconverter(dir = "AP64500SP-EVM/", txt = "AP64500SP-EVM",file="AP64500SP-EVM_FPGA_NoCable.csv", output="AP64500SP-EVM_FPGA_NoCable.png",ylim = 4000, title = "Testing results of the step down module [FPGA powering/No Cables]")
+#             
 p.close(PdfPages=PdfPages)
 
 

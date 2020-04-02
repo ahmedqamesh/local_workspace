@@ -1,0 +1,22 @@
+Anlg Ch State  Units/Div  Position  Coupling  BW Limit  Invert  Impedance 
+ Ch 1:    On     10.0V/   10.0000V     DC        Off      Off     1M Ohm  
+ Ch 2:    On     10.0V/   20.0000V     DC        Off      Off     1M Ohm  
+ Ch 3:    On     2.00V/   6.00000V     DC        Off      Off     1M Ohm  
+
+Anlg Ch   Probe  
+ Ch 1:  10.0 : 1 
+ Ch 2:  10.0 : 1 
+ Ch 3:  10.0 : 1 
+
+Time Time Ref  Main s/div   Delay  
+Roll   Right    10.00ms/   -4.076s 
+
+Acquisition Realtime  Vectors  Inf Persist 
+   Normal      On        On        Off     
+
+   Measure   Current   Mean     Min     Max   Std Dev  Count 
+Rise Time(2)  49.9ms  45.0ms  35.0ms  55.0ms   10.0ms    3   
+Rise Time(3)  2.9ms                                      0   
+Rise Time(1)  <300us                                     0   
+Delay(2R-3R)  1.8ms   -3.3ms  -5.0ms   0.0s    2.9ms     3   
+
