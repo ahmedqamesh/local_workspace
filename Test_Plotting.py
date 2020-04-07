@@ -22,7 +22,7 @@ import matplotlib.image as image
 #https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1td04/1TD04_0e_RTO_DC-DC-Converter.pdf
 #https://www.maximintegrated.com/en/design/technical-documents/tutorials/2/2031.html
 #https://www.analog.com/media/en/training-seminars/design-handbooks/Practical-Power-Solutions/Section1.pdf
-
+#https://indico.cern.ch/event/895294/contributions/3775479/attachments/2000763/3339673/Optosystem_PDR.pdf
 def voltagesupply(pf= 4*5, fl = 1.2, Is=np.arange(0.1,20,0.1),Rc=4):
     '''
     The function will print the needed voltage supply from the power supply.
