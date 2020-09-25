@@ -1,0 +1,3 @@
+New Carrier board
+Optimal BandGap 600.8 mV	C
+optimal Freq 	10.016 MHz	A

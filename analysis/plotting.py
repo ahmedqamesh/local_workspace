@@ -36,9 +36,9 @@ from matplotlib.patches import Rectangle
 from matplotlib.collections import PatchCollection
 from analysis import analysis
 from analysis import logger
-
 colors = ['black', 'red', '#006381', "blue", '#33D1FF', '#F5A9BC', 'grey', '#7e0044', 'orange', "maroon", 'green', "magenta", '#33D1FF', '#7e0044', "yellow"]
 #colors = plt.cm.BuPu(np.linspace(0.3, 0.9, 20))
+an = analysis.Analysis()
 class Plotting(object):     
 
     def __init__(self):
@@ -54,18 +54,27 @@ class Plotting(object):
         '''
         fig = plt.figure()
         ax = fig.add_subplot(111)
+
         if map:
             cmap = plt.cm.get_cmap('viridis', 15)
             sc = ax.scatter(x, y, c=z, cmap=cmap, s=8)
             cbar = fig.colorbar(sc, ax=ax, orientation='horizontal')
             cbar.ax.invert_xaxis()
             cbar.set_label(z_label, labelpad=1, fontsize=10)
-            plt.axvline(x=0.8*1000, linewidth=0.8, color=colors[1], linestyle='dashed')
-            plt.axhline(y=24, linewidth=0.8, color=colors[1], linestyle='dashed')
+            #plt.axvline(x=0.8*1000, linewidth=0.8, color=colors[1], linestyle='dashed')
+            #plt.axhline(y=24, linewidth=0.8, color=colors[1], linestyle='dashed')
         else:
             sc = ax.errorbar(x, y, xerr=0.0, yerr=0.0, fmt='o', color=colors[1], markersize=3, ecolor='black')
-            ax.plot(x, y, linestyle="-", color=colors[0], label="Fit", markersize=1)       
-            # ax.legend(loc="upper right")
+            #ax.plot(x, y, linestyle="-", color=colors[0], label="Fit: ", markersize=1)
+            sig = [0.4 * y[k] for k in range(len(y))]
+            popt, pcov = curve_fit(an.linear, x, y, sigma=sig, absolute_sigma=True, maxfev=5000, p0=(0.47, 0))
+            xline = np.linspace(x[0], x[-1], 100) 
+            a, b = popt[0], popt[1]
+            a_err, b_err = np.absolute(pcov[0][0]) ** 0.5, np.absolute(pcov[1][1]) ** 0.5
+            line_fit_legend_entry='Fit parameters:\n a=%.2f$\pm$ %.2f\n b=%.2f$\pm$ %.2f\n' % (a, a_err, b, b_err)
+            ax.plot(xline, an.linear(xline, *popt), '-', lw=1, label=line_fit_legend_entry, markersize=9)  # plot fitted function
+            
+            ax.legend(loc="upper right")
             # ax.set_ylim(ymin=min(y)-10)
         ax.set_xlabel(x_label, fontsize=10)
         ax.set_title(title, fontsize=8)
@@ -73,7 +82,7 @@ class Plotting(object):
         ax.ticklabel_format(useOffset=False)
         ax.grid(True)
         if text:
-            ax.text(0.95, 0.35, txt, fontsize=8,
+            ax.text(0.95, 0.15, txt, fontsize=8,
                     horizontalalignment='right', verticalalignment='top', transform=ax.transAxes,
                     bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.2))          
         if line:

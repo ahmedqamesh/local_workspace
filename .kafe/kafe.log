@@ -1110,3 +1110,909 @@ matplotlib.animation 2020-04-02 23:59:38,380 :: INFO :: MovieWriter.run: running
 Plotting 2020-04-03 00:00:06,428 :: INFO :: Plotting initialized
 matplotlib.animation 2020-04-03 00:00:11,447 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
 matplotlib.animation 2020-04-03 00:00:11,447 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 09:20:23,979 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 09:20:28,578 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 09:20:28,579 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 09:21:29,501 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 09:21:34,239 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 09:21:34,240 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 09:22:10,002 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 09:22:14,467 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 09:22:14,467 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 09:22:37,275 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 09:22:42,095 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 09:22:42,095 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 09:23:10,731 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 09:23:15,299 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 09:23:15,299 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 09:24:25,534 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 09:24:30,199 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 09:24:30,200 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 10:34:47,267 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 10:34:52,490 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 10:34:52,491 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 11:56:35,053 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 11:56:40,628 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 11:56:40,629 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 11:57:24,251 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 11:57:29,835 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 11:57:29,835 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-04-07 12:00:31,685 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 12:00:37,006 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 12:00:37,007 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-04-07 12:00:40,701 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 12:00:40,702 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-04-07 13:03:59,757 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 13:04:04,827 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:04:04,828 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-04-07 13:04:07,855 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:04:07,856 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-04-07 13:05:04,531 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 13:05:09,636 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:05:09,637 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-04-07 13:05:12,607 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:05:12,608 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-04-07 13:05:29,978 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 13:05:33,214 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:05:33,214 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-04-07 13:05:34,872 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:05:34,872 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-04-07 13:05:41,771 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 13:05:47,385 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:05:47,386 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-04-07 13:05:50,619 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:05:50,620 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-04-07 13:06:44,324 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 13:06:48,969 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:06:48,969 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-04-07 13:06:51,925 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 13:06:51,926 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-04-07 14:02:57,950 :: INFO :: Plotting initialized
+matplotlib.animation 2020-04-07 14:03:04,082 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 14:03:04,082 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-04-07 14:03:07,799 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-04-07 14:03:07,800 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Root 2020-05-28 13:47:00,406 :: INFO :: Root utils initialized
+Plotting 2020-09-14 16:51:20,594 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 16:51:25,874 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 16:51:25,875 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 16:51:29,084 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 16:51:29,084 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 16:59:11,579 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 16:59:15,905 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 16:59:15,906 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 16:59:19,079 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 16:59:19,079 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:00:33,356 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:00:37,769 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:00:37,769 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:00:40,988 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:00:40,989 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:00:47,848 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:00:52,234 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:00:52,235 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:00:55,466 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:00:55,466 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:00:59,252 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:01:03,826 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:01:03,827 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:01:07,020 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:01:07,021 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:01:23,503 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:01:28,037 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:01:28,037 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:01:31,256 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:01:31,256 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:04:24,485 :: INFO :: Plotting initialized
+Plotting 2020-09-14 17:04:40,987 :: INFO :: Plotting initialized
+Plotting 2020-09-14 17:05:07,544 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:05:11,841 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:05:11,842 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:05:15,185 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:05:15,186 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:05:21,060 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:05:25,549 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:05:25,550 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:05:29,008 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:05:29,009 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:06:27,704 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:06:32,157 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:06:32,157 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:06:35,367 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:06:35,367 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:06:56,677 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:07:01,170 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:07:01,170 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:07:04,302 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:07:04,302 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:07:47,989 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:07:52,364 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:07:52,364 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:07:55,556 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:07:55,556 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:08:57,212 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:09:01,548 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:09:01,549 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:09:04,668 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:09:04,668 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:09:37,700 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:09:42,089 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:09:42,089 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:09:45,268 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:09:45,268 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:10:09,028 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:10:13,273 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:10:13,273 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:10:16,485 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:10:16,485 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:10:27,869 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:10:32,243 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:10:32,243 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:10:35,435 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:10:35,436 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:10:40,634 :: INFO :: Plotting initialized
+Plotting 2020-09-14 17:10:49,520 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:10:53,876 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:10:53,877 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:10:57,136 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:10:57,136 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:11:06,096 :: INFO :: Plotting initialized
+Plotting 2020-09-14 17:12:22,109 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:12:26,499 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:12:26,499 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:12:29,722 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:12:29,722 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:14:10,771 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:14:15,238 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:14:15,239 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:14:18,426 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:14:18,426 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:15:38,228 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:15:42,754 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:15:42,755 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:15:46,045 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:15:46,046 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:16:30,285 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:16:34,748 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:16:34,748 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:16:37,986 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:16:37,986 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:17:21,438 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:17:25,897 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:17:25,898 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:17:29,128 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:17:29,129 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:18:32,228 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:18:36,709 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:18:36,710 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:18:40,042 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:18:40,043 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:18:51,154 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:18:55,503 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:18:55,504 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:18:58,733 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:18:58,733 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:19:04,452 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:19:08,921 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:19:08,921 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:19:12,110 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:19:12,110 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:19:20,434 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:19:24,889 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:19:24,890 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:19:28,109 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:19:28,109 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:19:33,622 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:19:37,901 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:19:37,901 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:19:41,040 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:19:41,041 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:21:59,332 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:22:03,745 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:22:03,746 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:22:06,884 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:22:06,885 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:25:00,335 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:25:04,717 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:25:04,718 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:25:07,859 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:25:07,859 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:29:21,135 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:29:25,538 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:29:25,539 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:29:28,652 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:29:28,653 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:29:39,150 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:29:43,441 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:29:43,441 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:29:46,546 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:29:46,546 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:30:34,109 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:30:38,694 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:30:38,695 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:30:42,023 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:30:42,023 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:30:53,893 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:30:58,556 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:30:58,557 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:31:01,884 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:31:01,884 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:31:13,095 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:31:17,542 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:31:17,543 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:31:20,698 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:31:20,698 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:31:28,832 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:31:33,280 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:31:33,281 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-09-14 17:31:37,649 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:31:42,035 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:31:42,035 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:31:45,226 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:31:45,227 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:35:12,847 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:35:17,388 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:35:17,389 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:35:20,561 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:35:20,561 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:35:42,699 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:35:47,057 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:35:47,057 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:35:50,293 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:35:50,293 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:35:54,864 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:35:59,250 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:35:59,251 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:36:02,406 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:36:02,406 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:36:11,878 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:36:16,338 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:36:16,339 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:36:19,557 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:36:19,557 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:36:50,785 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:36:55,254 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:36:55,254 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:36:58,447 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:36:58,447 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:46:00,988 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:46:05,336 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:05,337 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:46:08,481 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:08,482 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:46:14,789 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:46:19,260 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:19,260 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:46:22,486 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:22,486 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:46:27,790 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:46:32,168 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:32,169 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:46:35,393 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:35,394 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:46:44,135 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:46:48,446 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:48,446 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:46:51,575 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:46:51,575 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-14 17:46:58,718 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-14 17:47:03,069 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:47:03,070 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-14 17:47:06,205 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-14 17:47:06,205 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-15 13:12:16,609 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-15 13:12:20,995 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:12:20,995 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-15 13:12:24,335 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:12:24,336 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-15 13:14:14,578 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-15 13:14:18,912 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:14:18,912 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-15 13:14:22,138 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:14:22,138 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-15 13:23:11,614 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-15 13:23:15,922 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:23:15,923 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-15 13:23:19,021 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:23:19,021 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-15 13:23:31,307 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-15 13:23:35,708 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:23:35,708 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-15 13:23:38,953 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:23:38,953 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-15 13:23:43,350 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-15 13:23:47,588 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:23:47,588 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-15 13:23:50,672 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-15 13:23:50,672 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/00_Animation_no_fpga.gif']
+Plotting 2020-09-16 13:54:55,923 :: INFO :: Plotting initialized
+Plotting 2020-09-16 13:55:20,031 :: INFO :: Plotting initialized
+Plotting 2020-09-16 13:55:49,413 :: INFO :: Plotting initialized
+Plotting 2020-09-16 13:56:01,970 :: INFO :: Plotting initialized
+Plotting 2020-09-16 13:56:20,098 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:00:12,294 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:03:43,359 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:04:12,491 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:04:16,895 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:04:16,895 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:05:45,136 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:05:49,654 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:05:49,654 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:10:48,774 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:10:53,742 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:10:53,743 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:11:02,978 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:11:11,153 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:11:16,250 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:11:16,252 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:17:46,247 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:17:51,061 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:17:51,061 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:19:30,142 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:19:35,064 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:19:35,065 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:21:07,332 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:21:47,312 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:21:50,840 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:21:50,840 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:23:16,688 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:23:20,313 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:23:20,314 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Plotting 2020-09-16 14:30:14,215 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:31:04,690 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:31:19,145 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:32:34,878 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:32:49,757 :: INFO :: Plotting initialized
+Plotting 2020-09-16 14:33:36,000 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:33:36,001 :: INFO :: Analysis initialized
+Analysis 2020-09-16 14:33:44,509 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:33:44,521 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:34:04,148 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:34:04,161 :: INFO :: Plotting initialized
+matplotlib.legend 2020-09-16 14:34:04,293 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.animation 2020-09-16 14:34:07,848 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:34:07,849 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:34:21,264 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:34:21,278 :: INFO :: Plotting initialized
+matplotlib.legend 2020-09-16 14:34:21,418 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.animation 2020-09-16 14:34:24,982 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:34:24,982 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:34:38,243 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:34:38,256 :: INFO :: Plotting initialized
+matplotlib.legend 2020-09-16 14:34:38,397 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.animation 2020-09-16 14:34:41,892 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:34:41,892 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:34:50,993 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:34:51,006 :: INFO :: Plotting initialized
+matplotlib.legend 2020-09-16 14:34:51,146 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.animation 2020-09-16 14:34:54,637 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:34:54,638 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:35:00,330 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:35:00,344 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:35:18,439 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:35:18,452 :: INFO :: Plotting initialized
+matplotlib.legend 2020-09-16 14:35:18,599 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.animation 2020-09-16 14:35:22,116 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:35:22,116 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:35:32,117 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:35:32,130 :: INFO :: Plotting initialized
+matplotlib.legend 2020-09-16 14:35:32,262 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.animation 2020-09-16 14:35:35,697 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:35:35,697 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:35:45,829 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:35:45,843 :: INFO :: Plotting initialized
+matplotlib.legend 2020-09-16 14:35:45,979 :: WARNING :: No handles with labels found to put in legend.
+matplotlib.animation 2020-09-16 14:35:49,549 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:35:49,550 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:36:00,163 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:36:00,176 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:36:24,230 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:36:24,243 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:36:36,202 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:36:36,215 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:36:50,335 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:36:50,348 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:36:53,925 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:36:53,926 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:38:18,079 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:38:18,093 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:38:21,650 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:38:21,650 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:38:42,400 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:38:42,413 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:38:45,901 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:38:45,901 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:39:05,510 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:39:05,522 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:39:09,220 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:39:09,221 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:39:34,511 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:39:34,524 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:39:38,114 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:39:38,115 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:39:57,668 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:39:57,681 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:40:01,335 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:40:01,335 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:40:14,452 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:40:14,465 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:40:18,274 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:40:18,274 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:40:22,641 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:40:22,657 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:40:26,296 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:40:26,296 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:40:28,858 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:40:28,871 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:40:32,431 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:40:32,432 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:40:36,969 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:40:36,982 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:40:40,657 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:40:40,657 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:40:43,187 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:40:43,201 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:40:46,867 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:40:46,867 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:40:57,746 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:40:57,760 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:41:01,357 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:41:01,357 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:41:05,794 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:41:05,807 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:41:09,462 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:41:09,463 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:41:22,392 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:41:22,404 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:41:51,161 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:41:51,175 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:42:12,592 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:42:12,605 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:42:42,537 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:42:42,550 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:42:49,312 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:42:49,326 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:42:59,992 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:43:00,004 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:43:10,963 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:43:10,976 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:43:21,584 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:43:21,596 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:43:33,154 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:43:33,167 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:43:36,804 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:43:36,804 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:43:42,534 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:43:42,547 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-16 14:43:46,257 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-16 14:43:46,257 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-16 14:43:56,340 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:43:56,355 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:44:01,935 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:44:01,946 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:44:08,770 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:44:08,783 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:44:28,100 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:44:28,113 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:44:34,653 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:44:34,667 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:44:39,586 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:44:39,599 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:44:46,892 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:44:46,905 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:44:53,366 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:44:53,379 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:46:35,938 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:46:35,950 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:48:05,708 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:48:05,721 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:48:16,221 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:48:16,234 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:48:20,953 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:48:20,966 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:50:40,540 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:50:40,552 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:51:06,430 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:51:06,441 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:51:54,463 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:51:54,476 :: INFO :: Plotting initialized
+Analysis 2020-09-16 14:52:17,396 :: INFO :: Analysis initialized
+Plotting 2020-09-16 14:52:17,408 :: INFO :: Plotting initialized
+Analysis 2020-09-17 11:26:59,572 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:26:59,597 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:27:03,198 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:27:03,198 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-17 11:27:33,744 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:27:33,757 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:27:37,620 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:27:37,620 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:27:40,337 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:27:40,337 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:28:46,247 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:28:46,260 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:28:50,020 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:28:50,021 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:28:52,749 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:28:52,749 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:28:55,577 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:28:55,590 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:28:59,251 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:28:59,251 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:29:01,946 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:29:01,947 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:29:07,464 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:29:07,477 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:29:11,102 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:29:11,102 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:29:13,737 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:29:13,738 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:31:13,339 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:31:13,351 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:31:17,336 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:31:17,337 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:31:19,928 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:31:19,929 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:32:49,823 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:32:49,835 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:32:54,736 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:32:54,736 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:32:57,397 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:32:57,397 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:33:59,522 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:33:59,534 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:34:04,403 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:34:04,403 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:34:07,018 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:34:07,019 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:34:09,175 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:34:09,188 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:34:14,220 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:34:14,220 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:34:16,890 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:34:16,891 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:36:01,418 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:36:01,431 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:36:06,325 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:36:06,326 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:36:08,991 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:36:08,992 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:43:03,384 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:43:03,396 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:43:07,897 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:43:07,898 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:43:10,402 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:43:10,402 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-17 11:44:04,505 :: INFO :: Analysis initialized
+Plotting 2020-09-17 11:44:04,518 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-17 11:44:09,491 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:44:09,492 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-17 11:44:12,104 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-17 11:44:12,104 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-18 14:51:11,659 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:51:11,687 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:51:22,210 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:51:22,223 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-18 14:51:40,136 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 14:51:40,136 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-18 14:51:42,871 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 14:51:42,871 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-18 14:52:43,781 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:52:43,798 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:53:33,882 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:53:33,895 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-18 14:53:43,329 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 14:53:43,329 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-18 14:53:46,010 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 14:53:46,010 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-18 14:54:35,042 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:54:35,055 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:54:44,215 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:54:44,229 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:56:29,788 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:56:29,801 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:56:36,482 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:56:36,496 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:56:43,720 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:56:43,734 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:57:59,811 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:57:59,823 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:58:10,101 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:58:10,115 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:59:03,079 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:59:03,092 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:59:10,876 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:59:10,889 :: INFO :: Plotting initialized
+Analysis 2020-09-18 14:59:31,126 :: INFO :: Analysis initialized
+Plotting 2020-09-18 14:59:31,139 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:00:38,137 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:00:38,151 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:00:48,906 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:00:48,920 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:01:00,015 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:01:00,028 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:01:09,650 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:01:09,664 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:01:19,406 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:01:19,420 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:01:25,268 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:01:25,282 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:01:49,059 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:01:49,073 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:02:15,793 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:02:15,807 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:02:24,433 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:02:24,447 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:02:41,363 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:02:41,377 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:03:35,719 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:03:35,734 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:03:43,978 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:03:43,992 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:03:51,890 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:03:51,903 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:04:41,478 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:04:41,492 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:04:47,162 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:04:47,175 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:05:26,293 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:05:26,307 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:05:46,486 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:05:46,500 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:06:07,552 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:06:07,566 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:06:29,913 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:06:29,928 :: INFO :: Plotting initialized
+Analysis 2020-09-18 15:08:02,154 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:08:02,168 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-18 15:08:16,614 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 15:08:16,614 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-18 15:08:19,189 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 15:08:19,189 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-18 15:08:28,517 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:08:28,531 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-18 15:08:34,473 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 15:08:34,473 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-18 15:08:37,160 :: INFO :: Analysis initialized
+Plotting 2020-09-18 15:08:37,173 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-18 15:08:42,509 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 15:08:42,510 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-18 15:08:45,295 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-18 15:08:45,296 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-21 18:03:15,254 :: INFO :: Analysis initialized
+Plotting 2020-09-21 18:03:15,271 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-21 18:03:21,051 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-21 18:03:21,051 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-21 18:03:23,490 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-21 18:03:23,491 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-21 18:07:21,415 :: INFO :: Analysis initialized
+Plotting 2020-09-21 18:07:21,429 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-21 18:07:26,743 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-21 18:07:26,743 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-21 18:07:29,187 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-21 18:07:29,188 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 12:24:18,863 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:24:18,878 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:24:24,821 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:24:24,822 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 12:24:27,877 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:24:27,877 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 12:24:34,119 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:24:34,134 :: INFO :: Plotting initialized
+Analysis 2020-09-22 12:24:40,033 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:24:40,047 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:24:45,757 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:24:45,758 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 12:24:48,765 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:24:48,765 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 12:25:12,214 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:25:12,232 :: INFO :: Plotting initialized
+Analysis 2020-09-22 12:25:19,153 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:25:19,167 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:25:24,818 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:25:24,818 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 12:25:27,484 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:25:27,485 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 12:25:33,845 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:25:33,859 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:25:39,787 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:25:39,788 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-22 12:25:41,709 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:25:41,724 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:25:47,631 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:25:47,632 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 12:25:50,299 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:25:50,299 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 12:26:23,097 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:26:23,114 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:26:29,444 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:26:29,445 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 12:26:32,201 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:26:32,202 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 12:26:35,530 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:26:35,546 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:26:41,497 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:26:41,497 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-22 12:26:44,045 :: INFO :: Analysis initialized
+Plotting 2020-09-22 12:26:44,060 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 12:26:50,968 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:26:50,969 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 12:26:53,996 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 12:26:53,997 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 13:50:35,461 :: INFO :: Analysis initialized
+Plotting 2020-09-22 13:50:35,474 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 13:50:41,752 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 13:50:41,752 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 13:50:44,685 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 13:50:44,685 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-22 14:55:42,134 :: INFO :: Analysis initialized
+Plotting 2020-09-22 14:55:42,150 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-22 14:55:49,164 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 14:55:49,164 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-22 14:55:52,333 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-22 14:55:52,333 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 15:51:16,528 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:51:16,553 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:51:22,580 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:51:22,580 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 15:51:25,265 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:51:25,266 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 15:53:19,515 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:53:19,528 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:53:25,571 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:53:25,572 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 15:53:28,478 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:53:28,479 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 15:53:59,941 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:53:59,955 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:54:05,807 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:54:05,807 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 15:54:08,480 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:54:08,481 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 15:54:40,370 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:54:40,383 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:54:46,099 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:54:46,100 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 15:54:48,764 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:54:48,765 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 15:56:45,616 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:56:45,629 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:56:51,245 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:56:51,246 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 15:56:55,132 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:56:55,146 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:57:00,786 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:57:00,787 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 15:57:02,273 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:57:02,286 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:57:07,944 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:57:07,945 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 15:57:09,292 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:57:09,305 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:57:15,004 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:57:15,004 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 15:57:18,215 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:57:18,229 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:57:23,881 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:57:23,881 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 15:57:26,454 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:57:26,467 :: INFO :: Plotting initialized
+Analysis 2020-09-23 15:57:32,909 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:57:32,923 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:57:38,558 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:57:38,558 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 15:57:41,307 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:57:41,308 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 15:59:51,559 :: INFO :: Analysis initialized
+Plotting 2020-09-23 15:59:51,573 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 15:59:57,237 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 15:59:57,238 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:00:00,057 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:00:00,057 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:00:10,907 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:00:10,920 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:00:21,453 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:00:21,470 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:00:27,231 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:00:27,231 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:00:30,066 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:00:30,066 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:00:55,222 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:00:55,236 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:01:19,897 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:01:19,910 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:01:23,704 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:01:23,717 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:01:26,478 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:01:26,492 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:01:48,161 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:01:48,175 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:02:00,238 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:02:00,251 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:02:05,715 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:02:05,716 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:02:08,489 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:02:08,490 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:02:10,502 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:02:10,515 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:02:16,195 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:02:16,195 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:02:18,911 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:02:18,911 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:02:51,496 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:02:51,509 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:02:57,198 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:02:57,198 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:02:59,926 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:02:59,926 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:03:09,171 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:03:09,184 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:03:14,769 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:03:14,770 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:03:17,592 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:03:17,592 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:04:13,665 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:04:13,679 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:04:36,746 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:04:36,758 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:04:49,630 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:04:49,643 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:04:55,458 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:04:55,459 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:04:58,077 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:04:58,078 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:05:01,069 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:05:01,083 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:05:11,809 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:05:11,822 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:05:49,735 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:05:49,748 :: INFO :: Plotting initialized
+Analysis 2020-09-23 16:06:07,701 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:06:07,714 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:06:13,363 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:06:13,364 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 16:06:15,847 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:06:15,860 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:06:21,558 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:06:21,559 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:06:24,211 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:06:24,212 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:07:36,480 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:07:36,496 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:07:42,113 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:07:42,113 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 16:07:45,353 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:07:45,365 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:07:51,134 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:07:51,134 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:07:53,896 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:07:53,897 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:07:58,712 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:07:58,726 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:08:04,662 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:04,663 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+Analysis 2020-09-23 16:08:05,986 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:08:05,998 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:08:11,605 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:11,606 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:08:14,370 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:14,371 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:08:15,675 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:08:15,689 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:08:21,296 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:21,297 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:08:23,995 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:23,996 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:08:27,472 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:08:27,485 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:08:33,164 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:33,164 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:08:35,906 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:35,906 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-23 16:08:44,802 :: INFO :: Analysis initialized
+Plotting 2020-09-23 16:08:44,815 :: INFO :: Plotting initialized
+matplotlib.animation 2020-09-23 16:08:50,417 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:50,417 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/LTM8067EY-PBF/rampup/00_Animation_no_mops.gif']
+matplotlib.animation 2020-09-23 16:08:53,006 :: INFO :: Animation.save using <class 'matplotlib.animation.ImageMagickWriter'>
+matplotlib.animation 2020-09-23 16:08:53,006 :: INFO :: MovieWriter.run: running command: ['convert', '-size', '640x480', '-depth', '8', '-delay', '100.0', '-loop', '0', 'rgba:-', 'DCConverter/AP64500SP-EVM/rampup/00_Animation_no_fpga.gif']
+Analysis 2020-09-24 13:14:20,018 :: INFO :: Analysis initialized
+Plotting 2020-09-24 13:14:20,043 :: INFO :: Plotting initialized

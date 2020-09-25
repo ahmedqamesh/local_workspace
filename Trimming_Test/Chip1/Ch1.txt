@@ -1,0 +1,3 @@
+Old Carrier board
+Optimal BandGap C 600mV
+optimal Freq 09	10.03 MHz	

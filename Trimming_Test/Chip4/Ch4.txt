@@ -1,0 +1,4 @@
+Old Carrier board
+optimal BandGap 602.6 mV  9
+optimal Oscillation  10.01 MHz  9
+
