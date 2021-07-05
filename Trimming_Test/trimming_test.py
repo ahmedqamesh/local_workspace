@@ -16,6 +16,8 @@ from celluloid import Camera
 import matplotlib.image as image
 import math
 import random
+import matplotlib.patches as mpatches
+from matplotlib.offsetbox import (DrawingArea, OffsetImage,AnnotationBbox)
 #plt.style.use('ggplot')
 directory = "Trimming_Test/"
 PdfPages = PdfPages('../output_data/trimming_test' + '.pdf')
@@ -203,10 +205,9 @@ def plot_BandGap_All(directory = directory , chip_Id = ["chip_Id"]):
     plt.savefig("BandGap_Oscillation_All_Zoom.png", bbox_inches='tight')
     PdfPages.savefig()
     plt.close(fig)
-    objects = ('Python', 'C++', 'Java', 'Perl', 'Scala', 'Lisp')
 
 
-def plot_config_pattern(directory = directory , chip_Id = ["chip_Id"], file = "Optimal_Values.csv"):
+def plot_config_pattern(directory = directory , chip_Id = ["chip_Id"], file = "Configuration_pattern.csv"):
         Freq_array = [hex(x)[2:].upper() for x in np.arange(0, 32,1)] 
         BG_array = [hex(x)[2:].upper() for x in np.arange(0, 16,1)] 
         print("===============================Frequency/BandGap configuration Pattern==========================================")
@@ -274,7 +275,7 @@ def plot_config_pattern(directory = directory , chip_Id = ["chip_Id"], file = "O
 
 
 
-def plot_BandGap_Bar(file = "Optimal_Values.csv"):
+def plot_BandGap_Bar(file = "Configuration_pattern.csv"):
         print("=======================================Plotting Optimal Values==================================================")
         Freq_array = [hex(x)[2:].upper() for x in np.arange(0, 32,1)] 
         BG_array = [hex(x)[2:].upper() for x in np.arange(0, 16,1)]
@@ -312,9 +313,155 @@ def plot_BandGap_Bar(file = "Optimal_Values.csv"):
         plt.savefig('BandGap_Trimming_bits.png')
         PdfPages.savefig()
         plt.close(fig)
+
+def plot_Optimal_Values(directory = directory ,file = "Optimal_Values.csv" ): 
+    col_row = plt.cm.BuPu(np.linspace(0.3, 1.9, 16))
+    cmap = plt.cm.get_cmap('tab20', 16)
+    print("===============================Plotting Optimal Values  For all the chips==========================================================")
+    Chip = []
+    BG_hex = []
+    BG_int_mv = []
+    BG_int_hex = []
+    BG_mv=[]
+    Freq_hex = []
+    Freq_int = []
+    Freq = []
+    CAN_int = []
+    CAN = []
+    Status = [ ]
+    with open(file, 'r')as data:  # Get Data for the first Voltage
+        reader = csv.reader(data)
+        next(reader)
+        for row in reader:
+           Chip = np.append(Chip, row[0])
+           BG_int_hex = np.append(BG_int_hex, row[1])
+           BG_int_mv = np.append(BG_int_mv, float(row[2]))
+           BG_hex = np.append(BG_hex, row[3])
+           BG_mv = np.append(BG_mv, float(row[4]))
+           Freq_hex = np.append(Freq_hex, float(row[5]))
+           Freq_int= np.append(Freq_int, float(row[6]))
+           Freq= np.append(Freq, float(row[7]))
+           CAN_int= np.append(CAN_int, row[8])
+           CAN= np.append(CAN, row[9])
+           Status = np.append(Status, row[10])
+        colors_int = ["Y" for i in np.arange(len(CAN_int))]
+        colors = ["Y" for i in np.arange(len(CAN))]
+
+    for c in np.arange(len(CAN)):
+        if CAN[c] == "N":
+            colors[c] = "r"
+        else:
+            colors[c] = "g"    
+            
+            
+    for c in np.arange(len(CAN_int)):
+        if CAN_int[c] == "N":
+            colors_int[c] = "r"
+        else:
+            colors_int[c] = "g"          
+    Labels = [Chip[i]+Status[i] for i in np.arange(len(Status))]
+    perror = [0.03*10.01+10.01 for i in np.arange(len(Freq))]
+    nerror = [10.01-0.03*10.01 for i in np.arange(len(Freq))]
+    fig = plt.figure()
+    gs = gridspec.GridSpec(2, 1, height_ratios=[2, 2])
+    ax = plt.subplot(gs[0])
+    ax1 = plt.subplot(gs[1])
+    camera = Camera(fig)  
+    ax.fill_between(Labels, perror, nerror, color='gray', alpha=0.2)
+    #ax.scatter(Labels, Freq_int, c=colors_int, cmap=cmap, s=50)
+    ax.errorbar(Labels,Freq_int,0.0,fmt='-o', linewidth=1, label = "Internal Settings (BandGap[hex] = %s)"%BG_int_hex[1])         
+    ax.grid(True)
+    ax.legend(prop={'size': 6}, loc = 'upper right')
+    ax.set_xlabel("Chip Ids")
+    ax.set_ylabel("Oscillator Frequency [MHz]")
+    ax.set_title("Optimal Configurations  (Freq[hex] = 5)", fontsize=12)
+
+    ax1.errorbar(Labels,BG_int_mv,0.0,fmt='-o',linewidth=1,label = "Internal Settings (BandGap[hex] = %s)"%BG_int_hex[1])       
+    #ax1.scatter(Labels, BG_int_mv, c=colors_int, cmap=cmap, s=50)   
+    ax1.grid(True)
+    ax1.set_xlabel("Chip Ids")
+    ax1.set_ylabel("BandGap Voltage [mV]")
+    ax1.legend(prop={'size': 6}, loc = 'upper right')
+    plt.tight_layout()
+    colorax = ax1.twiny()
+    colorax.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+    colorax.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+    colorax.spines['bottom'].set_position(('outward', 36))
+    color_array = np.arange(len(colors))
+    colorax.set_xticks(color_array)
+    symbolsx = ["⚫" for i in color_array]
+    colorax.set_xticklabels(symbolsx, size=20)
+    colorax.set_xlim(ax1.get_xlim())
+    for tick, color in zip(colorax.get_xticklabels(), colors_int):
+        tick.set_color(color)
+    plt.savefig("Optimal_Values_Internal.png", bbox_inches='tight')  
+    camera.snap()  
+    
+    ax.fill_between(Labels, perror, nerror, color='gray', alpha=0.2)
+    ax.errorbar(Labels,Freq,0.0,fmt='-o', linewidth=1,  color = "goldenrod", label = "Configured Settings (BandGap[hex] = %s)"%BG_hex[1])
+    #ax.scatter(Labels, Freq, c=colors, cmap=cmap, s=50)
+    ax.legend(prop={'size': 6}, loc = 'upper right')
+    ax1.errorbar(Labels,BG_mv,0.0,fmt='-o', linewidth=1,  color = "goldenrod", label = "Configured Settings (BandGap[hex] = %s)"%BG_hex[1])
+    #ax1.scatter(Labels, BG_mv, c=colors, cmap=cmap, s=50)
+    ax1.legend(prop={'size': 6}, loc = 'upper right')
+    colorax = ax1.twiny()
+    colorax.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+    colorax.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+    colorax.spines['bottom'].set_position(('outward', 36))
+    color_array = np.arange(len(colors))
+    colorax.set_xticks(color_array)
+    symbolsx = ["⚫" for i in color_array]
+    colorax.set_xticklabels(symbolsx, size=20)
+    colorax.set_xlim(ax1.get_xlim())
+    for tick, color in zip(colorax.get_xticklabels(), colors):
+        tick.set_color(color)
+    camera.snap()
+    
+    plt.savefig("Optimal_Values_Mixed.png", bbox_inches='tight')
+    animation = camera.animate()
+    plt.tight_layout()
+    animation.save("Optimal_Values_Mixed.gif", writer = 'imagemagick', fps=1)          
+    
+    
+    
+    
+    fig = plt.figure()
+    gs = gridspec.GridSpec(2, 1, height_ratios=[2, 2])
+    ax = plt.subplot(gs[0])
+    ax1 = plt.subplot(gs[1])    
+    ax.fill_between(Labels, perror, nerror, color='gray', alpha=0.2)
+    ax.errorbar(Labels,Freq,0.0,fmt='-o',  color = "goldenrod",linewidth=1,  label = "Configured Settings (BandGap[hex] = %s)"%BG_hex[1])
+    #ax.scatter(Labels, Freq, c=colors, cmap=cmap, s=50)
+    ax.grid(True)
+    ax.legend(prop={'size': 6}, loc = 'upper right')
+    ax.set_xlabel("Chip Ids")
+    ax.set_ylabel("Oscillator Frequency [MHz]")
+    ax.set_title("Optimal Configurations  (Freq[hex] = 5)", fontsize=12)    
+    ax1.errorbar(Labels,BG_mv,0.0,fmt='-o', linewidth=1, color = "goldenrod",  label = "Configured Settings (BandGap[hex] = %s)"%BG_hex[1])
+    #ax1.scatter(Labels, BG_mv, c=colors, cmap=cmap, s=50)
+    ax1.legend(prop={'size': 6}, loc = 'upper right')
+    ax1.grid(True)
+    ax1.set_xlabel("Chip Ids")
+    ax1.set_ylabel("BandGap Voltage [mV]")
+    plt.tight_layout()
+    colorax = ax1.twiny()
+    colorax.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom
+    colorax.xaxis.set_label_position('bottom') # set the position of the second x-axis to bottom
+    colorax.spines['bottom'].set_position(('outward', 36))
+    color_array = np.arange(len(colors))
+    colorax.set_xticks(color_array)
+    symbolsx = ["⚫" for i in color_array]
+    colorax.set_xticklabels(symbolsx, size=20)
+    colorax.set_xlim(ax1.get_xlim())
+    for tick, color in zip(colorax.get_xticklabels(), colors):
+        tick.set_color(color)
         
+    plt.savefig("Optimal_Values_Configured.png", bbox_inches='tight')
+
+           
         
 chip_Id = ["Chip1","Chip1_New" ,"Chip2","Chip3","Chip3_New","Chip4","Chip5","Chip5_New", "Chip6_New","Chip6","Chip7","Chip9"] 
+plot_Optimal_Values()
 plot_BandGap_Bar()
 plot_config_pattern()
 plot_Freq_hex(chip_Id = chip_Id)

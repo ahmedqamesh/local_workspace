@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
-encoding//CANOpen/test_SDO.py=utf-8
+encoding//canmops/new.py=utf-8
+encoding//canmops/objectDictionary.py=utf-8
+encoding//canmops/test_network.py=utf-8
