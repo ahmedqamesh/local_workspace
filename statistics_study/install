@@ -1,0 +1,10 @@
+pip install dash-bootstrap-components
+pip install dash
+pip install -U scikit-learn
+conda install -c conda-forge uncertainties
+//For installation on Centos7
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
+//To create the DB
+mysql -u root -p -h127.0.0.1 --protocol=TCP
+CREATE DATABASE SQC;
+USE SQC;

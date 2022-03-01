@@ -7,10 +7,6 @@ import numba
 import tables as tb
 from tqdm import tqdm
 from scipy.optimize import curve_fit
-loglevel = logging.getLogger('Analysis').getEffectiveLevel()
-from analysis import logger
-np.warnings.filterwarnings('ignore')
-
 class Analysis(object):
     
     def __init__(self):

@@ -231,7 +231,7 @@ class Plotting(object):
         plt.axvline(x=2.6, linewidth=0.8, color="red", linestyle='dashed')
         ax.set_ylabel("Mops Voltage $U_M$ [v]", fontsize=10)
         ax.set_title("Voltage across one Mops $U_M$ [V] When the other one is disconnected", fontsize=8)
-        ax.set_xlabel("Supply Voltage $U_S$ [V]", fontsize=10)
+        ax.set_xlabel("Supply Voltage $U_S^{}$ [V]", fontsize=10)
         ax.ticklabel_format(useOffset=False)
         ax.grid(True)
         fig.savefig(directory + "output/MopsVoltageDrop.png", bbox_inches='tight')
