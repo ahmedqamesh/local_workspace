@@ -1,0 +1,38 @@
+# Example configuration file for MOPSHUB for beginners
+
+# Crate ID of your MOPSHUB
+Crate ID: 1
+
+# Defaults
+ADC Channel Default Converter: 'Raw' # available: 'Raw' | 'Temperature' | 'Voltage'), default: 'Raw'
+
+MOPS Default Location: 'Optobox 3' # default: 'Unknown'
+MOPS Default Status: 0x0 # default: 0
+MOPS Default Port: 0x5   # default: 0
+
+MOPS Configuration Default Trimming: 0x0 # default: 0
+
+# CICs to populate
+CIC 0:
+  # MOPS chips to populate (max 2 per CIC)
+  Bus 31:
+    MOPS 0:
+      Status: 0x5 # Set a custom initial status
+      # ADC channels with custom converters
+      ADC Channel 2:
+        Converter: 'Temperature'
+      # User can specify a channel alias, this will show up in the 'physicalParameter' field
+      ADC Channel 8:
+        Converter: 'Voltage'
+        Alias: 'EOS humidity sensor'
+
+  Bus 32:
+    MOPS 1:
+      Status: 0x5 # Set a custom initial status
+      # ADC channels with custom converters
+      ADC Channel 2:
+        Converter: 'Temperature'
+      # User can specify a channel alias, this will show up in the 'physicalParameter' field
+      ADC Channel 8:
+        Converter: 'Voltage'
+        Alias: 'EOS humidity sensor'

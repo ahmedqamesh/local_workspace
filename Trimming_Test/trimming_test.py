@@ -382,6 +382,7 @@ def plot_Optimal_Values(directory = directory ,file = "Optimal_Values.csv" ):
     ax1.set_xlabel("Chip Ids")
     ax1.set_ylabel("BandGap Voltage [mV]")
     ax1.legend(prop={'size': 6}, loc = 'upper right')
+    
     plt.tight_layout()
     colorax = ax1.twiny()
     colorax.xaxis.set_ticks_position('bottom') # set the position of the second x-axis to bottom

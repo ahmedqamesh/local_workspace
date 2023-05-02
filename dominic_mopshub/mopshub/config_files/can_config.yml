@@ -1,0 +1,20 @@
+CAN_Interfaces: socketcan
+channel0:
+  Bitrate: 125000
+  Channel: 0
+  SamplePoint: 0.5
+  SJW: 4
+  tseg1: 0
+  tseg2: 0
+  ipAddress: None
+  Timeout: 1000
+
+channel1:
+  Bitrate: 125000
+  Channel: 1
+  SamplePoint: 0.4
+  SJW: 4
+  tseg1: 7
+  tseg2: 8
+  ipAddress: None
+  Timeout: 1000

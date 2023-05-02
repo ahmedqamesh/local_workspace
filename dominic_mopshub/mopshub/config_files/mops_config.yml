@@ -1,0 +1,164 @@
+Application:
+  chipId: '1'
+  device_name: MOPS
+  device_version: v1.2
+  icon_dir: graphicsUtils/icons/icon_mops.png
+  index_items:
+    '0x1000':
+      description_items: <html><b> Device type</b> [Default 191(hex)]</b></html>
+      subindex_items:
+        '0': <html><b>Device type</b></html>
+    '0x1001':
+      description_items: <html><b> Error register</b> [Default 0]</b></html>
+      subindex_items:
+        '0': <html><b>Error register</b></html>
+    '0x1005':
+      description_items: <html><b> COB-ID SYNC</b> [Default 80(hex)]</b></html>
+      subindex_items:
+        '0': <html><b>COB-ID SYNC</b></html>
+    '0x1014':
+      description_items: <html><b> COB-ID EMCY</b> [Default 80(hex)+NodeId]</b></html>
+      subindex_items:
+        '0': <html><b>COB-ID EMCY</b></html>
+    '0x1018':
+      description_items: <html><b> Identity object needs</b></html>
+      subindex_items:
+        '0': <html><b>Number of entries</b></html>
+        '1': <html><b>Vendor Id</b></html>
+    '0x1200':
+      description_items: <html><b>Server SDO parameter 0</b></html>
+      subindex_items:
+        '0': <html><u>subindex 0:Number of entries [Default 2]</u></html>
+        '1': <html><u>subindex 1:COB-ID client to server [Default 600 (hex) + NodeId]</u></html>
+        '2': <html><u>subindex 2:COB-ID server to client [Default 580 (hex) + NodeId]</u></html>
+    '0x1800':
+      description_items: <html><b>TPDO communication parameter 0 </b></html>
+      subindex_items:
+        '0': <html><u>subindex 0:</u> Number of entries [Default 6]</html>
+        '1': <html><u>subindex 1:</u> COB-ID [Default 180 (hex) + NodeId]</html>
+        '2': <html><u>subindex 2:</u>Transmission type[Default FE (hex)]</html>
+        '3': <html><u>subindex 3:</u> Inhibit time [Default 0]</html>
+        '4': <html><u>subindex 4:</u> Reserved[Unused]</html>
+        '5': <html><u>subindex 5:</u> Event timer [Default 0]</html>
+        '6': <html><u>subindex 6:</u> SYNC start value[Default 0]</html>
+    '0x1801':
+      description_items: <html><b> TPDO communication parameter 1</b></html>
+      subindex_items:
+        '0': <html><u>subindex 0:</u> Number of entries [Default 6]</html>
+        '1': <html><u>subindex 1:</u> COB-ID [Default 280 (hex) + NodeId]</html>
+        '2': <html><u>subindex 2:</u>Transmission type[Default FE (hex)]</html>
+        '3': <html><u>subindex 3:</u> Inhibit time [Default 0]</html>
+        '4': <html><u>subindex 4:</u> Reserved[Unused]</html>
+        '5': <html><u>subindex 5:</u> Event timer [Default 0]</html>
+        '6': <html><u>subindex 6:</u> SYNC start value[Default 0]</html>
+    '0x1A00':
+      description_items: <html><b> TPDO mapping parameter 0</b></html>
+      subindex_items:
+        '0': <html><u>subindex 0:</u> Number of entries [Default 1]</html>
+        '1': <html><u>subindex 1:</u> PDO mapping entry [Default 21000020(hex)]</html>
+    '0x1A01':
+      description_items: <html><b> TPDO mapping parameter 1</b></html>
+      subindex_items:
+        '0': <html><u>subindex 0:</u> Number of entries [Default 1]</html>
+        '1': <html><u>subindex 1:</u> PDO mapping entry [Default 21010030(hex)]</html>
+    '0x2001':
+      description_items: <html><b> ADC trimming bits</b></html>
+      subindex_items:
+        '0': <html><b>ADC trimming bits</b></html>
+    '0x2100':
+      description_items: <html><b> Read monitoring values of all FEs</b></html>
+      subindex_items:
+        '0': <html><u></u></html>
+    '0x2310':
+      description_items: <html><b> Read other monitoring values</b></html>
+      subindex_items:
+        '0': <html><b>Number of entries</b></html>
+        '1': <html><b>VBANDGAP</b></html>
+        '2': <html><b>VCANSEN</b></html>
+        '3': <html><b>VGNDSEN</b></html>
+    '0x2400':
+      description_items: <html><b>Internal ADC channels</b></html>
+      subindex_items:
+        '0': <html><u>subindex 0 </u>:Number of entries [Default 40]</html>
+        '1': <html><u>subindex 1 </u>:Ch3 </html>
+        '2': <html><u>subindex 2 </u>:Ch4 </html>
+        '3': <html><u>subindex 3 </u>:Ch5 </html>
+        '4': <html><u>subindex 4 </u>:Ch6 </html>
+        '5': <html><u>subindex 5 </u>:Ch7 </html>
+        '6': <html><u>subindex 6 </u>:Ch8 </html>
+        '7': <html><u>subindex 7 </u>:Ch9 </html>
+        '8': <html><u>subindex 8 </u>:Ch10</html>
+        '9': <html><u>subindex 9 </u>:Ch11</html>
+        A: <html><u>subindex A </u>:Ch12</html>
+        B: <html><u>subindex B </u>:Ch13</html>
+        C: <html><u>subindex C </u>:Ch14</html>
+        D: <html><u>subindex D </u>:Ch15</html>
+        E: <html><u>subindex E </u>:Ch16</html>
+        F: <html><u>subindex F </u>:Ch17</html>
+        '10': <html><u>subindex 10</u>:Ch18</html>
+        '11': <html><u>subindex 11</u>:Ch19</html>
+        '12': <html><u>subindex 12</u>:Ch20</html>
+        '13': <html><u>subindex 13</u>:Ch21</html>
+        '14': <html><u>subindex 14</u>:Ch22</html>
+        '15': <html><u>subindex 15</u>:Ch23</html>
+        '16': <html><u>subindex 16</u>:Ch24</html>
+        '17': <html><u>subindex 17</u>:Ch25</html>
+        '18': <html><u>subindex 18</u>:Ch26</html>
+        '19': <html><u>subindex 19</u>:Ch27</html>
+        1A: <html><u>subindex 1A</u>:Ch28</html>
+        1B: <html><u>subindex 1B</u>:Ch29</html>
+        1C: <html><u>subindex 1C</u>:Ch30</html>
+        1D: <html><u>subindex 1D</u>:Ch31</html>
+        1E: <html><u>subindex 1E</u>:Ch32</html>
+        1F: <html><u>subindex 1F</u>:Ch33</html>
+        '20': <html><u>subindex 20</u>:Ch34</html>
+  nodeIds:
+  - '1'
+  - '2'
+Hardware:
+  resistor_ratio: '40'
+adc_channels_reg:
+  adc_channels:
+    '3': V
+    '4': V
+    '5': V
+    '6': V
+    '7': V
+    '8': V
+    '9': T
+    '10': V
+    '11': V
+    '12': T
+    '13': V
+    '14': V
+    '15': T
+    '16': V
+    '17': T
+    '18': V
+    '19': V
+    '20': T
+    '21': V
+    '22': V
+    '23': V
+    '24': V
+    '25': V
+    '26': V
+    '27': T
+    '28': V
+    '29': V
+    '30': T
+    '31': V
+    '32': V
+    '33': V
+    '34': V
+  adc_index:
+    '0x2400': null
+  conf_index:
+    '0x1000': null
+    '0x1001': null
+    '0x1005': null
+    '0x1014': null
+    '0x1018': null
+    '0x2001': null
+  mon_index:
+    '0x2310': null
