@@ -39,6 +39,7 @@ coverage.xml
 .project
 .pydevproject
 .DS_Store
+.ipynb_checkpoints
 
 # Rope
 .ropeproject
