@@ -1,0 +1,1 @@
+In this demonstration, the OPC UA server is implemented as a single python script
