@@ -22,23 +22,6 @@ class AnalysisUtils(object):
     def __init__(self):
         self.log = logger.setup_derived_logger('Utils')
         self.log.info('analysis utils initialized')
-        
-    def voltagesupply(self,pf=None, fl = None, Is=None,Rc=None):
-        '''
-        The function will print the needed voltage supply from the power supply.
-        Pf is FPGA power
-        eff is the converter efficiency
-        Is =array of all the possible currents in a specific range 
-        Rc is the cable resistance as calculated from AWG
-        '''
-        # calculate the proposed power voltage
-        Us =  (pf * fl/Is + Rc * Is)
-        
-        # calculate the transfered efficiency
-        Ps= np.multiply(Is,Us)
-        Trans_eff=[pf*100/Ps[i] for i in range(len(Ps))]
-        Pc = [Is[i]*Is[i]*Rc for i in range(len(Is))] # Power Loss in the cables
-        return Us, Trans_eff, Pc
 
     def plot_spline_masking(self,calibrated_file=False, PdfPages=PdfPages):
         with tb.open_file(calibrated_file, 'r') as in_file:

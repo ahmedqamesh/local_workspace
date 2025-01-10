@@ -15,7 +15,6 @@ from tables import *
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 class Scanning(HardwareLayer):
     '''Driver for  Sourcemeter 
     '''

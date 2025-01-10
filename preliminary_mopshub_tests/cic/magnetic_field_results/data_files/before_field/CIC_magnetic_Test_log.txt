@@ -1,0 +1,3 @@
+Test_date: 06_18_2024
+CIC_ID = v4_2
+current_consumbtion from the PSU = 0.0071

@@ -1,0 +1,16 @@
+V1 	: Voltage from the power supply
+V1cin 	: Input Voltage to DC/DC converter after cables
+V1cout 	: output Voltage from DC/DC converter
+I1 	: current from the power supply
+I1err 	: current error from the power supply	
+IC1 	: current load on DC/DC converter	
+IC1err	: current load error on DC/DC converter	
+PS	: Supply power
+PSIN	: Input power to DC/DC converter	
+PC 	: Cable power	
+% 	: percentage: PC/PSIN	
+R	: cable resistance
+Vcable	: cable voltage drop
+V1cincal: calculated V1cin
+diff 	: difference between V1cin and 	V1cincal	
+PSINcal : calculated PSIN

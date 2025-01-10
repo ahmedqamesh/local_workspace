@@ -1,0 +1,57 @@
+SEU Hold Test 	Date: 2017-05-20_20:13:09
+Chip ID: 2
+Shift periode: 1.000s	Clock Frequency: 1000000.000Hz
+ADC Intervall: 0.100s
+PSPP monitoring interval: 5.000s	PSPP register interval: 10.000PSPP write interval:30.000
+Time[s]	#SEU_s	#SEU_s 0to1	#SEU_s 1to0	#SEU_t	#SEU_t 0to1	#SEU_t 1to0	SCB error	Comment
+1495303996.019446	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495304001.007000	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495304006.012809	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495304006.533742	1	1	0	1	1	0	0	SEU occured
+1495304011.014115	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304016.017154	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304021.020469	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304026.022695	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304031.011015	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304036.013292	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304041.016597	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304046.020592	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304051.023315	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304056.026459	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304061.029040	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304066.016741	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304071.020614	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304076.023039	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304081.016185	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304086.019642	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304091.019830	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304096.024653	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304101.027473	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304106.030423	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304111.033713	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304116.022007	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304121.027497	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304126.029975	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304131.033416	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304136.037269	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304141.025085	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304146.028032	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304151.032126	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304156.037033	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304161.039672	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304166.042293	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304171.029402	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304176.032840	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304181.034517	1	1	0	1	1	0	1	SCB read monitoring failed. Not enough data
+1495304185.680152	2	1	1	2	1	1	0	SEU occured
+1495304186.040726	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304191.044421	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304196.047146	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304201.049996	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304206.037653	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304211.057685	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304216.044709	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304221.048265	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304226.052258	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304231.053520	2	1	1	2	1	1	1	SCB read monitoring failed. Not enough data
+1495304234.231923	2	1	1	2	1	1	0	End of Test

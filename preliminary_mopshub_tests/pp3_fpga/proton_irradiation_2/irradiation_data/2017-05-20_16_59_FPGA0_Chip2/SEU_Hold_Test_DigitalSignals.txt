@@ -1,0 +1,1 @@
+Time[s]	Comp Mod	Comp Temp0	Comp Temp1	POR	Bypass Ctrl	ClkDetect

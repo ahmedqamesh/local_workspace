@@ -60,7 +60,7 @@ class XRay(HardwareLayer):
     def set_position(self, value, address=None, ref=None):
         if ref:
             self.set_ref()
-            print 'Readjusting coordinates to reference point'
+            print ('Readjusting coordinates to reference point')
 
         if address:
             self._write_command("MR%d" % value, address)
@@ -70,7 +70,7 @@ class XRay(HardwareLayer):
     def get_position(self, address=None):
         self._write_command("TP", address)
         resp = self.read()
-        print resp
+        print (resp)
 
     def get_coordinates(self):
         self._write_command("TP", address=1)
@@ -189,13 +189,13 @@ class XRay(HardwareLayer):
             childWindow.lblBotton = Button(childWindow, text='       Ok     ', command=lambda: childWindow.destroy()).place(x=50, y=225)
 
     def Motor_mode(self):
-        print "=====================MotorStage mode inFormation=======================\n"
+        print ("=====================MotorStage mode inFormation=======================\n")
         self._write_command("TY", address=1)
-        print self.read()
+        print (self.read())
         self._write_command("TY", address=2)
-        print self.read()
+        print (self.read())
         self._write_command("TY", address=3)
-        print self.read()
+        print (self.read())
 
 # Part for Sensirion Thermohygrometer
     def write_sensirion(self, command):
@@ -215,10 +215,10 @@ class XRay(HardwareLayer):
         for i in range(1024):  # data assumed to be less than 1024 words
             a = self._intf.read(size=1).encode('hex_codec')
             if self.debug == 1:
-                print a,
+                print (a),
             if a == '':
                 if self.debug == 1:
-                    print "sensirionEKH4.read() timeout"
+                    print ("sensirionEKH4.read() timeout")
                 break
             elif flg == 0 and a == '7e':
                 flg = 1
@@ -227,7 +227,7 @@ class XRay(HardwareLayer):
             elif flg == 1:
                 Result.append(a)
         if self.debug == 1:
-            print "----", Result
+            print ("----", Result)
         return Result
 
     def get_temperature(self, min_val=-40, max_val=200):
@@ -290,16 +290,16 @@ class XRay(HardwareLayer):
 
         self.write("in_mode_05")
         stat = self.read()
-        print "The Chiller is on state", stat
+        print ("The Chiller is on state", stat)
 
     def Chiller_mode(self, Power=0, Temp=0):
-        print "=====================Chiller mode inFormation=======================\n"
+        print ("=====================Chiller mode inFormation=======================\n")
         if Temp == 1:
             self.write("in_pv_00")
             Temp = self.read()
             self.write("in_mode_01")
             Working_Temp = self.read()
-            print "Actual bath temperature is ", Temp, "Working Temprature is", Working_Temp
+            print ("Actual bath temperature is ", Temp, "Working Temprature is", Working_Temp)
             self.write("in_sp_00")  # get T1
             T1 = self.read()  # unicode(self.read(), errors='ignore')
             self.write("in_sp_01")  # get T2
@@ -308,7 +308,7 @@ class XRay(HardwareLayer):
             LimT2 = unicode(self.read(), errors='ignore')
             self.write("in_sp_04")  # Low Temperature warning limit
             LimT1 = unicode(self.read(), errors='ignore')
-            print "Settings for Temprature T1 is ", T1, "Settings for Temprature T2", T2, "High Temperature warning limit is ", LimT2, "Low Temperature warning limit is ", LimT1
+            print ("Settings for Temprature T1 is ", T1, "Settings for Temprature T2", T2, "High Temperature warning limit is ", LimT2, "Low Temperature warning limit is ", LimT1)
         if Power == 1:
             self.write("in_pv_01")
             Power = self.read()
@@ -316,7 +316,7 @@ class XRay(HardwareLayer):
             Limpow2 = unicode(self.read(), errors='ignore')
             self.write("in_hil_01")  # Low Power warning limit
             Limpow1 = unicode(self.read(), errors='ignore')
-            print "Heating power being used is", Power, "Max Cooling Power is  ", Limpow2, "Max Heating Power is is ", Limpow1
+            print ("Heating power being used is", Power, "Max Cooling Power is  ", Limpow2, "Max Heating Power is is ", Limpow1)
 
     def TempratureSettings(self):
         childWindow = Toplevel()
@@ -338,13 +338,13 @@ class XRay(HardwareLayer):
                 self.read()
                 self.write('in_sp_00')  # get T1
                 T1 = self.read()  # unicode(self.read(), errors='ignore')
-                print "Working Temprature T1 is  Now ", T1, "C"
+                print ("Working Temprature T1 is  Now ", T1, "C")
             if Set == 0:
                 self.write('out_sp_01 %d' % e2.get())
 #                self.read()
                 self.write("in_sp_01")  # get T2
                 T2 = self.read()  # unicode(self.read(), errors='ignore')
-                print "Working Temprature T2 is Now", T2, "C"
+                print ("Working Temprature T2 is Now", T2, "C")
 
     def TempratureLimits(self):
         childWindow = Toplevel()

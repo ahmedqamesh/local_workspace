@@ -1,0 +1,5 @@
+pyvisa
+pyvisa-py
+colorama
+clint
+colorlog

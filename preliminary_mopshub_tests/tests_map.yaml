@@ -1,0 +1,33 @@
+min_tests:
+  cic/TID_results:
+    - after_TID:
+        - CIC_TID_Test_03_09_2023_combined:
+            - vcan
+            - current
+            - phy
+        - CIC_TID_Test_03_09_2023_rst6:
+            - vcan
+            - current
+            - psu
+            - coupler
+            - ntc
+            - phy
+
+hr_tests:
+  cic/TID_results:
+    - before_TID:
+        - CIC_TID_Test_02_27_2023_00h:
+            - vcan
+            - psu
+            - coupler
+    - during_TID:
+        - CIC_TID_Test_07_08_09_combined:
+            - vcan
+            - psu
+            - coupler
+  cic/neutron_results:
+    - before_radiation:
+        - CIC_TID_Test_06_18_2024_combined:
+            - vcan
+            - psu
+            - coupler

@@ -1,0 +1,56 @@
+SEU Hold Test 	Date: 2017-05-20_17:21:07
+Chip ID: 2
+Shift periode: 2.000s	Clock Frequency: 1000000.000Hz
+ADC Intervall: 0.100s
+PSPP monitoring interval: 5.000s	PSPP register interval: 10.000PSPP write interval:30.000
+Time[s]	#SEU_s	#SEU_s 0to1	#SEU_s 1to0	#SEU_t	#SEU_t 0to1	#SEU_t 1to0	SCB error	Comment
+1495293674.891085	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293679.890775	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293684.900629	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293689.888653	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293694.902401	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293699.896052	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293704.890878	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293709.891783	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293714.893001	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293719.903125	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293724.898320	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293729.906032	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293734.900780	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293739.894569	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293744.905417	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293749.897509	0	0	0	0	0	0	1	SCB read monitoring failed. Not enough data
+1495293752.448776	1	0	1	1	0	1	0	SEU occured
+1495293754.907912	1	0	1	1	0	1	1	SCB read monitoring failed. Not enough data
+1495293759.898298	1	0	1	1	0	1	1	SCB read monitoring failed. Not enough data
+1495293760.453118	2	0	2	2	0	2	0	SEU occured
+1495293764.905728	2	0	2	2	0	2	1	SCB read monitoring failed. Not enough data
+1495293769.904460	2	0	2	2	0	2	1	SCB read monitoring failed. Not enough data
+1495293774.899190	2	0	2	2	0	2	1	SCB read monitoring failed. Not enough data
+1495293776.454845	1597	1595	2	1597	1595	2	0	SEU occured
+1495293778.449436	3194	3192	2	3194	3192	2	0	SEU occured
+1495293779.905750	3194	3192	2	3194	3192	2	1	SCB read monitoring failed. Not enough data
+1495293780.441397	4690	4688	2	4690	4688	2	0	SEU occured
+1495293782.447861	6192	6190	2	6192	6190	2	0	SEU occured
+1495293784.459240	7691	7689	2	7691	7689	2	0	SEU occured
+1495293784.903237	7691	7689	2	7691	7689	2	1	SCB read monitoring failed. Not enough data
+1495293786.453952	9377	9375	2	9377	9375	2	0	SEU occured
+1495293788.458215	11065	11063	2	11065	11063	2	0	SEU occured
+1495293789.903723	11065	11063	2	11065	11063	2	1	SCB read monitoring failed. Not enough data
+1495293790.459209	12471	12469	2	12471	12469	2	0	SEU occured
+1495293792.464373	14252	14250	2	14252	14250	2	0	SEU occured
+1495293794.465104	15376	15374	2	15376	15374	2	0	SEU occured
+1495293794.903615	15376	15374	2	15376	15374	2	1	SCB read monitoring failed. Not enough data
+1495293796.461064	16876	16874	2	16876	16874	2	0	SEU occured
+1495293798.446510	18564	18562	2	18564	18562	2	0	SEU occured
+1495293799.912672	18564	18562	2	18564	18562	2	1	SCB read monitoring failed. Not enough data
+1495293800.443553	19783	19781	2	19783	19781	2	0	SEU occured
+1495293802.459749	21657	21655	2	21657	21655	2	0	SEU occured
+1495293804.462686	22783	22781	2	22783	22781	2	0	SEU occured
+1495293804.905669	22783	22781	2	22783	22781	2	1	SCB read monitoring failed. Not enough data
+1495293806.467176	24845	24843	2	24845	24843	2	0	SEU occured
+1495293808.469609	26347	26345	2	26347	26345	2	0	SEU occured
+1495293809.916130	26347	26345	2	26347	26345	2	1	SCB read monitoring failed. Not enough data
+1495293810.467155	27566	27564	2	27566	27564	2	0	SEU occured
+1495293812.466413	29066	29064	2	29066	29064	2	0	SEU occured
+1495293813.629384	29066	29064	2	29066	29064	2	0	End of Test
